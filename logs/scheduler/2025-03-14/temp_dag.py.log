@@ -1,0 +1,1515 @@
+[2025-03-14T11:07:58.447+0000] {processor.py:186} INFO - Started process (PID=1431) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:07:58.448+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:07:58.448+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:07:58.448+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:07:58.478+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:07:58.478+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:07:58.479+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:07:58.486+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.042 seconds
+[2025-03-14T11:08:28.834+0000] {processor.py:186} INFO - Started process (PID=1504) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:08:28.835+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:08:28.836+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:08:28.836+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:08:28.866+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:08:28.865+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:08:28.866+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:08:28.874+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.043 seconds
+[2025-03-14T11:09:14.674+0000] {processor.py:186} INFO - Started process (PID=91) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:09:14.676+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:09:14.678+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:09:14.678+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:09:14.792+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:09:14.790+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:09:14.793+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:09:14.812+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.147 seconds
+[2025-03-14T11:09:45.627+0000] {processor.py:186} INFO - Started process (PID=165) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:09:45.628+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:09:45.629+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:09:45.629+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:09:45.663+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:09:45.662+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:09:45.664+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:09:45.734+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.110 seconds
+[2025-03-14T11:10:16.027+0000] {processor.py:186} INFO - Started process (PID=233) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:10:16.028+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:10:16.030+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:10:16.030+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:10:16.064+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:10:16.062+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:10:16.064+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:10:16.074+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.051 seconds
+[2025-03-14T11:10:46.504+0000] {processor.py:186} INFO - Started process (PID=300) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:10:46.504+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:10:46.507+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:10:46.507+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:10:46.540+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:10:46.539+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:10:46.541+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:10:46.553+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.053 seconds
+[2025-03-14T11:11:17.021+0000] {processor.py:186} INFO - Started process (PID=368) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:11:17.022+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:11:17.023+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:11:17.023+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:11:17.055+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:11:17.052+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:11:17.056+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:11:17.065+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.047 seconds
+[2025-03-14T11:11:47.379+0000] {processor.py:186} INFO - Started process (PID=436) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:11:47.380+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:11:47.382+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:11:47.382+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:11:47.419+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:11:47.418+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:11:47.419+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:11:47.429+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.054 seconds
+[2025-03-14T11:12:17.887+0000] {processor.py:186} INFO - Started process (PID=504) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:12:17.887+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:12:17.890+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:12:17.890+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:12:17.926+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:12:17.925+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:12:17.926+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:12:17.936+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.054 seconds
+[2025-03-14T11:12:48.849+0000] {processor.py:186} INFO - Started process (PID=572) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:12:48.849+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:12:48.851+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:12:48.851+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:12:48.891+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:12:48.890+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:12:48.892+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:12:48.902+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.058 seconds
+[2025-03-14T11:13:19.292+0000] {processor.py:186} INFO - Started process (PID=640) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:13:19.292+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:13:19.294+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:13:19.294+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:13:19.326+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:13:19.325+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:13:19.326+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:13:19.339+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.050 seconds
+[2025-03-14T11:13:49.645+0000] {processor.py:186} INFO - Started process (PID=708) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:13:49.647+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:13:49.648+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:13:49.648+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:13:49.684+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:13:49.682+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:13:49.684+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:13:49.696+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.054 seconds
+[2025-03-14T11:14:20.126+0000] {processor.py:186} INFO - Started process (PID=776) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:14:20.127+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:14:20.129+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:14:20.129+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:14:20.164+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:14:20.162+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:14:20.165+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:14:20.173+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.052 seconds
+[2025-03-14T11:14:50.525+0000] {processor.py:186} INFO - Started process (PID=844) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:14:50.526+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:14:50.529+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:14:50.528+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:14:50.564+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:14:50.563+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:14:50.565+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:14:50.575+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.055 seconds
+[2025-03-14T11:15:02.552+0000] {processor.py:186} INFO - Started process (PID=60) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:15:02.553+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:15:02.554+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:15:02.554+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:15:02.586+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:15:02.584+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:15:02.586+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:15:02.607+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.059 seconds
+[2025-03-14T11:15:33.596+0000] {processor.py:186} INFO - Started process (PID=128) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:15:33.598+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:15:33.599+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:15:33.599+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:15:33.639+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:15:33.637+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:15:33.639+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:15:33.649+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.057 seconds
+[2025-03-14T11:16:03.991+0000] {processor.py:186} INFO - Started process (PID=195) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:16:03.992+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:16:03.994+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:16:03.994+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:16:04.027+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:16:04.025+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:16:04.027+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:16:04.036+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.049 seconds
+[2025-03-14T11:16:34.331+0000] {processor.py:186} INFO - Started process (PID=262) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:16:34.333+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:16:34.334+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:16:34.334+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:16:34.369+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:16:34.368+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:16:34.369+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:16:34.380+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.054 seconds
+[2025-03-14T11:17:04.526+0000] {processor.py:186} INFO - Started process (PID=330) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:17:04.526+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:17:04.527+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:17:04.527+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:17:04.555+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:17:04.553+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:17:04.556+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:17:04.566+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.043 seconds
+[2025-03-14T11:17:18.233+0000] {processor.py:186} INFO - Started process (PID=60) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:17:18.234+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:17:18.235+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:17:18.235+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:17:18.286+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:17:18.285+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:17:18.287+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:17:18.304+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.073 seconds
+[2025-03-14T11:17:49.229+0000] {processor.py:186} INFO - Started process (PID=128) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:17:49.230+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:17:49.232+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:17:49.232+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:17:49.275+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:17:49.270+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:17:49.276+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:17:49.287+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.061 seconds
+[2025-03-14T11:18:19.914+0000] {processor.py:186} INFO - Started process (PID=200) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:18:19.915+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:18:19.917+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:18:19.917+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:18:19.946+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:18:19.945+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:18:19.947+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:18:19.957+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.046 seconds
+[2025-03-14T11:18:50.408+0000] {processor.py:186} INFO - Started process (PID=268) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:18:50.408+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:18:50.411+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:18:50.411+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:18:50.442+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:18:50.441+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:18:50.442+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:18:50.454+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.050 seconds
+[2025-03-14T11:19:20.657+0000] {processor.py:186} INFO - Started process (PID=336) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:19:20.659+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:19:20.661+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:19:20.661+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:19:20.706+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:19:20.704+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:19:20.707+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:19:20.718+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.067 seconds
+[2025-03-14T11:19:51.061+0000] {processor.py:186} INFO - Started process (PID=404) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:19:51.062+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:19:51.063+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:19:51.063+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:19:51.091+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:19:51.088+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:19:51.092+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:19:51.102+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.043 seconds
+[2025-03-14T11:20:21.372+0000] {processor.py:186} INFO - Started process (PID=471) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:20:21.373+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:20:21.376+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:20:21.375+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:20:21.408+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:20:21.407+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:20:21.409+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:20:21.420+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.052 seconds
+[2025-03-14T11:20:51.902+0000] {processor.py:186} INFO - Started process (PID=544) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:20:51.903+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:20:51.905+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:20:51.905+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:20:51.943+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:20:51.940+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:20:51.943+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:20:51.954+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.056 seconds
+[2025-03-14T11:21:22.441+0000] {processor.py:186} INFO - Started process (PID=613) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:21:22.442+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:21:22.444+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:21:22.444+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:21:22.482+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:21:22.479+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:21:22.483+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:21:22.497+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.060 seconds
+[2025-03-14T11:21:52.800+0000] {processor.py:186} INFO - Started process (PID=681) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:21:52.801+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:21:52.803+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:21:52.803+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:21:52.841+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:21:52.840+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:21:52.842+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:21:52.852+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.058 seconds
+[2025-03-14T11:22:22.891+0000] {processor.py:186} INFO - Started process (PID=753) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:22:22.891+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:22:22.893+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:22:22.892+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:22:22.922+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:22:22.922+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:22:22.923+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:22:22.931+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.044 seconds
+[2025-03-14T11:22:53.740+0000] {processor.py:186} INFO - Started process (PID=821) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:22:53.741+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:22:53.744+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:22:53.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:22:53.781+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:22:53.780+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:22:53.781+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:22:53.789+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.055 seconds
+[2025-03-14T11:23:24.757+0000] {processor.py:186} INFO - Started process (PID=889) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:23:24.758+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:23:24.761+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:23:24.761+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:23:24.804+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:23:24.803+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:23:24.804+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:23:24.812+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.063 seconds
+[2025-03-14T11:23:55.454+0000] {processor.py:186} INFO - Started process (PID=960) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:23:55.456+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:23:55.458+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:23:55.458+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:23:55.490+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:23:55.488+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:23:55.491+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:23:55.501+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.052 seconds
+[2025-03-14T11:24:25.784+0000] {processor.py:186} INFO - Started process (PID=1028) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:24:25.786+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:24:25.789+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:24:25.789+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:24:25.825+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:24:25.823+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:24:25.826+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:24:25.835+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.057 seconds
+[2025-03-14T11:24:56.106+0000] {processor.py:186} INFO - Started process (PID=1096) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:24:56.107+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:24:56.110+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:24:56.110+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:24:56.152+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:24:56.150+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:24:56.153+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:24:56.165+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.067 seconds
+[2025-03-14T11:25:26.389+0000] {processor.py:186} INFO - Started process (PID=1163) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:25:26.391+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:25:26.393+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:25:26.393+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:25:26.427+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:25:26.425+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:25:26.428+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:25:26.438+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.053 seconds
+[2025-03-14T11:25:56.867+0000] {processor.py:186} INFO - Started process (PID=1232) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:25:56.868+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:25:56.870+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:25:56.870+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:25:56.902+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:25:56.901+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:25:56.902+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:25:56.912+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.049 seconds
+[2025-03-14T11:26:27.138+0000] {processor.py:186} INFO - Started process (PID=1299) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:26:27.138+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:26:27.140+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:26:27.140+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:26:27.175+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:26:27.174+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:26:27.175+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:26:27.187+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.054 seconds
+[2025-03-14T11:26:57.543+0000] {processor.py:186} INFO - Started process (PID=1367) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:26:57.544+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:26:57.546+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:26:57.546+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:26:57.579+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:26:57.578+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:26:57.579+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:26:57.589+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.050 seconds
+[2025-03-14T11:27:27.666+0000] {processor.py:186} INFO - Started process (PID=1435) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:27:27.668+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:27:27.670+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:27:27.670+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:27:27.708+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:27:27.705+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:27:27.709+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:27:27.719+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.056 seconds
+[2025-03-14T11:27:58.107+0000] {processor.py:186} INFO - Started process (PID=1502) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:27:58.108+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:27:58.110+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:27:58.110+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:27:58.142+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:27:58.139+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:27:58.142+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:27:58.152+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.050 seconds
+[2025-03-14T11:28:28.425+0000] {processor.py:186} INFO - Started process (PID=1570) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:28:28.428+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:28:28.429+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:28:28.429+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:28:28.459+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:28:28.458+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:28:28.459+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:28:28.469+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.047 seconds
+[2025-03-14T11:28:58.984+0000] {processor.py:186} INFO - Started process (PID=1638) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:28:58.984+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:28:58.988+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:28:58.987+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:28:59.027+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:28:59.026+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:28:59.028+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:28:59.042+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.063 seconds
+[2025-03-14T11:29:29.278+0000] {processor.py:186} INFO - Started process (PID=1706) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:29:29.279+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:29:29.280+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:29:29.280+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:29:29.312+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:29:29.311+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:29:29.312+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:29:29.323+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.048 seconds
+[2025-03-14T11:29:59.837+0000] {processor.py:186} INFO - Started process (PID=1773) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:29:59.838+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:29:59.840+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:29:59.840+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:29:59.872+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:29:59.871+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:29:59.873+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:29:59.886+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.054 seconds
+[2025-03-14T11:30:30.256+0000] {processor.py:186} INFO - Started process (PID=1841) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:30:30.257+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:30:30.260+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:30:30.259+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:30:30.291+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:30:30.289+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:30:30.293+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:30:30.301+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.049 seconds
+[2025-03-14T11:31:00.944+0000] {processor.py:186} INFO - Started process (PID=1909) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:31:00.945+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:31:00.947+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:31:00.947+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:31:00.987+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:31:00.984+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:31:00.987+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:31:01.000+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.061 seconds
+[2025-03-14T11:31:31.508+0000] {processor.py:186} INFO - Started process (PID=1976) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:31:31.509+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:31:31.510+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:31:31.510+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:31:31.543+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:31:31.540+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:31:31.545+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:31:31.553+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.049 seconds
+[2025-03-14T11:32:01.744+0000] {processor.py:186} INFO - Started process (PID=2044) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:32:01.745+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:32:01.747+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:32:01.747+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:32:01.781+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:32:01.778+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:32:01.782+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:32:01.792+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.053 seconds
+[2025-03-14T11:32:32.030+0000] {processor.py:186} INFO - Started process (PID=2112) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:32:32.031+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:32:32.032+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:32:32.032+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:32:32.075+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:32:32.072+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:32:32.076+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:32:32.090+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.064 seconds
+[2025-03-14T11:33:02.597+0000] {processor.py:186} INFO - Started process (PID=2180) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:33:02.598+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:33:02.600+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:33:02.599+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:33:02.731+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:33:02.730+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:33:02.731+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:33:02.739+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.147 seconds
+[2025-03-14T11:33:33.028+0000] {processor.py:186} INFO - Started process (PID=2248) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:33:33.030+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:33:33.032+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:33:33.032+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:33:33.143+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:33:33.142+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:33:33.144+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:33:33.152+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.128 seconds
+[2025-03-14T11:34:04.012+0000] {processor.py:186} INFO - Started process (PID=2316) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:34:04.013+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:34:04.015+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:34:04.015+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:34:04.044+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:34:04.043+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:34:04.044+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:34:04.055+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.048 seconds
+[2025-03-14T11:34:34.137+0000] {processor.py:186} INFO - Started process (PID=2384) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:34:34.138+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:34:34.140+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:34:34.140+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:34:34.173+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:34:34.171+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:34:34.173+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:34:34.183+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.050 seconds
+[2025-03-14T11:35:04.353+0000] {processor.py:186} INFO - Started process (PID=2452) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:35:04.354+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:35:04.356+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:35:04.356+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:35:04.389+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:35:04.386+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:35:04.390+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:35:04.402+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.053 seconds
+[2025-03-14T11:35:34.581+0000] {processor.py:186} INFO - Started process (PID=2519) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:35:34.583+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:35:34.585+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:35:34.585+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:35:34.620+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:35:34.619+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:35:34.621+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:35:34.631+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.054 seconds
+[2025-03-14T11:36:04.704+0000] {processor.py:186} INFO - Started process (PID=2587) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:36:04.705+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:36:04.706+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:36:04.706+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:36:04.740+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:36:04.739+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:36:04.741+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:36:04.752+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.052 seconds
+[2025-03-14T11:36:35.770+0000] {processor.py:186} INFO - Started process (PID=2655) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:36:35.771+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:36:35.773+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:36:35.773+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:36:35.803+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:36:35.802+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:36:35.804+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:36:35.813+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.048 seconds
+[2025-03-14T11:37:06.842+0000] {processor.py:186} INFO - Started process (PID=2722) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:37:06.843+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:37:06.844+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:37:06.844+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:37:06.874+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:37:06.873+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:37:06.874+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:37:06.885+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.048 seconds
+[2025-03-14T11:37:36.982+0000] {processor.py:186} INFO - Started process (PID=2790) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:37:36.983+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:37:36.984+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:37:36.984+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:37:37.012+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:37:37.010+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:37:37.012+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:37:37.022+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.042 seconds
+[2025-03-14T11:38:07.111+0000] {processor.py:186} INFO - Started process (PID=2858) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:38:07.112+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:38:07.114+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:38:07.114+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:38:07.142+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:38:07.141+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:38:07.143+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:38:07.153+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.046 seconds
+[2025-03-14T11:38:37.268+0000] {processor.py:186} INFO - Started process (PID=2926) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:38:37.270+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:38:37.271+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:38:37.271+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:38:37.304+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:38:37.302+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:38:37.304+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:38:37.313+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.050 seconds
+[2025-03-14T11:39:07.353+0000] {processor.py:186} INFO - Started process (PID=2993) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:39:07.356+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:39:07.358+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:39:07.358+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:39:07.395+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:39:07.390+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:39:07.397+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:39:07.405+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.058 seconds
+[2025-03-14T11:39:38.419+0000] {processor.py:186} INFO - Started process (PID=3062) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:39:38.420+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:39:38.422+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:39:38.422+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:39:38.454+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:39:38.453+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:39:38.454+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:39:38.465+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.051 seconds
+[2025-03-14T11:40:09.486+0000] {processor.py:186} INFO - Started process (PID=3129) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:40:09.488+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:40:09.490+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:40:09.490+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:40:09.515+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:40:09.514+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:40:09.515+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:40:09.524+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.041 seconds
+[2025-03-14T11:40:39.582+0000] {processor.py:186} INFO - Started process (PID=3197) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:40:39.583+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:40:39.585+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:40:39.585+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:40:39.616+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:40:39.615+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:40:39.616+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:40:39.627+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.049 seconds
+[2025-03-14T11:41:09.681+0000] {processor.py:186} INFO - Started process (PID=3265) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:41:09.683+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:41:09.686+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:41:09.686+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:41:09.726+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:41:09.725+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:41:09.727+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:41:09.738+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.063 seconds
+[2025-03-14T11:41:39.798+0000] {processor.py:186} INFO - Started process (PID=3332) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:41:39.799+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:41:39.800+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:41:39.800+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:41:39.826+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:41:39.825+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:41:39.826+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:41:39.838+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.042 seconds
+[2025-03-14T11:42:09.966+0000] {processor.py:186} INFO - Started process (PID=3400) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:42:09.967+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:42:09.969+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:42:09.969+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:42:10.000+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:42:09.998+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:42:10.001+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:42:10.011+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.049 seconds
+[2025-03-14T11:42:40.131+0000] {processor.py:186} INFO - Started process (PID=3468) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:42:40.132+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:42:40.134+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:42:40.134+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:42:40.164+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:42:40.163+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:42:40.164+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:42:40.175+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.049 seconds
+[2025-03-14T11:43:11.206+0000] {processor.py:186} INFO - Started process (PID=3535) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:43:11.206+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:43:11.209+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:43:11.209+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:43:11.254+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:43:11.253+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:43:11.254+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:43:11.267+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.067 seconds
+[2025-03-14T11:43:41.630+0000] {processor.py:186} INFO - Started process (PID=3603) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:43:41.632+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:43:41.633+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:43:41.633+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:43:41.670+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:43:41.669+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:43:41.670+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:43:41.682+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.058 seconds
+[2025-03-14T11:44:12.281+0000] {processor.py:186} INFO - Started process (PID=3670) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:44:12.282+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:44:12.285+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:44:12.285+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:44:12.319+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:44:12.315+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:44:12.319+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:44:12.330+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.055 seconds
+[2025-03-14T11:44:42.582+0000] {processor.py:186} INFO - Started process (PID=3738) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:44:42.583+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:44:42.585+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:44:42.585+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:44:42.619+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:44:42.618+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:44:42.619+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:44:42.633+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.057 seconds
+[2025-03-14T11:45:12.897+0000] {processor.py:186} INFO - Started process (PID=3806) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:45:12.898+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:45:12.901+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:45:12.901+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:45:12.940+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:45:12.938+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:45:12.940+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:45:12.952+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.062 seconds
+[2025-03-14T11:45:43.289+0000] {processor.py:186} INFO - Started process (PID=3874) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:45:43.290+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:45:43.292+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:45:43.292+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:45:43.341+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:45:43.336+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:45:43.343+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:45:43.353+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.070 seconds
+[2025-03-14T11:46:13.632+0000] {processor.py:186} INFO - Started process (PID=3942) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:46:13.633+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:46:13.635+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:46:13.635+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:46:13.675+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:46:13.674+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:46:13.675+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:46:13.684+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.057 seconds
+[2025-03-14T11:46:44.002+0000] {processor.py:186} INFO - Started process (PID=4010) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:46:44.002+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:46:44.006+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:46:44.006+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:46:44.040+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:46:44.039+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:46:44.040+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:46:44.053+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.057 seconds
+[2025-03-14T11:47:14.501+0000] {processor.py:186} INFO - Started process (PID=4078) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:47:14.502+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:47:14.504+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:47:14.504+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:47:14.547+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:47:14.543+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:47:14.548+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:47:14.558+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.063 seconds
+[2025-03-14T11:47:45.031+0000] {processor.py:186} INFO - Started process (PID=4146) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:47:45.033+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:47:45.036+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:47:45.036+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:47:45.074+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:47:45.071+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:47:45.075+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:47:45.090+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.064 seconds
+[2025-03-14T11:48:15.429+0000] {processor.py:186} INFO - Started process (PID=4214) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:48:15.430+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:48:15.432+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:48:15.432+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:48:15.473+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:48:15.470+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:48:15.475+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:48:15.485+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.061 seconds
+[2025-03-14T11:48:45.872+0000] {processor.py:186} INFO - Started process (PID=4282) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:48:45.873+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:48:45.874+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:48:45.874+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:48:45.908+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:48:45.907+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:48:45.908+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:48:45.921+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.054 seconds
+[2025-03-14T11:49:16.268+0000] {processor.py:186} INFO - Started process (PID=4350) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:49:16.270+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:49:16.271+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:49:16.271+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:49:16.313+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:49:16.311+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:49:16.313+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:49:16.328+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.065 seconds
+[2025-03-14T11:49:47.108+0000] {processor.py:186} INFO - Started process (PID=4418) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:49:47.109+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:49:47.110+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:49:47.110+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:49:47.140+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:49:47.139+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:49:47.141+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:49:47.156+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.051 seconds
+[2025-03-14T11:50:17.672+0000] {processor.py:186} INFO - Started process (PID=4485) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:50:17.673+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:50:17.676+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:50:17.676+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:50:17.731+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:50:17.730+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:50:17.733+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:50:17.751+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.082 seconds
+[2025-03-14T11:50:48.362+0000] {processor.py:186} INFO - Started process (PID=4553) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:50:48.363+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:50:48.368+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:50:48.367+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:50:48.400+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:50:48.399+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:50:48.400+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:50:48.411+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.054 seconds
+[2025-03-14T11:51:18.794+0000] {processor.py:186} INFO - Started process (PID=4620) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:51:18.795+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:51:18.798+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:51:18.798+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:51:18.832+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:51:18.831+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:51:18.832+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:51:18.843+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.056 seconds
+[2025-03-14T11:51:49.199+0000] {processor.py:186} INFO - Started process (PID=4688) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:51:49.199+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:51:49.201+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:51:49.201+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:51:49.235+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:51:49.234+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:51:49.235+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:51:49.247+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.053 seconds
+[2025-03-14T11:52:19.744+0000] {processor.py:186} INFO - Started process (PID=4756) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:52:19.745+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:52:19.749+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:52:19.749+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:52:19.783+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:52:19.783+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:52:19.784+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:52:19.796+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.057 seconds
+[2025-03-14T11:52:50.305+0000] {processor.py:186} INFO - Started process (PID=4824) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:52:50.307+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:52:50.309+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:52:50.309+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:52:50.341+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:52:50.340+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:52:50.341+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:52:50.352+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.051 seconds
+[2025-03-14T11:53:20.572+0000] {processor.py:186} INFO - Started process (PID=4892) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:53:20.573+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:53:20.576+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:53:20.576+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:53:20.611+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:53:20.609+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:53:20.612+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:53:20.622+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.054 seconds
+[2025-03-14T11:53:50.924+0000] {processor.py:186} INFO - Started process (PID=4960) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:53:50.925+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:53:50.926+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:53:50.926+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:53:50.961+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:53:50.960+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:53:50.961+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:53:50.973+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.054 seconds
+[2025-03-14T11:54:21.315+0000] {processor.py:186} INFO - Started process (PID=5028) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:54:21.316+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:54:21.318+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:54:21.318+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:54:21.349+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:54:21.348+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:54:21.349+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:54:21.362+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.051 seconds
+[2025-03-14T11:54:51.791+0000] {processor.py:186} INFO - Started process (PID=5096) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:54:51.792+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:54:51.793+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:54:51.793+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:54:51.831+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:54:51.827+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:54:51.831+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:54:51.843+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.057 seconds
+[2025-03-14T11:55:22.231+0000] {processor.py:186} INFO - Started process (PID=5164) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:55:22.234+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:55:22.237+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:55:22.237+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:55:22.268+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:55:22.267+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:55:22.269+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:55:22.277+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.052 seconds
+[2025-03-14T11:55:52.332+0000] {processor.py:186} INFO - Started process (PID=5232) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:55:52.332+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:55:52.335+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:55:52.335+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:55:52.364+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:55:52.363+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:55:52.364+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:55:52.373+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.045 seconds
+[2025-03-14T11:56:22.538+0000] {processor.py:186} INFO - Started process (PID=5300) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:56:22.540+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:56:22.543+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:56:22.543+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:56:22.578+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:56:22.578+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:56:22.579+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:56:22.591+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.059 seconds
+[2025-03-14T11:56:52.889+0000] {processor.py:186} INFO - Started process (PID=5368) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:56:52.890+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:56:52.893+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:56:52.892+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:56:52.932+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:56:52.931+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:56:52.932+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:56:52.943+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.059 seconds
+[2025-03-14T11:57:01.683+0000] {processor.py:186} INFO - Started process (PID=5402) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:57:01.683+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:57:01.686+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:57:01.685+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:57:01.720+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:57:01.719+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:57:01.721+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:57:01.729+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.051 seconds
+[2025-03-14T11:57:32.490+0000] {processor.py:186} INFO - Started process (PID=5469) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:57:32.491+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:57:32.492+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:57:32.492+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:57:32.522+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:57:32.522+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:57:32.523+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:57:32.531+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.045 seconds
+[2025-03-14T11:58:02.698+0000] {processor.py:186} INFO - Started process (PID=5537) to work on /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:58:02.699+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/temp_dag.py for tasks to queue
+[2025-03-14T11:58:02.701+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:58:02.700+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:58:02.730+0000] {logging_mixin.py:190} INFO - [2025-03-14T11:58:02.729+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/temp_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/temp_dag.py", line 10, in <module>
+    yf.pdr_override()
+    ^^^^^^^^^^^^^^^
+AttributeError: module 'yfinance' has no attribute 'pdr_override'
+[2025-03-14T11:58:02.730+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/temp_dag.py
+[2025-03-14T11:58:02.738+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/temp_dag.py took 0.044 seconds

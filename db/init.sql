@@ -1,6 +1,3 @@
--- 데이터베이스 생성
-CREATE DATABASE future_political_leader_trend;
-
 -- 해당 데이터베이스를 사용
 \c future_political_leader_trend;
 
@@ -23,14 +20,30 @@ CREATE TABLE IF NOT EXISTS survey_info (
 -- candidate_info
 CREATE TABLE IF NOT EXISTS candidate_info (
     candidate_id SERIAL PRIMARY KEY,
-    candidate_name TEXT NOT NULL
-)
+    candidate_name TEXT UNIQUE NOT NULL
+);
 
 -- political_party_info
 CREATE TABLE IF NOT EXISTS political_party_info (
     political_party_id SERIAL PRIMARY KEY, 
     political_party_name TEXT UNIQUE NOT NULL
-)
+);
+
+-- stock_info
+CREATE TABLE IF NOT EXISTS stock_info (
+    stock_id SERIAL PRIMARY KEY,
+    standard_code TEXT UNIQUE NOT NULL,
+    short_code TEXT UNIQUE NOT NULL,
+    kor_stock_name TEXT NOT NULL,
+    kor_stock_abbr TEXT UNIQUE NOT NULL,
+    eng_stock_name TEXT NOT NULL,
+    listing_date DATE NOT NULL,
+    market_type TEXT NOT NULL,
+    security_type TEXT NOT NULL,
+    affiliated_dept TEXT,
+    stock_type TEXT NOT NULL,
+    listed_shares BIGINT NOT NULL
+);
 
 -- candidate_log
 CREATE TABLE IF NOT EXISTS candidate_log (
@@ -39,7 +52,7 @@ CREATE TABLE IF NOT EXISTS candidate_log (
     candidate_name TEXT NOT NULL,
     approval_rating FLOAT NOT NULL,
     FOREIGN KEY (survey_id) REFERENCES survey_info(survey_id) ON DELETE CASCADE
-)
+);
 
 -- political_party_log
 CREATE TABLE IF NOT EXISTS political_party_log (
@@ -52,49 +65,48 @@ CREATE TABLE IF NOT EXISTS political_party_log (
 
 -- theme_info
 CREATE TABLE IF NOT EXISTS theme_info (
-    lid SERIAL PRIMARY KEY,
+    tid SERIAL PRIMARY KEY,
     stock_name TEXT NOT NULL,
     candidate_name TEXT NOT NULL,
     FOREIGN KEY (stock_name) REFERENCES stock_info(kor_stock_abbr) ON DELETE CASCADE,
     FOREIGN KEY (candidate_name) REFERENCES candidate_info(candidate_name) ON DELETE CASCADE
-)
-
--- stock_info
-CREATE TABLE IF NOT EXISTS stock_info (
-    stock_id SERIAL PRIMARY KEY,
-    standard_code TEXT UNIQUE NOT NULL,
-    short_code TEXT UNIQUE NOT NULL,
-    kor_stock_name TEXT NOT NULL,
-    kor_stock_abbr TEXT NOT NULL,
-    eng_stock_name TEXT NOT NULL,
-    listing_date DATE NOT NULL,
-    market_type TEXT NOT NULL,
-    security_type TEXT NOT NULL,
-    affiliated_dept TEXT NOT NULL,
-    stock_type TEXT NOT NULL,
-    listed_shares BIGINT NOT NULL
 );
 
--- 네이버 블로그 데이터 저장 테이블
+-- stock_log
+CREATE TABLE IF NOT EXISTS stock_log (
+    sid SERIAL,  -- ✅ 단순 증가하는 값
+    date DATE NOT NULL,
+    stock_code TEXT NOT NULL,
+    close FLOAT NOT NULL,
+    high FLOAT NOT NULL,
+    low FLOAT NOT NULL,
+    open FLOAT NOT NULL,
+    volume INT NOT NULL,
+    FOREIGN KEY (stock_code) REFERENCES stock_info(short_code) ON DELETE CASCADE,
+    PRIMARY KEY (date, stock_code)  -- ✅ 중복을 방지할 유일한 키 설정
+);
+
+-- naver_news
+CREATE TABLE IF NOT EXISTS naver_news (
+    kid SERIAL PRIMARY KEY,
+    keyword TEXT NOT NULL,
+    title TEXT NOT NULL,
+    original_link TEXT UNIQUE NOT NULL,  -- 중복 데이터 방지
+    naver_link TEXT UNIQUE NOT NULL,
+    description TEXT,
+    published_date DATE NOT NULL,
+    FOREIGN KEY (keyword) REFERENCES candidate_info(candidate_name) ON DELETE CASCADE
+);
+
+-- naver_blog
 CREATE TABLE IF NOT EXISTS naver_blog (
-    id SERIAL PRIMARY KEY,
-    candidate TEXT NOT NULL,
+    kid SERIAL PRIMARY KEY,
+    keyword TEXT NOT NULL,
     title TEXT NOT NULL,
     link TEXT UNIQUE NOT NULL,  -- 중복 데이터 방지
     description TEXT,
     blogger_name TEXT,
     blogger_link TEXT,
-    post_date DATE,
-    scraped_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    post_date DATE NOT NULL,
+    FOREIGN KEY (keyword) REFERENCES candidate_info(candidate_name) ON DELETE CASCADE
 );
-
--- 성능 최적화를 위한 인덱스 설정
-CREATE INDEX IF NOT EXISTS idx_candidate ON naver_blog(candidate);
-CREATE INDEX IF NOT EXISTS idx_post_date ON naver_blog(post_date);
-
--- 테스트용 후보 데이터 삽입 (필요하면 주석 해제)
--- INSERT INTO candidate_info (candidate_name) VALUES ('테스트 후보 1'), ('테스트 후보 2');
-
--- 권한 설정 (Airflow 등에서 접근 가능하도록)
-GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO myuser;
-GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO myuser;

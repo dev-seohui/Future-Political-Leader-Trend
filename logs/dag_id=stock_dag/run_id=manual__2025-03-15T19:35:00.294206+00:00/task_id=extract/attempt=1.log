@@ -1,0 +1,1128 @@
+[2025-03-15T19:35:01.907+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-15T19:35:01.915+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_dag.extract manual__2025-03-15T19:35:00.294206+00:00 [queued]>
+[2025-03-15T19:35:01.918+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_dag.extract manual__2025-03-15T19:35:00.294206+00:00 [queued]>
+[2025-03-15T19:35:01.918+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-15T19:35:01.924+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): extract> on 2025-03-15 19:35:00.294206+00:00
+[2025-03-15T19:35:01.927+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=121) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-15T19:35:01.928+0000] {standard_task_runner.py:72} INFO - Started process 123 to run task
+[2025-03-15T19:35:01.928+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'stock_dag', 'extract', 'manual__2025-03-15T19:35:00.294206+00:00', '--job-id', '125', '--raw', '--subdir', 'DAGS_FOLDER/stock_dag.py', '--cfg-path', '/tmp/tmp2pyt0piq']
+[2025-03-15T19:35:01.929+0000] {standard_task_runner.py:105} INFO - Job 125: Subtask extract
+[2025-03-15T19:35:01.950+0000] {task_command.py:467} INFO - Running <TaskInstance: stock_dag.extract manual__2025-03-15T19:35:00.294206+00:00 [running]> on host 92df0a54a3c6
+[2025-03-15T19:35:01.984+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='stock_dag' AIRFLOW_CTX_TASK_ID='extract' AIRFLOW_CTX_EXECUTION_DATE='2025-03-15T19:35:00.294206+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-15T19:35:00.294206+00:00'
+[2025-03-15T19:35:01.985+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-15T19:35:01.985+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-15T19:35:01.985+0000] {logging_mixin.py:190} INFO - Current task name:extract state:running start_date:2025-03-15 19:35:01.915899+00:00
+[2025-03-15T19:35:01.985+0000] {logging_mixin.py:190} INFO - Dag name:stock_dag and current dag run status:running
+[2025-03-15T19:35:01.985+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-15T19:35:01.993+0000] {logging_mixin.py:190} INFO - YF.download() has changed argument auto_adjust default to True
+[2025-03-15T19:35:03.333+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:03.333+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:03.333+0000] {multi.py:194} ERROR - ['039240.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:03.731+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:03.732+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:03.732+0000] {multi.py:194} ERROR - ['010130.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:04.098+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:04.099+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:04.100+0000] {multi.py:194} ERROR - ['026910.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:04.469+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:04.470+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:04.470+0000] {multi.py:194} ERROR - ['053270.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:04.833+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:04.834+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:04.835+0000] {multi.py:194} ERROR - ['006050.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:05.204+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:05.205+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:05.205+0000] {multi.py:194} ERROR - ['014530.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:05.581+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:05.581+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:05.582+0000] {multi.py:194} ERROR - ['001570.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:05.903+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:05.903+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:05.904+0000] {multi.py:194} ERROR - ['035460.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:06.291+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:06.291+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:06.292+0000] {multi.py:194} ERROR - ['013700.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:06.674+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:06.675+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:06.676+0000] {multi.py:194} ERROR - ['004540.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:07.000+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:07.001+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:07.001+0000] {multi.py:194} ERROR - ['311390.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:07.343+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:07.343+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:07.344+0000] {multi.py:194} ERROR - ['137940.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:07.663+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:07.664+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:07.665+0000] {multi.py:194} ERROR - ['376930.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:07.840+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:07.840+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:07.841+0000] {multi.py:194} ERROR - ['069140.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:08.172+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:08.173+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:08.174+0000] {multi.py:194} ERROR - ['060260.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:08.510+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:08.511+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:08.512+0000] {multi.py:194} ERROR - ['030210.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:08.881+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:08.882+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:08.883+0000] {multi.py:194} ERROR - ['019680.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:09.270+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:09.270+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:09.271+0000] {multi.py:194} ERROR - ['004780.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:09.628+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:09.629+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:09.629+0000] {multi.py:194} ERROR - ['084690.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:09.977+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:09.978+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:09.978+0000] {multi.py:194} ERROR - ['084695.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:10.299+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:10.300+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:10.300+0000] {multi.py:194} ERROR - ['128820.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:10.664+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:10.664+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:10.664+0000] {multi.py:194} ERROR - ['027830.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:11.012+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:11.013+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:11.013+0000] {multi.py:194} ERROR - ['020180.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:11.393+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:11.394+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:11.395+0000] {multi.py:194} ERROR - ['009190.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:11.570+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:11.571+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:11.572+0000] {multi.py:194} ERROR - ['014160.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:11.904+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:11.904+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:11.905+0000] {multi.py:194} ERROR - ['006340.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:12.278+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:12.279+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:12.279+0000] {multi.py:194} ERROR - ['078600.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:12.650+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:12.651+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:12.651+0000] {multi.py:194} ERROR - ['016090.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:13.026+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:13.027+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:13.027+0000] {multi.py:194} ERROR - ['004830.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:13.402+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:13.402+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:13.402+0000] {multi.py:194} ERROR - ['004835.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:13.741+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:13.742+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:13.742+0000] {multi.py:194} ERROR - ['002150.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:14.079+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:14.080+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:14.080+0000] {multi.py:194} ERROR - ['099410.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:14.278+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:14.278+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:14.279+0000] {multi.py:194} ERROR - ['025950.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:14.651+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:14.652+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:14.652+0000] {multi.py:194} ERROR - ['018500.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:15.007+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:15.007+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:15.008+0000] {multi.py:194} ERROR - ['109860.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:15.352+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:15.352+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:15.352+0000] {multi.py:194} ERROR - ['032960.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:15.693+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:15.693+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:15.693+0000] {multi.py:194} ERROR - ['113810.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:16.034+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:16.035+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:16.036+0000] {multi.py:194} ERROR - ['197140.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:16.365+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:16.365+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:16.366+0000] {multi.py:194} ERROR - ['187220.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:16.693+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:16.694+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:16.694+0000] {multi.py:194} ERROR - ['383930.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:16.860+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:16.861+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:16.861+0000] {multi.py:194} ERROR - ['300120.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:17.190+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:17.191+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:17.191+0000] {multi.py:194} ERROR - ['073570.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:17.528+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:17.529+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:17.530+0000] {multi.py:194} ERROR - ['042500.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:17.874+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:17.875+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:17.875+0000] {multi.py:194} ERROR - ['038290.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:18.238+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:18.239+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:18.239+0000] {multi.py:194} ERROR - ['059210.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:18.405+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:18.405+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:18.406+0000] {multi.py:194} ERROR - ['118000.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:18.733+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:18.734+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:18.734+0000] {multi.py:194} ERROR - ['417970.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:19.045+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:19.046+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:19.046+0000] {multi.py:194} ERROR - ['214610.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:19.372+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:19.372+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:19.373+0000] {multi.py:194} ERROR - ['331520.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:21.309+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:21.310+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:21.311+0000] {multi.py:194} ERROR - ['199480.KS']: YFTzMissingError('possibly delisted; no timezone found')
+[2025-03-15T19:35:21.639+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:21.640+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:21.640+0000] {multi.py:194} ERROR - ['002410.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:22.044+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:22.045+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:22.046+0000] {multi.py:194} ERROR - ['007210.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:22.392+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:22.392+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:22.393+0000] {multi.py:194} ERROR - ['225530.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:22.723+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:22.724+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:22.724+0000] {multi.py:194} ERROR - ['250000.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:23.046+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:23.046+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:23.047+0000] {multi.py:194} ERROR - ['000890.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:23.378+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:23.378+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:23.379+0000] {multi.py:194} ERROR - ['014470.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:23.725+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:23.726+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:23.726+0000] {multi.py:194} ERROR - ['064480.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:24.570+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:24.570+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:24.571+0000] {multi.py:194} ERROR - ['002070.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:24.899+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:24.900+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:24.901+0000] {multi.py:194} ERROR - ['413640.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:25.230+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:25.232+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:25.233+0000] {multi.py:194} ERROR - ['050090.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:25.611+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:25.612+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:25.612+0000] {multi.py:194} ERROR - ['032850.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:25.938+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:25.939+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:25.939+0000] {multi.py:194} ERROR - ['069540.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:26.317+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:26.317+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:26.318+0000] {multi.py:194} ERROR - ['018310.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:26.661+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:26.664+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:26.664+0000] {multi.py:194} ERROR - ['053700.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:26.997+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:26.998+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:26.998+0000] {multi.py:194} ERROR - ['009620.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:27.394+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:27.395+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:27.396+0000] {multi.py:194} ERROR - ['003720.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:27.772+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:27.774+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:27.774+0000] {multi.py:194} ERROR - ['002450.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:28.151+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:28.152+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:28.153+0000] {multi.py:194} ERROR - ['032280.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:28.558+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:28.559+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:28.559+0000] {multi.py:194} ERROR - ['002290.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:28.735+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:28.736+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:28.736+0000] {multi.py:194} ERROR - ['024950.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:29.062+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:29.063+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:29.064+0000] {multi.py:194} ERROR - ['042940.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:29.419+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:29.420+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:29.420+0000] {multi.py:194} ERROR - ['038070.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:29.782+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:29.782+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:29.782+0000] {multi.py:194} ERROR - ['018680.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:30.159+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:30.160+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:30.161+0000] {multi.py:194} ERROR - ['011370.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:30.510+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:30.511+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:30.512+0000] {multi.py:194} ERROR - ['015750.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:30.870+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:30.870+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:30.871+0000] {multi.py:194} ERROR - ['000180.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:31.049+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:31.050+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:31.050+0000] {multi.py:194} ERROR - ['013000.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:31.428+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:31.429+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:31.429+0000] {multi.py:194} ERROR - ['024830.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:31.823+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:31.824+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:31.824+0000] {multi.py:194} ERROR - ['021820.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:32.193+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:32.193+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:32.194+0000] {multi.py:194} ERROR - ['039310.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:32.522+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:32.523+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:32.523+0000] {multi.py:194} ERROR - ['258790.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:32.685+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:32.685+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:32.686+0000] {multi.py:194} ERROR - ['035610.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:33.031+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:33.032+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:33.033+0000] {multi.py:194} ERROR - ['050960.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:33.398+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:33.399+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:33.399+0000] {multi.py:194} ERROR - ['084180.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:33.730+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:33.731+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:33.731+0000] {multi.py:194} ERROR - ['094840.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:34.021+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:34.022+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:34.022+0000] {multi.py:194} ERROR - ['013810.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:34.383+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:34.384+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:34.384+0000] {multi.py:194} ERROR - ['020710.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:34.712+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:34.713+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:34.713+0000] {multi.py:194} ERROR - ['033170.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:35.060+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:35.061+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:35.061+0000] {multi.py:194} ERROR - ['006880.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:35.435+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:35.435+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:35.436+0000] {multi.py:194} ERROR - ['002870.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:35.813+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:35.814+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:35.814+0000] {multi.py:194} ERROR - ['036710.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:36.202+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:36.203+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:36.203+0000] {multi.py:194} ERROR - ['004770.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:36.542+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:36.542+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:36.542+0000] {multi.py:194} ERROR - ['208640.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:36.737+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:36.738+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:36.739+0000] {multi.py:194} ERROR - ['050890.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:37.068+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:37.069+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:37.069+0000] {multi.py:194} ERROR - ['066790.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:37.400+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:37.401+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:37.402+0000] {multi.py:194} ERROR - ['340810.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:37.754+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:37.755+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:37.755+0000] {multi.py:194} ERROR - ['260930.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:38.098+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:38.099+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:38.099+0000] {multi.py:194} ERROR - ['052860.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:38.264+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:38.266+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:38.266+0000] {multi.py:194} ERROR - ['124500.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:38.649+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:38.650+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:38.650+0000] {multi.py:194} ERROR - ['032080.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:38.972+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:38.973+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:38.973+0000] {multi.py:194} ERROR - ['013310.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:39.304+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:39.305+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:39.305+0000] {multi.py:194} ERROR - ['200350.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:39.637+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:39.638+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:39.639+0000] {multi.py:194} ERROR - ['321820.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:40.003+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:40.004+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:40.004+0000] {multi.py:194} ERROR - ['053800.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:40.179+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:40.180+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:40.180+0000] {multi.py:194} ERROR - ['085810.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:40.500+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:40.501+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:40.502+0000] {multi.py:194} ERROR - ['043100.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:40.835+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:40.836+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:40.836+0000] {multi.py:194} ERROR - ['179530.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:41.161+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:41.162+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:41.162+0000] {multi.py:194} ERROR - ['270520.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:41.544+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:41.545+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:41.545+0000] {multi.py:194} ERROR - ['011090.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:41.925+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:41.926+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:41.926+0000] {multi.py:194} ERROR - ['038680.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:42.305+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:42.306+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:42.306+0000] {multi.py:194} ERROR - ['045660.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:42.652+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:42.652+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:42.653+0000] {multi.py:194} ERROR - ['224110.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:43.050+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:43.051+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:43.051+0000] {multi.py:194} ERROR - ['021080.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:43.248+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:43.249+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:43.250+0000] {multi.py:194} ERROR - ['038110.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:43.567+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:43.568+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:43.569+0000] {multi.py:194} ERROR - ['317770.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:43.903+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:43.905+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:43.905+0000] {multi.py:194} ERROR - ['067570.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:44.229+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:44.230+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:44.231+0000] {multi.py:194} ERROR - ['069410.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:44.611+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:44.612+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:44.612+0000] {multi.py:194} ERROR - ['014440.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:44.976+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:44.977+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:44.978+0000] {multi.py:194} ERROR - ['036560.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:45.382+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:45.383+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:45.384+0000] {multi.py:194} ERROR - ['012280.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:45.557+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:45.558+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:45.558+0000] {multi.py:194} ERROR - ['002630.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:45.888+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:45.889+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:45.890+0000] {multi.py:194} ERROR - ['065500.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:46.234+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:46.235+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:46.235+0000] {multi.py:194} ERROR - ['010470.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:46.564+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:46.565+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:46.565+0000] {multi.py:194} ERROR - ['352910.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:46.899+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:46.899+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:46.900+0000] {multi.py:194} ERROR - ['052300.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:47.241+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:47.243+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:47.243+0000] {multi.py:194} ERROR - ['173130.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:47.416+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:47.417+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:47.418+0000] {multi.py:194} ERROR - ['440320.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:47.788+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:47.789+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:47.789+0000] {multi.py:194} ERROR - ['049480.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:48.116+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:48.117+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:48.117+0000] {multi.py:194} ERROR - ['005320.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:48.471+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:48.472+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:48.473+0000] {multi.py:194} ERROR - ['109080.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:48.835+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:48.836+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:48.836+0000] {multi.py:194} ERROR - ['079000.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:49.203+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:49.203+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:49.203+0000] {multi.py:194} ERROR - ['101170.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:49.365+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:49.366+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:49.366+0000] {multi.py:194} ERROR - ['046940.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:49.722+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:49.722+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:49.724+0000] {multi.py:194} ERROR - ['014190.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:50.034+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:50.034+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:50.034+0000] {multi.py:194} ERROR - ['376980.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:50.366+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:50.367+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:50.367+0000] {multi.py:194} ERROR - ['065370.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:50.696+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:50.697+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:50.697+0000] {multi.py:194} ERROR - ['299900.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:51.058+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:51.059+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:51.059+0000] {multi.py:194} ERROR - ['136540.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:51.250+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:51.250+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:51.250+0000] {multi.py:194} ERROR - ['192390.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:51.629+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:51.630+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:51.630+0000] {multi.py:194} ERROR - ['008600.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:51.967+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:51.968+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:51.968+0000] {multi.py:194} ERROR - ['446070.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:52.290+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:52.290+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:52.290+0000] {multi.py:194} ERROR - ['084440.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:52.637+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:52.637+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:52.637+0000] {multi.py:194} ERROR - ['069330.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:53.014+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:53.014+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:53.014+0000] {multi.py:194} ERROR - ['049520.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:53.371+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:53.371+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:53.371+0000] {multi.py:194} ERROR - ['000220.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:53.538+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:53.538+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:53.538+0000] {multi.py:194} ERROR - ['221800.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:53.891+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:53.892+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:53.892+0000] {multi.py:194} ERROR - ['039020.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:54.249+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:54.249+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:54.250+0000] {multi.py:194} ERROR - ['053350.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:54.593+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:54.593+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:54.593+0000] {multi.py:194} ERROR - ['015020.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:54.916+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:54.916+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:54.916+0000] {multi.py:194} ERROR - ['450520.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:55.258+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:55.258+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:55.258+0000] {multi.py:194} ERROR - ['129260.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:55.618+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:55.618+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:55.618+0000] {multi.py:194} ERROR - ['013360.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:55.775+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:55.775+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:55.775+0000] {multi.py:194} ERROR - ['234920.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:56.091+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:56.091+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:56.092+0000] {multi.py:194} ERROR - ['208140.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:56.409+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:56.409+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:56.409+0000] {multi.py:194} ERROR - ['159580.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:56.784+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:56.785+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:56.786+0000] {multi.py:194} ERROR - ['038010.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:57.153+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:57.154+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:57.154+0000] {multi.py:194} ERROR - ['053050.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:57.329+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:57.329+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:57.329+0000] {multi.py:194} ERROR - ['204840.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:57.691+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:57.692+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:57.692+0000] {multi.py:194} ERROR - ['003780.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:58.068+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:58.069+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:58.069+0000] {multi.py:194} ERROR - ['010640.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:58.412+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:58.413+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:58.413+0000] {multi.py:194} ERROR - ['100250.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:58.748+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:58.749+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:58.749+0000] {multi.py:194} ERROR - ['051630.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:59.072+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:59.073+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:59.074+0000] {multi.py:194} ERROR - ['002780.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:59.428+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:59.429+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:59.429+0000] {multi.py:194} ERROR - ['033250.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:59.827+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:59.828+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:59.828+0000] {multi.py:194} ERROR - ['016920.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:35:59.998+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:35:59.998+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:35:59.998+0000] {multi.py:194} ERROR - ['050110.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:00.326+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:00.326+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:00.327+0000] {multi.py:194} ERROR - ['307930.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:00.701+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:00.702+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:00.702+0000] {multi.py:194} ERROR - ['001620.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:01.088+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:01.090+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:01.090+0000] {multi.py:194} ERROR - ['025880.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:01.261+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:01.262+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:01.262+0000] {multi.py:194} ERROR - ['093640.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:01.614+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:01.615+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:01.616+0000] {multi.py:194} ERROR - ['145270.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:01.992+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:01.993+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:01.994+0000] {multi.py:194} ERROR - ['052400.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:02.356+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:02.357+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:02.357+0000] {multi.py:194} ERROR - ['027050.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:02.714+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:02.715+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:02.715+0000] {multi.py:194} ERROR - ['049430.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:03.095+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:03.096+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:03.097+0000] {multi.py:194} ERROR - ['002020.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:03.476+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:03.477+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:03.477+0000] {multi.py:194} ERROR - ['003070.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:03.796+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:03.797+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:03.798+0000] {multi.py:194} ERROR - ['450140.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:04.127+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:04.128+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:04.128+0000] {multi.py:194} ERROR - ['121850.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:04.475+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:04.476+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:04.477+0000] {multi.py:194} ERROR - ['031820.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:04.808+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:04.809+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:04.809+0000] {multi.py:194} ERROR - ['110790.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:05.189+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:05.190+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:05.190+0000] {multi.py:194} ERROR - ['004100.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:05.578+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:05.579+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:05.580+0000] {multi.py:194} ERROR - ['004105.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:05.976+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:05.977+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:05.978+0000] {multi.py:194} ERROR - ['009410.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:06.179+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:06.180+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:06.181+0000] {multi.py:194} ERROR - ['009415.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:06.559+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:06.560+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:06.561+0000] {multi.py:194} ERROR - ['051360.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:06.885+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:06.885+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:06.886+0000] {multi.py:194} ERROR - ['045340.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:07.242+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:07.243+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:07.243+0000] {multi.py:194} ERROR - ['026150.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:07.612+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:07.613+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:07.613+0000] {multi.py:194} ERROR - ['033830.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:07.779+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:07.780+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:07.781+0000] {multi.py:194} ERROR - ['057680.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:08.162+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:08.162+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:08.163+0000] {multi.py:194} ERROR - ['019180.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:08.495+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:08.496+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:08.497+0000] {multi.py:194} ERROR - ['131100.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:08.853+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:08.854+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:08.854+0000] {multi.py:194} ERROR - ['130740.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:09.225+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:09.225+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:09.226+0000] {multi.py:194} ERROR - ['033540.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:09.407+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:09.407+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:09.407+0000] {multi.py:194} ERROR - ['106240.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:09.737+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:09.738+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:09.738+0000] {multi.py:194} ERROR - ['318010.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:10.076+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:10.077+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:10.077+0000] {multi.py:194} ERROR - ['036580.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:10.409+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:10.410+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:10.410+0000] {multi.py:194} ERROR - ['090080.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:10.802+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:10.802+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:10.803+0000] {multi.py:194} ERROR - ['010770.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:10.990+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:10.991+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:10.991+0000] {multi.py:194} ERROR - ['005670.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:11.310+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:11.311+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:11.312+0000] {multi.py:194} ERROR - ['950210.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:11.700+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:11.700+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:11.701+0000] {multi.py:194} ERROR - ['053160.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:11.992+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:11.992+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:11.993+0000] {multi.py:194} ERROR - ['075130.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:12.309+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:12.310+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:12.310+0000] {multi.py:194} ERROR - ['163730.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:12.692+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:12.694+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:12.695+0000] {multi.py:194} ERROR - ['066130.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:13.047+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:13.048+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:13.048+0000] {multi.py:194} ERROR - ['222980.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:13.429+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:13.429+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:13.430+0000] {multi.py:194} ERROR - ['025550.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:13.734+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:13.735+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:13.736+0000] {multi.py:194} ERROR - ['002200.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:13.988+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:13.989+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:13.989+0000] {multi.py:194} ERROR - ['101680.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:14.338+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:14.339+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:14.340+0000] {multi.py:194} ERROR - ['039740.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:14.695+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:14.696+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:14.697+0000] {multi.py:194} ERROR - ['023350.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:15.066+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:15.067+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:15.067+0000] {multi.py:194} ERROR - ['034830.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:15.443+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:15.444+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:15.444+0000] {multi.py:194} ERROR - ['003680.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:15.782+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:15.783+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:15.783+0000] {multi.py:194} ERROR - ['025750.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:16.153+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:16.153+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:16.154+0000] {multi.py:194} ERROR - ['014130.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:16.508+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:16.509+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:16.509+0000] {multi.py:194} ERROR - ['024740.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:16.889+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:16.890+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:16.891+0000] {multi.py:194} ERROR - ['007770.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:17.074+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:17.075+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:17.075+0000] {multi.py:194} ERROR - ['009460.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:17.410+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:17.411+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:17.411+0000] {multi.py:194} ERROR - ['092300.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:17.743+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:17.744+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:17.744+0000] {multi.py:194} ERROR - ['093240.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:18.089+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:18.090+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:18.090+0000] {multi.py:194} ERROR - ['011080.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:18.463+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:18.463+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:18.464+0000] {multi.py:194} ERROR - ['060560.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:18.837+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:18.838+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:18.839+0000] {multi.py:194} ERROR - ['126640.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:19.265+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:19.266+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:19.266+0000] {multi.py:194} ERROR - ['010660.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:19.479+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:19.480+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:19.481+0000] {multi.py:194} ERROR - ['000850.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:19.853+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:19.854+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:19.854+0000] {multi.py:194} ERROR - ['097870.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:20.124+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:20.124+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:20.124+0000] {multi.py:194} ERROR - ['078590.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:20.449+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:20.449+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:20.450+0000] {multi.py:194} ERROR - ['115160.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:20.794+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:20.794+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:20.795+0000] {multi.py:194} ERROR - ['028080.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:21.142+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:21.142+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:21.142+0000] {multi.py:194} ERROR - ['010240.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:21.486+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:21.487+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:21.487+0000] {multi.py:194} ERROR - ['003280.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:21.741+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:21.741+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:21.742+0000] {multi.py:194} ERROR - ['065770.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:22.100+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:22.101+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:22.101+0000] {multi.py:194} ERROR - ['155660.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:22.470+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:22.470+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:22.470+0000] {multi.py:194} ERROR - ['069730.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:22.801+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:22.802+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:22.802+0000] {multi.py:194} ERROR - ['130500.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:23.158+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:23.159+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:23.160+0000] {multi.py:194} ERROR - ['052220.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:23.547+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:23.547+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:23.547+0000] {multi.py:194} ERROR - ['021320.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:23.871+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:23.871+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:23.871+0000] {multi.py:194} ERROR - ['044180.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:24.216+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:24.216+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:24.216+0000] {multi.py:194} ERROR - ['058400.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:24.383+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:24.383+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:24.383+0000] {multi.py:194} ERROR - ['000680.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:24.758+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:24.759+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:24.759+0000] {multi.py:194} ERROR - ['023150.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:25.135+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:25.136+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:25.137+0000] {multi.py:194} ERROR - ['053290.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:25.530+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:25.531+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:25.532+0000] {multi.py:194} ERROR - ['024940.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:25.874+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:25.875+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:25.875+0000] {multi.py:194} ERROR - ['099220.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:26.209+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:26.209+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:26.209+0000] {multi.py:194} ERROR - ['001380.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:26.368+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:26.368+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:26.368+0000] {multi.py:194} ERROR - ['022220.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:26.756+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:26.756+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:26.757+0000] {multi.py:194} ERROR - ['007980.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:27.113+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:27.114+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:27.114+0000] {multi.py:194} ERROR - ['024070.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:27.412+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
+[2025-03-15T19:36:27.412+0000] {multi.py:181} ERROR - 
+1 Failed download:
+[2025-03-15T19:36:27.412+0000] {multi.py:194} ERROR - ['057030.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-14 -> 2025-03-14)')
+[2025-03-15T19:36:27.416+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stock_dag.py", line 23, in extract
+    stock_log.to_csv(file_path, index=False)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/generic.py", line 3902, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
+    csv_formatter.save()
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/formats/csvs.py", line 247, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 739, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 604, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/opt/***/dags/db'
+[2025-03-15T19:36:27.426+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-03-15T19:36:27.426+0000] {logging_mixin.py:190} INFO - Task start:2025-03-15 19:35:01.915899+00:00 end:2025-03-15 19:36:27.426317+00:00 duration:85.510418
+[2025-03-15T19:36:27.427+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): extract> dag:<DAG: stock_dag> dagrun:<DagRun stock_dag @ 2025-03-15 19:35:00.294206+00:00: manual__2025-03-15T19:35:00.294206+00:00, state:running, queued_at: 2025-03-15 19:35:00.319632+00:00. externally triggered: True>
+[2025-03-15T19:36:27.428+0000] {logging_mixin.py:190} INFO - Failure caused by Cannot save file into a non-existent directory: '/opt/***/dags/db'
+[2025-03-15T19:36:27.429+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=stock_dag, task_id=extract, run_id=manual__2025-03-15T19:35:00.294206+00:00, execution_date=20250315T193500, start_date=20250315T193501, end_date=20250315T193627
+[2025-03-15T19:36:27.441+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-15T19:36:27.442+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 125 for task extract (Cannot save file into a non-existent directory: '/opt/***/dags/db'; 123)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stock_dag.py", line 23, in extract
+    stock_log.to_csv(file_path, index=False)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/generic.py", line 3902, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
+    csv_formatter.save()
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/formats/csvs.py", line 247, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 739, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 604, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/opt/***/dags/db'
+[2025-03-15T19:36:27.458+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-03-15T19:36:27.465+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-15T19:36:27.466+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
