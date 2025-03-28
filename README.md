@@ -35,8 +35,8 @@
 ![Image](https://github.com/user-attachments/assets/457cf35f-d548-4684-8cbe-b2bf03d57f1e)
 
 ---
-#### 📌 6. User Interface
-- 
+#### 📌 6. Visualization
+- [개별 정치인 세부 분석](https://public.tableau.com/app/profile/seohui.cho/viz/2_17429160891360/2025)
 ---
 #### 📌 7. 참고 자료
 - [KRX | 정보데이터시스템](http://data.krx.co.kr/contents/MDC/MAIN/main/index.cmd) : 주식 종목 코드 수집
