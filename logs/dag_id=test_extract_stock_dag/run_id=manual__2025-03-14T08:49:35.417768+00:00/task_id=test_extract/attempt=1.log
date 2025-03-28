@@ -1,1767 +1,0 @@
-[2025-03-14T08:49:37.311+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
-[2025-03-14T08:49:37.316+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_extract_stock_dag.test_extract manual__2025-03-14T08:49:35.417768+00:00 [queued]>
-[2025-03-14T08:49:37.318+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_extract_stock_dag.test_extract manual__2025-03-14T08:49:35.417768+00:00 [queued]>
-[2025-03-14T08:49:37.318+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
-[2025-03-14T08:49:37.322+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): test_extract> on 2025-03-14 08:49:35.417768+00:00
-[2025-03-14T08:49:37.325+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=125) is multi-threaded, use of fork() may lead to deadlocks in the child.
-  pid = os.fork()
-
-[2025-03-14T08:49:37.326+0000] {standard_task_runner.py:72} INFO - Started process 126 to run task
-[2025-03-14T08:49:37.326+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'test_extract_stock_dag', 'test_extract', 'manual__2025-03-14T08:49:35.417768+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/temp.py', '--cfg-path', '/tmp/tmp6q1w94of']
-[2025-03-14T08:49:37.326+0000] {standard_task_runner.py:105} INFO - Job 91: Subtask test_extract
-[2025-03-14T08:49:37.342+0000] {task_command.py:467} INFO - Running <TaskInstance: test_extract_stock_dag.test_extract manual__2025-03-14T08:49:35.417768+00:00 [running]> on host c2b00310d89d
-[2025-03-14T08:49:37.366+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test_extract_stock_dag' AIRFLOW_CTX_TASK_ID='test_extract' AIRFLOW_CTX_EXECUTION_DATE='2025-03-14T08:49:35.417768+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-14T08:49:35.417768+00:00'
-[2025-03-14T08:49:37.367+0000] {logging_mixin.py:190} INFO - Task instance is in running state
-[2025-03-14T08:49:37.367+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
-[2025-03-14T08:49:37.367+0000] {logging_mixin.py:190} INFO - Current task name:test_extract state:running start_date:2025-03-14 08:49:37.316236+00:00
-[2025-03-14T08:49:37.367+0000] {logging_mixin.py:190} INFO - Dag name:test_extract_stock_dag and current dag run status:running
-[2025-03-14T08:49:37.367+0000] {taskinstance.py:732} INFO - ::endgroup::
-[2025-03-14T08:49:37.369+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 가져온 주식 리스트: ['039240', '010130', '026910', '053270', '006050', '014530', '001570', '035460', '013700', '004540', '311390', '137940', '376930', '069140', '060260', '030210', '019680', '004780', '084690', '084695', '128820', '027830', '020180', '009190', '014160', '006340', '078600', '016090', '004830', '004835', '002150', '099410', '025950', '018500', '109860', '032960', '113810', '197140', '187220', '383930', '300120', '073570', '042500', '038290', '059210', '118000', '417970', '214610', '331520', '199480', '002410', '007210', '225530', '250000', '000890', '014470', '064480', '002070', '413640', '050090', '032850', '069540', '018310', '053700', '009620', '003720', '002450', '032280', '002290', '024950', '042940', '038070', '018680', '011370', '015750', '000180', '013000', '024830', '021820', '039310', '258790', '035610', '050960', '084180', '094840', '013810', '020710', '033170', '006880', '002870', '036710', '004770', '208640', '050890', '066790', '340810', '260930', '052860', '124500', '032080', '013310', '200350', '321820', '053800', '085810', '043100', '179530', '270520', '011090', '038680', '045660', '224110', '021080', '038110', '317770', '067570', '069410', '014440', '036560', '012280', '002630', '065500', '010470', '352910', '052300', '173130', '440320', '049480', '005320', '109080', '079000', '101170', '046940', '014190', '376980', '065370', '299900', '136540', '192390', '008600', '446070', '084440', '069330', '049520', '000220', '221800', '039020', '053350', '015020', '450520', '129260', '013360', '234920', '208140', '159580', '038010', '053050', '204840', '003780', '010640', '100250', '051630', '002780', '033250', '016920', '050110', '307930', '001620', '025880', '093640', '145270', '052400', '027050', '049430', '002020', '003070', '450140', '121850', '031820', '110790', '004100', '004105', '009410', '009415', '051360', '045340', '026150', '033830', '057680', '019180', '131100', '130740', '033540', '106240', '318010', '036580', '090080', '010770', '005670', '950210', '053160', '075130', '163730', '066130', '222980', '025550', '002200', '101680', '039740', '023350', '034830', '003680', '025750', '014130', '024740', '007770', '009460', '092300', '093240', '011080', '060560', '126640', '010660', '000850', '097870', '078590', '115160', '028080', '010240', '003280', '065770', '155660', '069730', '130500', '052220', '021320', '044180', '058400', '000680', '023150', '053290', '024940', '099220', '001380', '022220', '007980', '024070', '057030']
-[2025-03-14T08:49:37.370+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 039240.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:37.370+0000] {logging_mixin.py:190} INFO - YF.download() has changed argument auto_adjust default to True
-[2025-03-14T08:49:38.811+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:38.812+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:38.812+0000] {multi.py:194} ERROR - ['039240.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:38.819+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 039240.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:38.820+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 039240.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:38.821+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 010130.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:39.183+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:39.184+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:39.185+0000] {multi.py:194} ERROR - ['010130.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:39.189+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 010130.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:39.189+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 010130.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:39.190+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 026910.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:39.555+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:39.556+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:39.556+0000] {multi.py:194} ERROR - ['026910.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:39.559+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 026910.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:39.559+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 026910.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:39.559+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 053270.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:39.940+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:39.941+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:39.941+0000] {multi.py:194} ERROR - ['053270.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:39.945+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 053270.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:39.945+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 053270.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:39.946+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 006050.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:40.313+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:40.314+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:40.315+0000] {multi.py:194} ERROR - ['006050.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:40.318+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 006050.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:40.318+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 006050.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:40.319+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 014530.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:40.691+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:40.692+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:40.693+0000] {multi.py:194} ERROR - ['014530.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:40.698+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 014530.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:40.698+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 014530.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:40.699+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 001570.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:41.075+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:41.075+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:41.076+0000] {multi.py:194} ERROR - ['001570.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:41.080+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 001570.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:41.080+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 001570.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:41.080+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 035460.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:41.383+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:41.384+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:41.385+0000] {multi.py:194} ERROR - ['035460.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:41.388+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 035460.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:41.389+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 035460.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:41.389+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 013700.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:41.760+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:41.761+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:41.762+0000] {multi.py:194} ERROR - ['013700.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:41.765+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 013700.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:41.766+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 013700.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:41.766+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 004540.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:42.116+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:42.117+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:42.117+0000] {multi.py:194} ERROR - ['004540.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:42.121+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 004540.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:42.121+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 004540.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:42.121+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 311390.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:42.425+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:42.426+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:42.426+0000] {multi.py:194} ERROR - ['311390.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:42.430+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 311390.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:42.430+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 311390.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:42.430+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 137940.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:42.760+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:42.761+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:42.762+0000] {multi.py:194} ERROR - ['137940.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:42.766+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 137940.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:42.766+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 137940.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:42.767+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 376930.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:43.071+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:43.072+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:43.072+0000] {multi.py:194} ERROR - ['376930.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:43.076+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 376930.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:43.076+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 376930.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:43.077+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 069140.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:43.383+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:43.384+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:43.384+0000] {multi.py:194} ERROR - ['069140.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:43.388+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 069140.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:43.388+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 069140.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:43.388+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 060260.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:43.692+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:43.693+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:43.693+0000] {multi.py:194} ERROR - ['060260.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:43.697+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 060260.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:43.697+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 060260.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:43.697+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 030210.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:44.001+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:44.002+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:44.002+0000] {multi.py:194} ERROR - ['030210.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:44.004+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 030210.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:44.004+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 030210.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:44.004+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 019680.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:44.335+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:44.336+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:44.336+0000] {multi.py:194} ERROR - ['019680.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:44.340+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 019680.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:44.340+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 019680.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:44.341+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 004780.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:44.738+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:44.738+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:44.738+0000] {multi.py:194} ERROR - ['004780.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:44.740+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 004780.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:44.740+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 004780.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:44.741+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 084690.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:45.083+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:45.085+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:45.085+0000] {multi.py:194} ERROR - ['084690.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:45.088+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 084690.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:45.089+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 084690.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:45.089+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 084695.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:45.460+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:45.461+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:45.462+0000] {multi.py:194} ERROR - ['084695.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:45.466+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 084695.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:45.466+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 084695.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:45.467+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 128820.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:45.773+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:45.774+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:45.774+0000] {multi.py:194} ERROR - ['128820.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:45.778+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 128820.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:45.779+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 128820.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:45.779+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 027830.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:46.124+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:46.125+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:46.125+0000] {multi.py:194} ERROR - ['027830.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:46.129+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 027830.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:46.129+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 027830.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:46.129+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 020180.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:46.449+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:46.449+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:46.450+0000] {multi.py:194} ERROR - ['020180.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:46.453+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 020180.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:46.453+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 020180.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:46.454+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 009190.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:46.783+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:46.783+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:46.784+0000] {multi.py:194} ERROR - ['009190.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:46.788+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 009190.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:46.788+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 009190.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:46.788+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 014160.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:47.104+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:47.105+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:47.106+0000] {multi.py:194} ERROR - ['014160.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:47.111+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 014160.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:47.111+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 014160.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:47.112+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 006340.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:47.424+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:47.424+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:47.425+0000] {multi.py:194} ERROR - ['006340.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:47.428+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 006340.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:47.428+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 006340.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:47.428+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 078600.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:47.783+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:47.784+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:47.785+0000] {multi.py:194} ERROR - ['078600.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:47.788+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 078600.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:47.788+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 078600.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:47.788+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 016090.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:48.171+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:48.171+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:48.172+0000] {multi.py:194} ERROR - ['016090.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:48.175+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 016090.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:48.176+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 016090.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:48.176+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 004830.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:48.559+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:48.560+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:48.560+0000] {multi.py:194} ERROR - ['004830.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:48.563+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 004830.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:48.563+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 004830.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:48.564+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 004835.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:48.935+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:48.935+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:48.936+0000] {multi.py:194} ERROR - ['004835.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:48.939+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 004835.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:48.939+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 004835.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:48.940+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002150.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:49.283+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:49.284+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:49.285+0000] {multi.py:194} ERROR - ['002150.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:49.288+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002150.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:49.288+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 002150.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:49.289+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 099410.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:49.609+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:49.609+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:49.610+0000] {multi.py:194} ERROR - ['099410.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:49.611+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 099410.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:49.612+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 099410.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:49.612+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 025950.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:49.978+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:49.979+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:49.979+0000] {multi.py:194} ERROR - ['025950.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:49.983+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 025950.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:49.984+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 025950.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:49.984+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 018500.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:50.371+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:50.371+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:50.372+0000] {multi.py:194} ERROR - ['018500.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:50.377+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 018500.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:50.377+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 018500.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:50.377+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 109860.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:50.739+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:50.740+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:50.740+0000] {multi.py:194} ERROR - ['109860.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:50.744+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 109860.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:50.744+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 109860.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:50.744+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 032960.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:51.111+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:51.112+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:51.112+0000] {multi.py:194} ERROR - ['032960.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:51.115+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 032960.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:51.115+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 032960.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:51.115+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 113810.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:51.457+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:51.458+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:51.459+0000] {multi.py:194} ERROR - ['113810.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:51.462+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 113810.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:51.463+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 113810.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:51.463+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 197140.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:51.778+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:51.778+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:51.778+0000] {multi.py:194} ERROR - ['197140.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:51.780+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 197140.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:51.780+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 197140.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:51.781+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 187220.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:52.095+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:52.095+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:52.096+0000] {multi.py:194} ERROR - ['187220.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:52.098+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 187220.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:52.099+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 187220.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:52.099+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 383930.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:52.399+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:52.399+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:52.399+0000] {multi.py:194} ERROR - ['383930.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:52.401+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 383930.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:52.401+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 383930.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:52.401+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 300120.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:52.708+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:52.708+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:52.708+0000] {multi.py:194} ERROR - ['300120.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:52.710+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 300120.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:52.710+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 300120.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:52.710+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 073570.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:53.012+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:53.012+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:53.013+0000] {multi.py:194} ERROR - ['073570.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:53.014+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 073570.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:53.014+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 073570.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:53.014+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 042500.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:53.316+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:53.316+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:53.317+0000] {multi.py:194} ERROR - ['042500.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:53.318+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 042500.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:53.318+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 042500.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:53.318+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 038290.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:53.637+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:53.638+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:53.638+0000] {multi.py:194} ERROR - ['038290.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:53.639+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 038290.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:53.639+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 038290.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:53.640+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 059210.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:53.981+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:53.982+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:53.982+0000] {multi.py:194} ERROR - ['059210.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:53.983+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 059210.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:53.983+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 059210.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:53.984+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 118000.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:54.289+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:54.289+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:54.290+0000] {multi.py:194} ERROR - ['118000.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:54.291+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 118000.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:54.291+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 118000.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:54.291+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 417970.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:54.610+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:54.611+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:54.611+0000] {multi.py:194} ERROR - ['417970.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:54.612+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 417970.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:54.614+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 417970.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:54.614+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 214610.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:54.923+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:54.924+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:54.924+0000] {multi.py:194} ERROR - ['214610.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:54.930+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 214610.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:54.930+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 214610.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:54.931+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 331520.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:55.262+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:55.263+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:55.264+0000] {multi.py:194} ERROR - ['331520.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:55.267+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 331520.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:55.267+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 331520.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:55.268+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 199480.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:57.244+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:57.245+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:57.245+0000] {multi.py:194} ERROR - ['199480.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-14T08:49:57.247+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 199480.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:57.248+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 199480.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:57.248+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002410.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:57.555+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:57.556+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:57.556+0000] {multi.py:194} ERROR - ['002410.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:57.560+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002410.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:57.561+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 002410.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:57.561+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 007210.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:57.913+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:57.914+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:57.915+0000] {multi.py:194} ERROR - ['007210.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:57.918+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 007210.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:57.918+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 007210.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:57.919+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 225530.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:58.244+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:58.245+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:58.246+0000] {multi.py:194} ERROR - ['225530.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:58.250+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 225530.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:58.251+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 225530.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:58.251+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 250000.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:58.572+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:58.573+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:58.574+0000] {multi.py:194} ERROR - ['250000.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:58.578+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 250000.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:58.579+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 250000.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:58.579+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 000890.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:58.887+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:58.888+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:58.888+0000] {multi.py:194} ERROR - ['000890.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:58.892+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 000890.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:58.893+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 000890.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:58.893+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 014470.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:59.209+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:59.210+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:59.211+0000] {multi.py:194} ERROR - ['014470.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:59.215+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 014470.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:59.216+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 014470.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:59.219+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 064480.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:59.553+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:59.554+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:59.554+0000] {multi.py:194} ERROR - ['064480.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:59.556+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 064480.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:59.557+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 064480.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:59.557+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002070.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:49:59.954+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:49:59.954+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:49:59.955+0000] {multi.py:194} ERROR - ['002070.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:49:59.958+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002070.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:49:59.958+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 002070.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:49:59.959+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 413640.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:00.291+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:00.292+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:00.292+0000] {multi.py:194} ERROR - ['413640.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:00.296+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 413640.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:00.296+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 413640.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:00.297+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 050090.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:00.608+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:00.610+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:00.610+0000] {multi.py:194} ERROR - ['050090.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:00.615+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 050090.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:00.615+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 050090.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:00.616+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 032850.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:00.986+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:00.987+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:00.987+0000] {multi.py:194} ERROR - ['032850.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:00.991+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 032850.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:00.992+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 032850.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:00.992+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 069540.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:01.303+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:01.303+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:01.303+0000] {multi.py:194} ERROR - ['069540.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:01.306+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 069540.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:01.306+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 069540.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:01.306+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 018310.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:01.674+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:01.675+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:01.675+0000] {multi.py:194} ERROR - ['018310.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:01.679+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 018310.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:01.679+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 018310.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:01.680+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 053700.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:02.041+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:02.042+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:02.043+0000] {multi.py:194} ERROR - ['053700.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:02.046+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 053700.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:02.047+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 053700.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:02.047+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 009620.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:02.360+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:02.361+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:02.362+0000] {multi.py:194} ERROR - ['009620.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:02.366+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 009620.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:02.367+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 009620.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:02.367+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 003720.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:02.761+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:02.761+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:02.762+0000] {multi.py:194} ERROR - ['003720.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:02.765+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 003720.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:02.766+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 003720.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:02.766+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002450.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:03.155+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:03.156+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:03.156+0000] {multi.py:194} ERROR - ['002450.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:03.159+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002450.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:03.159+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 002450.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:03.159+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 032280.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:03.526+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:03.527+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:03.527+0000] {multi.py:194} ERROR - ['032280.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:03.530+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 032280.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:03.531+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 032280.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:03.531+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002290.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:03.946+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:03.947+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:03.947+0000] {multi.py:194} ERROR - ['002290.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:03.948+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002290.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:03.948+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 002290.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:03.948+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 024950.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:04.286+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:04.287+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:04.287+0000] {multi.py:194} ERROR - ['024950.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:04.291+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 024950.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:04.291+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 024950.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:04.292+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 042940.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:04.620+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:04.621+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:04.622+0000] {multi.py:194} ERROR - ['042940.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:04.625+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 042940.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:04.626+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 042940.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:04.626+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 038070.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:04.973+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:04.975+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:04.975+0000] {multi.py:194} ERROR - ['038070.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:04.978+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 038070.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:04.979+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 038070.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:04.979+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 018680.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:05.341+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:05.342+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:05.343+0000] {multi.py:194} ERROR - ['018680.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:05.347+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 018680.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:05.348+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 018680.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:05.348+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 011370.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:05.731+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:05.732+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:05.733+0000] {multi.py:194} ERROR - ['011370.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:05.737+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 011370.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:05.737+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 011370.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:05.738+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 015750.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:06.141+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:06.142+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:06.142+0000] {multi.py:194} ERROR - ['015750.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:06.144+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 015750.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:06.144+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 015750.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:06.145+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 000180.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:06.520+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:06.521+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:06.521+0000] {multi.py:194} ERROR - ['000180.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:06.524+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 000180.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:06.525+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 000180.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:06.525+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 013000.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:06.833+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:06.834+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:06.834+0000] {multi.py:194} ERROR - ['013000.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:06.842+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 013000.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:06.842+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 013000.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:06.843+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 024830.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:07.261+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:07.261+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:07.262+0000] {multi.py:194} ERROR - ['024830.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:07.266+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 024830.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:07.267+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 024830.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:07.267+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 021820.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:07.650+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:07.651+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:07.652+0000] {multi.py:194} ERROR - ['021820.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:07.656+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 021820.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:07.656+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 021820.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:07.656+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 039310.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:08.021+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:08.022+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:08.022+0000] {multi.py:194} ERROR - ['039310.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:08.027+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 039310.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:08.027+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 039310.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:08.028+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 258790.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:08.354+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:08.355+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:08.355+0000] {multi.py:194} ERROR - ['258790.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:08.359+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 258790.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:08.359+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 258790.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:08.360+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 035610.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:08.789+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:08.790+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:08.790+0000] {multi.py:194} ERROR - ['035610.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:08.793+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 035610.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:08.793+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 035610.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:08.794+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 050960.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:09.116+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:09.117+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:09.117+0000] {multi.py:194} ERROR - ['050960.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:09.121+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 050960.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:09.121+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 050960.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:09.121+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 084180.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:09.446+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:09.446+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:09.447+0000] {multi.py:194} ERROR - ['084180.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:09.450+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 084180.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:09.450+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 084180.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:09.451+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 094840.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:09.775+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:09.776+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:09.776+0000] {multi.py:194} ERROR - ['094840.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:09.780+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 094840.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:09.780+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 094840.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:09.781+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 013810.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:10.149+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:10.150+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:10.150+0000] {multi.py:194} ERROR - ['013810.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:10.154+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 013810.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:10.155+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 013810.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:10.155+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 020710.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:10.537+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:10.538+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:10.538+0000] {multi.py:194} ERROR - ['020710.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:10.543+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 020710.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:10.543+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 020710.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:10.543+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 033170.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:10.871+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:10.871+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:10.871+0000] {multi.py:194} ERROR - ['033170.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:10.874+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 033170.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:10.874+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 033170.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:10.874+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 006880.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:11.205+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:11.206+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:11.206+0000] {multi.py:194} ERROR - ['006880.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:11.210+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 006880.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:11.211+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 006880.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:11.211+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002870.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:11.721+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:11.721+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:11.722+0000] {multi.py:194} ERROR - ['002870.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:11.724+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002870.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:11.724+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 002870.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:11.724+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 036710.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:12.151+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:12.151+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:12.151+0000] {multi.py:194} ERROR - ['036710.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:12.152+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 036710.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:12.153+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 036710.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:12.153+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 004770.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:12.513+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:12.514+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:12.514+0000] {multi.py:194} ERROR - ['004770.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:12.517+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 004770.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:12.518+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 004770.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:12.518+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 208640.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:12.822+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:12.823+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:12.823+0000] {multi.py:194} ERROR - ['208640.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:12.827+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 208640.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:12.827+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 208640.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:12.828+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 050890.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:13.173+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:13.174+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:13.174+0000] {multi.py:194} ERROR - ['050890.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:13.178+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 050890.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:13.178+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 050890.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:13.179+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 066790.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:13.477+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:13.477+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:13.478+0000] {multi.py:194} ERROR - ['066790.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:13.481+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 066790.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:13.482+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 066790.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:13.482+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 340810.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:13.778+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:13.779+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:13.779+0000] {multi.py:194} ERROR - ['340810.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:13.782+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 340810.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:13.782+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 340810.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:13.782+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 260930.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:14.115+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:14.116+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:14.117+0000] {multi.py:194} ERROR - ['260930.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:14.120+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 260930.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:14.121+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 260930.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:14.121+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 052860.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:14.418+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:14.419+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:14.420+0000] {multi.py:194} ERROR - ['052860.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:14.423+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 052860.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:14.424+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 052860.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:14.424+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 124500.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:14.724+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:14.726+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:14.727+0000] {multi.py:194} ERROR - ['124500.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:14.730+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 124500.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:14.731+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 124500.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:14.731+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 032080.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:15.079+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:15.081+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:15.081+0000] {multi.py:194} ERROR - ['032080.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:15.085+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 032080.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:15.085+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 032080.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:15.085+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 013310.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:15.441+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:15.442+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:15.443+0000] {multi.py:194} ERROR - ['013310.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:15.447+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 013310.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:15.447+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 013310.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:15.447+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 200350.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:15.753+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:15.754+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:15.755+0000] {multi.py:194} ERROR - ['200350.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:15.758+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 200350.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:15.759+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 200350.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:15.759+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 321820.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:16.069+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:16.070+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:16.070+0000] {multi.py:194} ERROR - ['321820.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:16.074+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 321820.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:16.074+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 321820.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:16.074+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 053800.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:16.444+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:16.445+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:16.445+0000] {multi.py:194} ERROR - ['053800.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:16.449+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 053800.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:16.450+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 053800.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:16.450+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 085810.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:16.751+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:16.751+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:16.752+0000] {multi.py:194} ERROR - ['085810.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:16.754+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 085810.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:16.754+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 085810.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:16.754+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 043100.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:17.054+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:17.056+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:17.056+0000] {multi.py:194} ERROR - ['043100.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:17.061+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 043100.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:17.062+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 043100.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:17.062+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 179530.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:17.377+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:17.378+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:17.378+0000] {multi.py:194} ERROR - ['179530.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:17.383+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 179530.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:17.383+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 179530.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:17.383+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 270520.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:17.702+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:17.703+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:17.703+0000] {multi.py:194} ERROR - ['270520.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:17.706+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 270520.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:17.707+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 270520.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:17.707+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 011090.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:18.093+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:18.094+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:18.094+0000] {multi.py:194} ERROR - ['011090.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:18.098+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 011090.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:18.098+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 011090.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:18.099+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 038680.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:18.462+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:18.463+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:18.463+0000] {multi.py:194} ERROR - ['038680.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:18.466+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 038680.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:18.466+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 038680.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:18.466+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 045660.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:18.831+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:18.832+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:18.832+0000] {multi.py:194} ERROR - ['045660.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:18.835+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 045660.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:18.835+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 045660.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:18.836+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 224110.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:19.207+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:19.208+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:19.209+0000] {multi.py:194} ERROR - ['224110.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:19.213+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 224110.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:19.213+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 224110.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:19.213+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 021080.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:19.587+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:19.588+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:19.588+0000] {multi.py:194} ERROR - ['021080.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:19.594+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 021080.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:19.595+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 021080.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:19.595+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 038110.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:19.951+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:19.952+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:19.953+0000] {multi.py:194} ERROR - ['038110.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:19.956+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 038110.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:19.956+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 038110.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:19.956+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 317770.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:20.254+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:20.256+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:20.256+0000] {multi.py:194} ERROR - ['317770.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:20.270+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 317770.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:20.272+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 317770.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:20.272+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 067570.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:20.605+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:20.606+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:20.606+0000] {multi.py:194} ERROR - ['067570.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:20.610+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 067570.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:20.610+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 067570.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:20.610+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 069410.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:20.935+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:20.935+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:20.935+0000] {multi.py:194} ERROR - ['069410.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:20.938+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 069410.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:20.938+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 069410.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:20.938+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 014440.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:21.276+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:21.277+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:21.277+0000] {multi.py:194} ERROR - ['014440.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:21.281+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 014440.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:21.281+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 014440.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:21.281+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 036560.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:21.626+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:21.627+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:21.627+0000] {multi.py:194} ERROR - ['036560.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:21.631+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 036560.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:21.632+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 036560.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:21.632+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 012280.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:21.990+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:21.990+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:21.991+0000] {multi.py:194} ERROR - ['012280.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:21.993+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 012280.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:21.993+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 012280.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:21.993+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002630.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:22.300+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:22.301+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:22.302+0000] {multi.py:194} ERROR - ['002630.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:22.306+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002630.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:22.306+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 002630.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:22.307+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 065500.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:22.626+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:22.627+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:22.628+0000] {multi.py:194} ERROR - ['065500.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:22.633+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 065500.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:22.634+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 065500.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:22.634+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 010470.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:22.975+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:22.976+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:22.976+0000] {multi.py:194} ERROR - ['010470.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:22.980+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 010470.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:22.980+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 010470.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:22.981+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 352910.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:23.280+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:23.280+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:23.281+0000] {multi.py:194} ERROR - ['352910.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:23.282+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 352910.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:23.282+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 352910.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:23.282+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 052300.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:23.581+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:23.581+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:23.581+0000] {multi.py:194} ERROR - ['052300.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:23.582+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 052300.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:23.583+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 052300.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:23.583+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 173130.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:23.880+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:23.880+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:23.880+0000] {multi.py:194} ERROR - ['173130.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:23.882+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 173130.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:23.882+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 173130.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:23.882+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 440320.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:24.180+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:24.180+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:24.181+0000] {multi.py:194} ERROR - ['440320.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:24.182+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 440320.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:24.183+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 440320.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:24.183+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 049480.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:24.521+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:24.521+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:24.521+0000] {multi.py:194} ERROR - ['049480.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:24.523+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 049480.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:24.523+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 049480.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:24.523+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 005320.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:24.830+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:24.830+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:24.830+0000] {multi.py:194} ERROR - ['005320.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:24.832+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 005320.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:24.832+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 005320.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:24.832+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 109080.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:25.178+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:25.179+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:25.179+0000] {multi.py:194} ERROR - ['109080.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:25.180+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 109080.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:25.180+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 109080.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:25.180+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 079000.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:25.520+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:25.520+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:25.520+0000] {multi.py:194} ERROR - ['079000.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:25.522+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 079000.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:25.522+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 079000.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:25.522+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 101170.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:25.852+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:25.853+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:25.853+0000] {multi.py:194} ERROR - ['101170.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:25.856+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 101170.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:25.856+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 101170.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:25.856+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 046940.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:26.162+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:26.163+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:26.163+0000] {multi.py:194} ERROR - ['046940.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:26.167+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 046940.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:26.167+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 046940.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:26.168+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 014190.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:26.497+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:26.498+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:26.498+0000] {multi.py:194} ERROR - ['014190.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:26.500+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 014190.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:26.500+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 014190.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:26.500+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 376980.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:26.801+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:26.801+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:26.801+0000] {multi.py:194} ERROR - ['376980.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:26.802+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 376980.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:26.803+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 376980.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:26.803+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 065370.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:27.120+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:27.120+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:27.121+0000] {multi.py:194} ERROR - ['065370.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:27.122+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 065370.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:27.122+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 065370.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:27.122+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 299900.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:27.421+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:27.421+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:27.421+0000] {multi.py:194} ERROR - ['299900.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:27.423+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 299900.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:27.423+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 299900.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:27.423+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 136540.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:27.860+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:27.861+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:27.861+0000] {multi.py:194} ERROR - ['136540.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:27.864+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 136540.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:27.864+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 136540.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:27.865+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 192390.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:28.202+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:28.203+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:28.204+0000] {multi.py:194} ERROR - ['192390.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:28.208+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 192390.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:28.209+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 192390.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:28.209+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 008600.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:28.570+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:28.571+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:28.571+0000] {multi.py:194} ERROR - ['008600.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:28.575+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 008600.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:28.575+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 008600.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:28.575+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 446070.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:28.889+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:28.890+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:28.891+0000] {multi.py:194} ERROR - ['446070.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:28.897+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 446070.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:28.897+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 446070.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:28.898+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 084440.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:29.217+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:29.218+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:29.218+0000] {multi.py:194} ERROR - ['084440.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:29.222+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 084440.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:29.222+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 084440.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:29.223+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 069330.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:29.558+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:29.559+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:29.559+0000] {multi.py:194} ERROR - ['069330.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:29.563+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 069330.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:29.563+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 069330.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:29.564+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 049520.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:29.969+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:29.970+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:29.970+0000] {multi.py:194} ERROR - ['049520.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:29.972+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 049520.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:29.972+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 049520.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:29.972+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 000220.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:30.369+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:30.371+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:30.371+0000] {multi.py:194} ERROR - ['000220.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:30.375+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 000220.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:30.375+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 000220.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:30.376+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 221800.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:30.686+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:30.687+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:30.687+0000] {multi.py:194} ERROR - ['221800.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:30.691+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 221800.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:30.691+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 221800.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:30.692+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 039020.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:31.031+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:31.032+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:31.032+0000] {multi.py:194} ERROR - ['039020.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:31.034+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 039020.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:31.034+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 039020.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:31.035+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 053350.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:31.363+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:31.364+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:31.365+0000] {multi.py:194} ERROR - ['053350.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:31.370+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 053350.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:31.370+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 053350.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:31.371+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 015020.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:31.737+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:31.737+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:31.738+0000] {multi.py:194} ERROR - ['015020.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:31.741+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 015020.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:31.742+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 015020.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:31.742+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 450520.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:32.081+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:32.082+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:32.083+0000] {multi.py:194} ERROR - ['450520.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:32.087+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 450520.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:32.087+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 450520.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:32.087+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 129260.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:32.422+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:32.424+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:32.424+0000] {multi.py:194} ERROR - ['129260.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:32.428+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 129260.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:32.428+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 129260.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:32.428+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 013360.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:32.810+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:32.811+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:32.812+0000] {multi.py:194} ERROR - ['013360.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:32.816+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 013360.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:32.816+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 013360.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:32.816+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 234920.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:33.114+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:33.114+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:33.115+0000] {multi.py:194} ERROR - ['234920.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:33.118+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 234920.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:33.119+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 234920.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:33.119+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 208140.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:33.435+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:33.436+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:33.436+0000] {multi.py:194} ERROR - ['208140.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:33.441+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 208140.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:33.441+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 208140.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:33.441+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 159580.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:33.752+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:33.753+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:33.753+0000] {multi.py:194} ERROR - ['159580.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:33.758+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 159580.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:33.758+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 159580.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:33.759+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 038010.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:34.118+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:34.119+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:34.120+0000] {multi.py:194} ERROR - ['038010.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:34.123+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 038010.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:34.124+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 038010.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:34.124+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 053050.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:34.473+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:34.475+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:34.475+0000] {multi.py:194} ERROR - ['053050.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:34.479+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 053050.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:34.479+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 053050.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:34.480+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 204840.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:34.795+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:34.796+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:34.796+0000] {multi.py:194} ERROR - ['204840.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:34.800+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 204840.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:34.800+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 204840.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:34.800+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 003780.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:35.184+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:35.184+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:35.185+0000] {multi.py:194} ERROR - ['003780.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:35.188+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 003780.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:35.189+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 003780.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:35.189+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 010640.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:35.548+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:35.549+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:35.549+0000] {multi.py:194} ERROR - ['010640.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:35.553+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 010640.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:35.554+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 010640.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:35.554+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 100250.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:35.904+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:35.905+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:35.905+0000] {multi.py:194} ERROR - ['100250.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:35.908+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 100250.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:35.909+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 100250.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:35.909+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 051630.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:36.230+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:36.231+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:36.231+0000] {multi.py:194} ERROR - ['051630.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:36.235+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 051630.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:36.235+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 051630.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:36.236+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002780.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:36.544+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:36.544+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:36.545+0000] {multi.py:194} ERROR - ['002780.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:36.547+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002780.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:36.548+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 002780.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:36.548+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 033250.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:36.894+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:36.895+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:36.895+0000] {multi.py:194} ERROR - ['033250.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:36.899+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 033250.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:36.899+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 033250.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:36.900+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 016920.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:37.274+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:37.275+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:37.275+0000] {multi.py:194} ERROR - ['016920.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:37.278+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 016920.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:37.279+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 016920.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:37.279+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 050110.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:37.599+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:37.601+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:37.602+0000] {multi.py:194} ERROR - ['050110.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:37.606+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 050110.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:37.607+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 050110.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:37.607+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 307930.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:37.927+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:37.928+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:37.928+0000] {multi.py:194} ERROR - ['307930.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:37.932+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 307930.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:37.933+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 307930.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:37.933+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 001620.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:38.271+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:38.272+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:38.273+0000] {multi.py:194} ERROR - ['001620.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:38.277+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 001620.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:38.277+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 001620.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:38.277+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 025880.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:38.664+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:38.665+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:38.665+0000] {multi.py:194} ERROR - ['025880.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:38.670+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 025880.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:38.671+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 025880.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:38.671+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 093640.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:39.011+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:39.012+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:39.012+0000] {multi.py:194} ERROR - ['093640.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:39.014+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 093640.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:39.015+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 093640.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:39.015+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 145270.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:39.334+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:39.334+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:39.335+0000] {multi.py:194} ERROR - ['145270.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:39.338+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 145270.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:39.339+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 145270.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:39.339+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 052400.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:39.674+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:39.675+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:39.675+0000] {multi.py:194} ERROR - ['052400.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:39.679+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 052400.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:39.679+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 052400.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:39.679+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 027050.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:40.035+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:40.036+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:40.037+0000] {multi.py:194} ERROR - ['027050.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:40.040+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 027050.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:40.041+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 027050.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:40.041+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 049430.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:40.385+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:40.386+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:40.386+0000] {multi.py:194} ERROR - ['049430.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:40.391+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 049430.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:40.392+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 049430.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:40.392+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002020.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:40.752+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:40.753+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:40.753+0000] {multi.py:194} ERROR - ['002020.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:40.757+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002020.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:40.757+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 002020.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:40.757+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 003070.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:41.183+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:41.184+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:41.184+0000] {multi.py:194} ERROR - ['003070.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:41.189+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 003070.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:41.189+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 003070.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:41.189+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 450140.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:41.497+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:41.498+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:41.498+0000] {multi.py:194} ERROR - ['450140.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:41.501+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 450140.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:41.502+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 450140.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:41.502+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 121850.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:41.824+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:41.826+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:41.826+0000] {multi.py:194} ERROR - ['121850.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:41.829+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 121850.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:41.830+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 121850.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:41.830+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 031820.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:42.170+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:42.171+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:42.172+0000] {multi.py:194} ERROR - ['031820.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:42.176+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 031820.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:42.176+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 031820.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:42.176+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 110790.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:42.509+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:42.510+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:42.511+0000] {multi.py:194} ERROR - ['110790.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:42.515+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 110790.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:42.515+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 110790.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:42.516+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 004100.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:42.872+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:42.872+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:42.873+0000] {multi.py:194} ERROR - ['004100.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:42.876+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 004100.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:42.876+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 004100.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:42.876+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 004105.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:43.238+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:43.239+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:43.240+0000] {multi.py:194} ERROR - ['004105.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:43.245+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 004105.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:43.245+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 004105.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:43.246+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 009410.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:43.634+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:43.635+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:43.635+0000] {multi.py:194} ERROR - ['009410.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:43.640+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 009410.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:43.641+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 009410.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:43.641+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 009415.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:43.998+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:43.999+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:43.999+0000] {multi.py:194} ERROR - ['009415.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:44.001+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 009415.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:44.001+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 009415.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:44.001+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 051360.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:44.882+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:44.883+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:44.884+0000] {multi.py:194} ERROR - ['051360.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:44.888+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 051360.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:44.889+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 051360.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:44.889+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 045340.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:45.191+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:45.192+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:45.192+0000] {multi.py:194} ERROR - ['045340.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:45.196+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 045340.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:45.196+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 045340.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:45.197+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 026150.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:45.551+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:45.553+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:45.554+0000] {multi.py:194} ERROR - ['026150.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:45.558+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 026150.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:45.558+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 026150.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:45.559+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 033830.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:45.879+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:45.880+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:45.880+0000] {multi.py:194} ERROR - ['033830.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:45.884+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 033830.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:45.884+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 033830.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:45.884+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 057680.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:46.193+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:46.194+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:46.194+0000] {multi.py:194} ERROR - ['057680.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:46.197+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 057680.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:46.197+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 057680.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:46.197+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 019180.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:46.592+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:46.593+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:46.594+0000] {multi.py:194} ERROR - ['019180.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:46.600+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 019180.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:46.600+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 019180.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:46.600+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 131100.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:46.906+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:46.907+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:46.907+0000] {multi.py:194} ERROR - ['131100.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:46.910+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 131100.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:46.911+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 131100.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:46.911+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 130740.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:47.234+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:47.235+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:47.236+0000] {multi.py:194} ERROR - ['130740.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:47.239+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 130740.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:47.240+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 130740.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:47.240+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 033540.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:47.601+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:47.602+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:47.603+0000] {multi.py:194} ERROR - ['033540.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:47.607+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 033540.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:47.607+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 033540.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:47.608+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 106240.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:47.922+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:47.923+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:47.923+0000] {multi.py:194} ERROR - ['106240.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:47.927+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 106240.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:47.927+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 106240.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:47.927+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 318010.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:48.232+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:48.233+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:48.234+0000] {multi.py:194} ERROR - ['318010.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:48.237+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 318010.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:48.238+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 318010.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:48.238+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 036580.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:48.573+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:48.574+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:48.575+0000] {multi.py:194} ERROR - ['036580.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:48.579+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 036580.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:48.579+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 036580.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:48.579+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 090080.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:48.943+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:48.943+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:48.944+0000] {multi.py:194} ERROR - ['090080.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:48.949+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 090080.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:48.949+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 090080.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:48.950+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 010770.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:49.325+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:49.327+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:49.327+0000] {multi.py:194} ERROR - ['010770.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:49.331+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 010770.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:49.332+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 010770.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:49.332+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 005670.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:49.688+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:49.688+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:49.689+0000] {multi.py:194} ERROR - ['005670.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:49.692+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 005670.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:49.693+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 005670.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:49.693+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 950210.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:50.000+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:50.001+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:50.001+0000] {multi.py:194} ERROR - ['950210.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:50.005+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 950210.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:50.005+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 950210.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:50.005+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 053160.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:50.360+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:50.360+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:50.361+0000] {multi.py:194} ERROR - ['053160.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:50.364+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 053160.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:50.365+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 053160.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:50.365+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 075130.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:50.727+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:50.728+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:50.728+0000] {multi.py:194} ERROR - ['075130.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:50.732+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 075130.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:50.732+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 075130.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:50.732+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 163730.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:51.039+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:51.040+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:51.040+0000] {multi.py:194} ERROR - ['163730.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:51.043+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 163730.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:51.044+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 163730.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:51.044+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 066130.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:51.389+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:51.390+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:51.391+0000] {multi.py:194} ERROR - ['066130.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:51.396+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 066130.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:51.397+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 066130.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:51.397+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 222980.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:51.703+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:51.704+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:51.704+0000] {multi.py:194} ERROR - ['222980.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:51.707+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 222980.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:51.708+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 222980.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:51.708+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 025550.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:52.042+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:52.043+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:52.043+0000] {multi.py:194} ERROR - ['025550.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:52.045+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 025550.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:52.046+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 025550.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:52.046+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002200.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:52.411+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:52.412+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:52.412+0000] {multi.py:194} ERROR - ['002200.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:52.416+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 002200.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:52.416+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 002200.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:52.417+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 101680.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:52.829+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:52.829+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:52.830+0000] {multi.py:194} ERROR - ['101680.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:52.833+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 101680.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:52.834+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 101680.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:52.834+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 039740.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:53.160+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:53.160+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:53.160+0000] {multi.py:194} ERROR - ['039740.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:53.162+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 039740.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:53.162+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 039740.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:53.163+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 023350.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:53.498+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:53.499+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:53.499+0000] {multi.py:194} ERROR - ['023350.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:53.503+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 023350.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:53.503+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 023350.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:53.503+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 034830.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:53.857+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:53.858+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:53.858+0000] {multi.py:194} ERROR - ['034830.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:53.863+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 034830.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:53.863+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 034830.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:53.863+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 003680.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:54.211+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:54.212+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:54.212+0000] {multi.py:194} ERROR - ['003680.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:54.213+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 003680.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:54.214+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 003680.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:54.214+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 025750.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:54.513+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:54.513+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:54.514+0000] {multi.py:194} ERROR - ['025750.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:54.515+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 025750.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:54.515+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 025750.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:54.515+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 014130.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:54.872+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:54.872+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:54.872+0000] {multi.py:194} ERROR - ['014130.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:54.874+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 014130.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:54.874+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 014130.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:54.874+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 024740.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:55.210+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:55.210+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:55.210+0000] {multi.py:194} ERROR - ['024740.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:55.211+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 024740.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:55.211+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 024740.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:55.212+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 007770.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:55.562+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:55.563+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:55.563+0000] {multi.py:194} ERROR - ['007770.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:55.564+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 007770.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:55.565+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 007770.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:55.565+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 009460.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:55.895+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:55.896+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:55.896+0000] {multi.py:194} ERROR - ['009460.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:55.897+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 009460.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:55.897+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 009460.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:55.898+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 092300.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:56.261+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:56.262+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:56.262+0000] {multi.py:194} ERROR - ['092300.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:56.264+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 092300.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:56.264+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 092300.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:56.264+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 093240.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:56.561+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:56.561+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:56.562+0000] {multi.py:194} ERROR - ['093240.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:56.563+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 093240.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:56.563+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 093240.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:56.563+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 011080.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:56.913+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:56.914+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:56.915+0000] {multi.py:194} ERROR - ['011080.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:56.917+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 011080.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:56.917+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 011080.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:56.917+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 060560.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:57.285+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:57.287+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:57.287+0000] {multi.py:194} ERROR - ['060560.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:57.290+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 060560.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:57.291+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 060560.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:57.291+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 126640.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:57.620+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:57.620+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:57.621+0000] {multi.py:194} ERROR - ['126640.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:57.622+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 126640.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:57.622+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 126640.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:57.622+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 010660.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:58.016+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:58.016+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:58.016+0000] {multi.py:194} ERROR - ['010660.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:58.017+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 010660.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:58.017+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 010660.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:58.018+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 000850.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:58.351+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:58.351+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:58.351+0000] {multi.py:194} ERROR - ['000850.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:58.353+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 000850.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:58.353+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 000850.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:58.353+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 097870.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:58.698+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:58.699+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:58.699+0000] {multi.py:194} ERROR - ['097870.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:58.705+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 097870.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:58.706+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 097870.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:58.706+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 078590.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:59.018+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:59.019+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:59.019+0000] {multi.py:194} ERROR - ['078590.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:59.023+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 078590.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:59.023+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 078590.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:59.024+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 115160.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:59.342+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:59.342+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:59.343+0000] {multi.py:194} ERROR - ['115160.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:59.346+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 115160.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:59.347+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 115160.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:59.347+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 028080.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:50:59.694+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:50:59.695+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:50:59.695+0000] {multi.py:194} ERROR - ['028080.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:50:59.698+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 028080.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:50:59.698+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 028080.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:50:59.699+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 010240.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:00.034+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:00.035+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:00.035+0000] {multi.py:194} ERROR - ['010240.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:00.039+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 010240.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:00.039+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 010240.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:00.039+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 003280.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:00.371+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:00.372+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:00.373+0000] {multi.py:194} ERROR - ['003280.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:00.376+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 003280.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:00.377+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 003280.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:00.377+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 065770.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:00.691+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:00.691+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:00.692+0000] {multi.py:194} ERROR - ['065770.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:00.696+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 065770.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:00.697+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 065770.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:00.697+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 155660.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:01.027+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:01.028+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:01.029+0000] {multi.py:194} ERROR - ['155660.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:01.033+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 155660.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:01.034+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 155660.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:01.034+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 069730.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:01.392+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:01.393+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:01.394+0000] {multi.py:194} ERROR - ['069730.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:01.398+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 069730.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:01.398+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 069730.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:01.399+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 130500.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:01.725+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:01.726+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:01.727+0000] {multi.py:194} ERROR - ['130500.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:01.730+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 130500.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:01.731+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 130500.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:01.731+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 052220.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:02.058+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:02.059+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:02.059+0000] {multi.py:194} ERROR - ['052220.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:02.063+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 052220.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:02.063+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 052220.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:02.064+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 021320.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:02.443+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:02.444+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:02.445+0000] {multi.py:194} ERROR - ['021320.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:02.449+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 021320.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:02.450+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 021320.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:02.450+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 044180.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:02.784+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:02.784+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:02.785+0000] {multi.py:194} ERROR - ['044180.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:02.789+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 044180.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:02.789+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 044180.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:02.790+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 058400.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:03.113+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:03.114+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:03.114+0000] {multi.py:194} ERROR - ['058400.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:03.118+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 058400.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:03.119+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 058400.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:03.119+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 000680.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:03.451+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:03.453+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:03.453+0000] {multi.py:194} ERROR - ['000680.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:03.459+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 000680.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:03.459+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 000680.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:03.460+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 023150.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:03.848+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:03.849+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:03.850+0000] {multi.py:194} ERROR - ['023150.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:03.854+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 023150.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:03.854+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 023150.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:03.854+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 053290.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:04.241+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:04.242+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:04.243+0000] {multi.py:194} ERROR - ['053290.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:04.246+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 053290.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:04.247+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 053290.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:04.247+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 024940.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:04.608+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:04.609+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:04.610+0000] {multi.py:194} ERROR - ['024940.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:04.613+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 024940.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:04.614+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 024940.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:04.614+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 099220.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:04.918+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:04.919+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:04.919+0000] {multi.py:194} ERROR - ['099220.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:04.923+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 099220.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:04.924+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 099220.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:04.924+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 001380.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:05.219+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:05.220+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:05.220+0000] {multi.py:194} ERROR - ['001380.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:05.224+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 001380.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:05.224+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 001380.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:05.225+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 022220.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:05.512+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:05.513+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:05.513+0000] {multi.py:194} ERROR - ['022220.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:05.516+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 022220.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:05.517+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 022220.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:05.517+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 007980.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:05.870+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:05.871+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:05.871+0000] {multi.py:194} ERROR - ['007980.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:05.876+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 007980.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:05.877+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 007980.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:05.877+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 024070.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:06.213+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:06.214+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:06.215+0000] {multi.py:194} ERROR - ['024070.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:06.219+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 024070.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:06.219+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 024070.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:06.220+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 057030.KS 주식 데이터 다운로드 시작...
-[2025-03-14T08:51:06.555+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-14T08:51:06.556+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-14T08:51:06.557+0000] {multi.py:194} ERROR - ['057030.KS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-03-13 -> 2025-03-13)')
-[2025-03-14T08:51:06.561+0000] {logging_mixin.py:190} INFO - 📌 [INFO] 057030.KS 다운로드 결과: (0, 6)
-[2025-03-14T08:51:06.561+0000] {logging_mixin.py:190} INFO - 📌 [WARNING] 057030.KS 데이터 없음! 다운로드 실패.
-[2025-03-14T08:51:06.561+0000] {logging_mixin.py:190} INFO - 📌 [ERROR] 가져온 주가 데이터가 없습니다!
-[2025-03-14T08:51:06.562+0000] {python.py:240} INFO - Done. Returned value was: None
-[2025-03-14T08:51:06.573+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
-[2025-03-14T08:51:06.574+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=test_extract_stock_dag, task_id=test_extract, run_id=manual__2025-03-14T08:49:35.417768+00:00, execution_date=20250314T084935, start_date=20250314T084937, end_date=20250314T085106
-[2025-03-14T08:51:06.590+0000] {logging_mixin.py:190} INFO - Task instance in success state
-[2025-03-14T08:51:06.590+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
-[2025-03-14T08:51:06.591+0000] {logging_mixin.py:190} INFO - Dag name:test_extract_stock_dag queued_at:2025-03-14 08:49:35.432964+00:00
-[2025-03-14T08:51:06.591+0000] {logging_mixin.py:190} INFO - Task hostname:c2b00310d89d operator:PythonOperator
-[2025-03-14T08:51:06.627+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
-[2025-03-14T08:51:06.636+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
-[2025-03-14T08:51:06.637+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

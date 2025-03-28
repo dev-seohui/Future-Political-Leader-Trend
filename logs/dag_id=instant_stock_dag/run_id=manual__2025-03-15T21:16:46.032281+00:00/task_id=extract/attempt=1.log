@@ -1,566 +1,0 @@
-[2025-03-15T21:16:49.707+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
-[2025-03-15T21:16:49.732+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instant_stock_dag.extract manual__2025-03-15T21:16:46.032281+00:00 [queued]>
-[2025-03-15T21:16:49.744+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instant_stock_dag.extract manual__2025-03-15T21:16:46.032281+00:00 [queued]>
-[2025-03-15T21:16:49.745+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
-[2025-03-15T21:16:49.760+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): extract> on 2025-03-15 21:16:46.032281+00:00
-[2025-03-15T21:16:49.773+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'instant_stock_dag', 'extract', 'manual__2025-03-15T21:16:46.032281+00:00', '--job-id', '168', '--raw', '--subdir', 'DAGS_FOLDER/blog_dag.py', '--cfg-path', '/tmp/tmpzy564osx']
-[2025-03-15T21:16:49.775+0000] {standard_task_runner.py:105} INFO - Job 168: Subtask extract
-[2025-03-15T21:16:49.773+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=127) is multi-threaded, use of fork() may lead to deadlocks in the child.
-  pid = os.fork()
-
-[2025-03-15T21:16:49.777+0000] {standard_task_runner.py:72} INFO - Started process 129 to run task
-[2025-03-15T21:16:49.837+0000] {task_command.py:467} INFO - Running <TaskInstance: instant_stock_dag.extract manual__2025-03-15T21:16:46.032281+00:00 [running]> on host 53fe0bb4753d
-[2025-03-15T21:16:49.880+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='instant_stock_dag' AIRFLOW_CTX_TASK_ID='extract' AIRFLOW_CTX_EXECUTION_DATE='2025-03-15T21:16:46.032281+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-15T21:16:46.032281+00:00'
-[2025-03-15T21:16:49.882+0000] {logging_mixin.py:190} INFO - Task instance is in running state
-[2025-03-15T21:16:49.883+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
-[2025-03-15T21:16:49.883+0000] {logging_mixin.py:190} INFO - Current task name:extract state:running start_date:2025-03-15 21:16:49.732572+00:00
-[2025-03-15T21:16:49.884+0000] {logging_mixin.py:190} INFO - Dag name:instant_stock_dag and current dag run status:running
-[2025-03-15T21:16:49.884+0000] {taskinstance.py:732} INFO - ::endgroup::
-[2025-03-15T21:16:49.888+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7039240007.KQ
-[2025-03-15T21:16:49.889+0000] {logging_mixin.py:190} INFO - YF.download() has changed argument auto_adjust default to True
-[2025-03-15T21:16:52.965+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:16:52.966+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:16:52.966+0000] {multi.py:194} ERROR - ['KR7039240007.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:16:52.973+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7039240007.KQ, skipping...
-[2025-03-15T21:16:52.973+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7010130003.KS
-[2025-03-15T21:16:54.246+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:16:54.247+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:16:54.248+0000] {multi.py:194} ERROR - ['KR7010130003.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:16:54.251+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7010130003.KS, skipping...
-[2025-03-15T21:16:54.251+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7026910000.KQ
-[2025-03-15T21:16:55.747+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:16:55.748+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:16:55.748+0000] {multi.py:194} ERROR - ['KR7026910000.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:16:55.751+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7026910000.KQ, skipping...
-[2025-03-15T21:16:55.751+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7053270005.KQ
-[2025-03-15T21:16:57.392+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:16:57.393+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:16:57.393+0000] {multi.py:194} ERROR - ['KR7053270005.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:16:57.396+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7053270005.KQ, skipping...
-[2025-03-15T21:16:57.397+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7006050009.KQ
-[2025-03-15T21:16:58.944+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:16:58.945+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:16:58.945+0000] {multi.py:194} ERROR - ['KR7006050009.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:16:58.947+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7006050009.KQ, skipping...
-[2025-03-15T21:16:58.948+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7014530000.KS
-[2025-03-15T21:17:00.492+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:00.493+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:00.493+0000] {multi.py:194} ERROR - ['KR7014530000.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:00.497+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7014530000.KS, skipping...
-[2025-03-15T21:17:00.498+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7001570001.KS
-[2025-03-15T21:17:02.273+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:02.273+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:02.274+0000] {multi.py:194} ERROR - ['KR7001570001.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:02.277+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7001570001.KS, skipping...
-[2025-03-15T21:17:02.278+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7035460005.KQ
-[2025-03-15T21:17:04.026+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:04.027+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:04.027+0000] {multi.py:194} ERROR - ['KR7035460005.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:04.029+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7035460005.KQ, skipping...
-[2025-03-15T21:17:04.030+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7013700000.KS
-[2025-03-15T21:17:05.201+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:05.202+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:05.202+0000] {multi.py:194} ERROR - ['KR7013700000.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:05.204+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7013700000.KS, skipping...
-[2025-03-15T21:17:05.204+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7004540001.KS
-[2025-03-15T21:17:06.413+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:06.414+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:06.414+0000] {multi.py:194} ERROR - ['KR7004540001.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:06.419+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7004540001.KS, skipping...
-[2025-03-15T21:17:06.420+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7311390009.KQ
-[2025-03-15T21:17:07.601+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:07.602+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:07.602+0000] {multi.py:194} ERROR - ['KR7311390009.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:07.604+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7311390009.KQ, skipping...
-[2025-03-15T21:17:07.604+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7137940003.KQ
-[2025-03-15T21:17:09.048+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:09.049+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:09.050+0000] {multi.py:194} ERROR - ['KR7137940003.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:09.052+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7137940003.KQ, skipping...
-[2025-03-15T21:17:09.052+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7376930004.KQ
-[2025-03-15T21:17:10.644+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:10.645+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:10.645+0000] {multi.py:194} ERROR - ['KR7376930004.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:10.649+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7376930004.KQ, skipping...
-[2025-03-15T21:17:10.649+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7069140002.KQ
-[2025-03-15T21:17:11.895+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:11.895+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:11.896+0000] {multi.py:194} ERROR - ['KR7069140002.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:11.898+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7069140002.KQ, skipping...
-[2025-03-15T21:17:11.898+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7060260007.KQ
-[2025-03-15T21:17:13.435+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:13.437+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:13.437+0000] {multi.py:194} ERROR - ['KR7060260007.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:13.439+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7060260007.KQ, skipping...
-[2025-03-15T21:17:13.441+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7030210009.KS
-[2025-03-15T21:17:15.086+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:15.086+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:15.087+0000] {multi.py:194} ERROR - ['KR7030210009.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:15.088+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7030210009.KS, skipping...
-[2025-03-15T21:17:15.089+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7019680008.KS
-[2025-03-15T21:17:16.658+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:16.658+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:16.658+0000] {multi.py:194} ERROR - ['KR7019680008.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:16.660+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7019680008.KS, skipping...
-[2025-03-15T21:17:16.661+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7004780003.KQ
-[2025-03-15T21:17:18.268+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:18.268+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:18.269+0000] {multi.py:194} ERROR - ['KR7004780003.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:18.272+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7004780003.KQ, skipping...
-[2025-03-15T21:17:18.272+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7084690007.KS
-[2025-03-15T21:17:19.856+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:19.856+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:19.856+0000] {multi.py:194} ERROR - ['KR7084690007.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:19.858+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7084690007.KS, skipping...
-[2025-03-15T21:17:19.858+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7084691005.KS
-[2025-03-15T21:17:21.736+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:21.736+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:21.737+0000] {multi.py:194} ERROR - ['KR7084691005.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:21.739+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7084691005.KS, skipping...
-[2025-03-15T21:17:21.739+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7128820008.KS
-[2025-03-15T21:17:23.029+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:23.029+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:23.029+0000] {multi.py:194} ERROR - ['KR7128820008.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:23.032+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7128820008.KS, skipping...
-[2025-03-15T21:17:23.032+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7027830009.KQ
-[2025-03-15T21:17:24.239+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:24.239+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:24.240+0000] {multi.py:194} ERROR - ['KR7027830009.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:24.242+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7027830009.KQ, skipping...
-[2025-03-15T21:17:24.242+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7020180006.KQ
-[2025-03-15T21:17:25.858+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:25.859+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:25.859+0000] {multi.py:194} ERROR - ['KR7020180006.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:25.863+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7020180006.KQ, skipping...
-[2025-03-15T21:17:25.863+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7009190000.KS
-[2025-03-15T21:17:27.213+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:27.213+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:27.213+0000] {multi.py:194} ERROR - ['KR7009190000.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:27.215+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7009190000.KS, skipping...
-[2025-03-15T21:17:27.215+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7014160006.KS
-[2025-03-15T21:17:28.420+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:28.420+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:28.421+0000] {multi.py:194} ERROR - ['KR7014160006.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:28.423+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7014160006.KS, skipping...
-[2025-03-15T21:17:28.423+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7006340004.KS
-[2025-03-15T21:17:29.620+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:29.620+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:29.620+0000] {multi.py:194} ERROR - ['KR7006340004.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:29.622+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7006340004.KS, skipping...
-[2025-03-15T21:17:29.623+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7078600004.KQ
-[2025-03-15T21:17:30.913+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:30.913+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:30.913+0000] {multi.py:194} ERROR - ['KR7078600004.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:30.915+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7078600004.KQ, skipping...
-[2025-03-15T21:17:30.915+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7016090003.KS
-[2025-03-15T21:17:32.085+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:32.085+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:32.086+0000] {multi.py:194} ERROR - ['KR7016090003.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:32.090+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7016090003.KS, skipping...
-[2025-03-15T21:17:32.090+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7004830006.KS
-[2025-03-15T21:17:33.273+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:33.273+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:33.274+0000] {multi.py:194} ERROR - ['KR7004830006.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:33.276+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7004830006.KS, skipping...
-[2025-03-15T21:17:33.276+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7004831004.KS
-[2025-03-15T21:17:34.471+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:34.471+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:34.472+0000] {multi.py:194} ERROR - ['KR7004831004.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:34.474+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7004831004.KS, skipping...
-[2025-03-15T21:17:34.475+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7002150001.KS
-[2025-03-15T21:17:35.893+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:35.893+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:35.894+0000] {multi.py:194} ERROR - ['KR7002150001.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:35.895+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7002150001.KS, skipping...
-[2025-03-15T21:17:35.895+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7099410003.KQ
-[2025-03-15T21:17:37.175+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:37.177+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:37.179+0000] {multi.py:194} ERROR - ['KR7099410003.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:37.199+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7099410003.KQ, skipping...
-[2025-03-15T21:17:37.202+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7025950007.KQ
-[2025-03-15T21:17:38.767+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:38.768+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:38.768+0000] {multi.py:194} ERROR - ['KR7025950007.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:38.770+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7025950007.KQ, skipping...
-[2025-03-15T21:17:38.770+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7018500009.KS
-[2025-03-15T21:17:40.074+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:40.075+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:40.079+0000] {multi.py:194} ERROR - ['KR7018500009.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:40.081+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7018500009.KS, skipping...
-[2025-03-15T21:17:40.082+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7109860007.KQ
-[2025-03-15T21:17:41.326+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:41.327+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:41.327+0000] {multi.py:194} ERROR - ['KR7109860007.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:41.330+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7109860007.KQ, skipping...
-[2025-03-15T21:17:41.330+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7032960007.KQ
-[2025-03-15T21:17:42.876+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:42.876+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:42.877+0000] {multi.py:194} ERROR - ['KR7032960007.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:42.880+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7032960007.KQ, skipping...
-[2025-03-15T21:17:42.880+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7113810006.KQ
-[2025-03-15T21:17:44.453+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:44.454+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:44.454+0000] {multi.py:194} ERROR - ['KR7113810006.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:44.456+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7113810006.KQ, skipping...
-[2025-03-15T21:17:44.456+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7197140007.KQ
-[2025-03-15T21:17:45.739+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:45.740+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:45.740+0000] {multi.py:194} ERROR - ['KR7197140007.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:45.743+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7197140007.KQ, skipping...
-[2025-03-15T21:17:45.743+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7187220009.KQ
-[2025-03-15T21:17:47.175+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:47.175+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:47.176+0000] {multi.py:194} ERROR - ['KR7187220009.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:47.178+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7187220009.KQ, skipping...
-[2025-03-15T21:17:47.179+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7383930005.KQ
-[2025-03-15T21:17:49.018+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:49.019+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:49.019+0000] {multi.py:194} ERROR - ['KR7383930005.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:49.023+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7383930005.KQ, skipping...
-[2025-03-15T21:17:49.023+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7300120003.KQ
-[2025-03-15T21:17:50.280+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:50.281+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:50.281+0000] {multi.py:194} ERROR - ['KR7300120003.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:50.288+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7300120003.KQ, skipping...
-[2025-03-15T21:17:50.289+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7073570004.KQ
-[2025-03-15T21:17:51.498+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:51.498+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:51.499+0000] {multi.py:194} ERROR - ['KR7073570004.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:51.501+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7073570004.KQ, skipping...
-[2025-03-15T21:17:51.502+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7042500009.KQ
-[2025-03-15T21:17:52.666+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:52.666+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:52.667+0000] {multi.py:194} ERROR - ['KR7042500009.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:52.670+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7042500009.KQ, skipping...
-[2025-03-15T21:17:52.670+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7038290003.KQ
-[2025-03-15T21:17:53.967+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:53.968+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:53.968+0000] {multi.py:194} ERROR - ['KR7038290003.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:53.970+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7038290003.KQ, skipping...
-[2025-03-15T21:17:53.970+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7059210005.KQ
-[2025-03-15T21:17:55.659+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:55.659+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:55.660+0000] {multi.py:194} ERROR - ['KR7059210005.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:55.662+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7059210005.KQ, skipping...
-[2025-03-15T21:17:55.662+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7118000009.KS
-[2025-03-15T21:17:56.954+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:56.954+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:56.955+0000] {multi.py:194} ERROR - ['KR7118000009.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:56.958+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7118000009.KS, skipping...
-[2025-03-15T21:17:56.959+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7417970001.KQ
-[2025-03-15T21:17:58.615+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:58.615+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:58.616+0000] {multi.py:194} ERROR - ['KR7417970001.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:58.618+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7417970001.KQ, skipping...
-[2025-03-15T21:17:58.618+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7214610008.KQ
-[2025-03-15T21:17:59.903+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:17:59.904+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:17:59.905+0000] {multi.py:194} ERROR - ['KR7214610008.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:17:59.908+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7214610008.KQ, skipping...
-[2025-03-15T21:17:59.909+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7331520007.KQ
-[2025-03-15T21:18:01.129+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:01.130+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:01.130+0000] {multi.py:194} ERROR - ['KR7331520007.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:01.132+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7331520007.KQ, skipping...
-[2025-03-15T21:18:01.132+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7199480005.KQ
-[2025-03-15T21:18:02.763+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:02.764+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:02.764+0000] {multi.py:194} ERROR - ['KR7199480005.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:02.766+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7199480005.KQ, skipping...
-[2025-03-15T21:18:02.767+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7002410009.KS
-[2025-03-15T21:18:03.968+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:03.968+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:03.969+0000] {multi.py:194} ERROR - ['KR7002410009.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:03.972+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7002410009.KS, skipping...
-[2025-03-15T21:18:03.973+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7007210008.KS
-[2025-03-15T21:18:05.143+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:05.145+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:05.145+0000] {multi.py:194} ERROR - ['KR7007210008.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:05.147+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7007210008.KS, skipping...
-[2025-03-15T21:18:05.147+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7225530005.KQ
-[2025-03-15T21:18:06.746+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:06.746+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:06.747+0000] {multi.py:194} ERROR - ['KR7225530005.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:06.749+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7225530005.KQ, skipping...
-[2025-03-15T21:18:06.749+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7250000007.KQ
-[2025-03-15T21:18:08.298+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:08.298+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:08.299+0000] {multi.py:194} ERROR - ['KR7250000007.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:08.301+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7250000007.KQ, skipping...
-[2025-03-15T21:18:08.301+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7000890004.KS
-[2025-03-15T21:18:09.564+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:09.564+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:09.565+0000] {multi.py:194} ERROR - ['KR7000890004.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:09.567+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7000890004.KS, skipping...
-[2025-03-15T21:18:09.568+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7014470009.KQ
-[2025-03-15T21:18:11.309+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:11.309+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:11.310+0000] {multi.py:194} ERROR - ['KR7014470009.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:11.311+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7014470009.KQ, skipping...
-[2025-03-15T21:18:11.312+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7064480007.KQ
-[2025-03-15T21:18:12.612+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:12.612+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:12.613+0000] {multi.py:194} ERROR - ['KR7064480007.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:12.614+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7064480007.KQ, skipping...
-[2025-03-15T21:18:12.615+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7002070001.KS
-[2025-03-15T21:18:13.896+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:13.897+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:13.897+0000] {multi.py:194} ERROR - ['KR7002070001.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:13.899+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7002070001.KS, skipping...
-[2025-03-15T21:18:13.900+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7413640004.KQ
-[2025-03-15T21:18:15.386+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:15.387+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:15.387+0000] {multi.py:194} ERROR - ['KR7413640004.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:15.390+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7413640004.KQ, skipping...
-[2025-03-15T21:18:15.390+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7050090000.KQ
-[2025-03-15T21:18:16.798+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:16.800+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:16.800+0000] {multi.py:194} ERROR - ['KR7050090000.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:16.803+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7050090000.KQ, skipping...
-[2025-03-15T21:18:16.803+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7032850000.KQ
-[2025-03-15T21:18:18.377+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:18.379+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:18.382+0000] {multi.py:194} ERROR - ['KR7032850000.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:18.385+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7032850000.KQ, skipping...
-[2025-03-15T21:18:18.386+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7069540003.KQ
-[2025-03-15T21:18:19.606+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:19.606+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:19.606+0000] {multi.py:194} ERROR - ['KR7069540003.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:19.608+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7069540003.KQ, skipping...
-[2025-03-15T21:18:19.609+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7018310003.KQ
-[2025-03-15T21:18:21.160+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:21.160+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:21.161+0000] {multi.py:194} ERROR - ['KR7018310003.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:21.163+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7018310003.KQ, skipping...
-[2025-03-15T21:18:21.164+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7053700001.KQ
-[2025-03-15T21:18:22.761+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:22.761+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:22.762+0000] {multi.py:194} ERROR - ['KR7053700001.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:22.763+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7053700001.KQ, skipping...
-[2025-03-15T21:18:22.764+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7009620006.KQ
-[2025-03-15T21:18:24.003+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:24.003+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:24.004+0000] {multi.py:194} ERROR - ['KR7009620006.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:24.006+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7009620006.KQ, skipping...
-[2025-03-15T21:18:24.007+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7003720000.KS
-[2025-03-15T21:18:25.544+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:25.544+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:25.545+0000] {multi.py:194} ERROR - ['KR7003720000.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:25.547+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7003720000.KS, skipping...
-[2025-03-15T21:18:25.547+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7002450005.KS
-[2025-03-15T21:18:27.556+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:27.556+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:27.557+0000] {multi.py:194} ERROR - ['KR7002450005.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:27.558+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7002450005.KS, skipping...
-[2025-03-15T21:18:27.559+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7032280000.KQ
-[2025-03-15T21:18:29.114+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:29.114+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:29.115+0000] {multi.py:194} ERROR - ['KR7032280000.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:29.117+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7032280000.KQ, skipping...
-[2025-03-15T21:18:29.118+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7002290005.KQ
-[2025-03-15T21:18:30.752+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:30.753+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:30.753+0000] {multi.py:194} ERROR - ['KR7002290005.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:30.755+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7002290005.KQ, skipping...
-[2025-03-15T21:18:30.756+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7024950008.KQ
-[2025-03-15T21:18:32.273+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:32.274+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:32.274+0000] {multi.py:194} ERROR - ['KR7024950008.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:32.277+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7024950008.KQ, skipping...
-[2025-03-15T21:18:32.278+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7042940007.KQ
-[2025-03-15T21:18:33.499+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:33.499+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:33.500+0000] {multi.py:194} ERROR - ['KR7042940007.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:33.501+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7042940007.KQ, skipping...
-[2025-03-15T21:18:33.502+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7038070009.KQ
-[2025-03-15T21:18:34.912+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:34.912+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:34.913+0000] {multi.py:194} ERROR - ['KR7038070009.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:34.914+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7038070009.KQ, skipping...
-[2025-03-15T21:18:34.915+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7018680009.KQ
-[2025-03-15T21:18:36.457+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:36.457+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:36.458+0000] {multi.py:194} ERROR - ['KR7018680009.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:36.463+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7018680009.KQ, skipping...
-[2025-03-15T21:18:36.463+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7011370004.KQ
-[2025-03-15T21:18:37.653+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:37.654+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:37.654+0000] {multi.py:194} ERROR - ['KR7011370004.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:37.656+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7011370004.KQ, skipping...
-[2025-03-15T21:18:37.657+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7015750003.KQ
-[2025-03-15T21:18:38.940+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:38.942+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:38.945+0000] {multi.py:194} ERROR - ['KR7015750003.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:38.952+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7015750003.KQ, skipping...
-[2025-03-15T21:18:38.953+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7000180000.KS
-[2025-03-15T21:18:40.358+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:40.359+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:40.359+0000] {multi.py:194} ERROR - ['KR7000180000.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:40.361+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7000180000.KS, skipping...
-[2025-03-15T21:18:40.362+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7013000005.KS
-[2025-03-15T21:18:41.735+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:41.735+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:41.736+0000] {multi.py:194} ERROR - ['KR7013000005.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:41.738+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7013000005.KS, skipping...
-[2025-03-15T21:18:41.738+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7024830002.KQ
-[2025-03-15T21:18:42.974+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:42.976+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:42.976+0000] {multi.py:194} ERROR - ['KR7024830002.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:42.979+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7024830002.KQ, skipping...
-[2025-03-15T21:18:42.980+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7021820006.KS
-[2025-03-15T21:18:44.244+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:44.246+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:44.247+0000] {multi.py:194} ERROR - ['KR7021820006.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:44.250+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7021820006.KS, skipping...
-[2025-03-15T21:18:44.251+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7039310008.KQ
-[2025-03-15T21:18:45.852+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:45.852+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:45.853+0000] {multi.py:194} ERROR - ['KR7039310008.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:45.856+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7039310008.KQ, skipping...
-[2025-03-15T21:18:45.857+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7258790005.KQ
-[2025-03-15T21:18:47.139+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:47.140+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:47.140+0000] {multi.py:194} ERROR - ['KR7258790005.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:47.142+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7258790005.KQ, skipping...
-[2025-03-15T21:18:47.143+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7035610005.KQ
-[2025-03-15T21:18:48.744+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:48.745+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:48.745+0000] {multi.py:194} ERROR - ['KR7035610005.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:48.747+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7035610005.KQ, skipping...
-[2025-03-15T21:18:48.748+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7050960004.KQ
-[2025-03-15T21:18:50.130+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:50.131+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:50.131+0000] {multi.py:194} ERROR - ['KR7050960004.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:50.133+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7050960004.KQ, skipping...
-[2025-03-15T21:18:50.134+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7084180009.KQ
-[2025-03-15T21:18:51.331+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:51.334+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:51.335+0000] {multi.py:194} ERROR - ['KR7084180009.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:51.337+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7084180009.KQ, skipping...
-[2025-03-15T21:18:51.337+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7094840006.KQ
-[2025-03-15T21:18:52.956+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:52.958+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:52.959+0000] {multi.py:194} ERROR - ['KR7094840006.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:52.969+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7094840006.KQ, skipping...
-[2025-03-15T21:18:52.969+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7013810007.KQ
-[2025-03-15T21:18:54.575+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:54.576+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:54.576+0000] {multi.py:194} ERROR - ['KR7013810007.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:54.580+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7013810007.KQ, skipping...
-[2025-03-15T21:18:54.580+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7020710000.KQ
-[2025-03-15T21:18:56.084+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:56.085+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:56.085+0000] {multi.py:194} ERROR - ['KR7020710000.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:56.087+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7020710000.KQ, skipping...
-[2025-03-15T21:18:56.088+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7033170002.KQ
-[2025-03-15T21:18:57.320+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:57.321+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:57.321+0000] {multi.py:194} ERROR - ['KR7033170002.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:57.323+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7033170002.KQ, skipping...
-[2025-03-15T21:18:57.323+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7006880009.KS
-[2025-03-15T21:18:58.907+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:18:58.907+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:18:58.908+0000] {multi.py:194} ERROR - ['KR7006880009.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:18:58.910+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7006880009.KS, skipping...
-[2025-03-15T21:18:58.910+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7002870004.KS
-[2025-03-15T21:19:00.082+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:19:00.083+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:19:00.083+0000] {multi.py:194} ERROR - ['KR7002870004.KS']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:19:00.085+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7002870004.KS, skipping...
-[2025-03-15T21:19:00.087+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7036710002.KQ
-[2025-03-15T21:19:01.293+0000] {logging_mixin.py:190} WARNING - [*********************100%***********************]  1 of 1 completed
-[2025-03-15T21:19:01.294+0000] {multi.py:181} ERROR - 
-1 Failed download:
-[2025-03-15T21:19:01.295+0000] {multi.py:194} ERROR - ['KR7036710002.KQ']: YFTzMissingError('possibly delisted; no timezone found')
-[2025-03-15T21:19:01.296+0000] {logging_mixin.py:190} INFO - ⚠️ No data for KR7036710002.KQ, skipping...
-[2025-03-15T21:19:01.297+0000] {logging_mixin.py:190} INFO - 📡 Fetching data for: KR7004770004.KS

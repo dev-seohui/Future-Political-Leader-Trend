@@ -2,4 +2,6 @@ plugins/config/settings.py
 __pycache__
 db/
 tableau/
+logs/
+*.log
 .env
