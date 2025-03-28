@@ -1,37 +1,39 @@
 ### 📈 장래 정치 지도자 트렌드 분석 프로젝트
 ---
 #### 📌 1. 프로젝트 개요
-- 타겟 고객
-  - 여론조사 기관 및 의뢰자에 따라 결과가 다른 여론조사 수치를 비교분석하고 싶은 국민
-  - 장래 정치 지도자 트렌드와 관련 정치 테마주를 비교분석하고 싶은 투자자 
-- 제공 가치
-  - 동일 기간 내 실시된 여론조사를 시각화하여 분포를 확인하 수 있게 함으로써 서로 다른 데이터 뭉치를 쉽게 비교할 수 있다.
-  - 여론조사 뿐 아니라 주가 정보와 웹사이트 언급량 등을 함께 제공함으로써 여론조사와 빅데이터 2가지의 사회조사방법을 비교할 수 있다. 
-- 핵심 기능
+- **타겟 고객**
+  - 여론조사 기관 및 의뢰자에 따라 결과가 다른 여론조사 수치를 비교분석하고 싶은 유권자
+  - 여론조사 수치를 빅데이터와 비교분석하고 싶은 유권자
+  - 정치 테마주와 정치인 지지도를 비교 분석하고 싶은 투자자
+- **제공 가치**
+  - 후보자의 여론조사 지지율과 각종 포털의 트렌드 지표 (구글 트렌드. 네이버 뉴스, 네이버 블로그, 야후 주가)를 비교 분석 가능
+- **핵심 기능**
+  - 분석 결과를 대시보드 형태로 제공
 ---
 #### 📌 2. 일정
-- 프로젝트 기간 : 2025.02.21 ~ 2025.??.??
-- 프로젝트 일정 
+- **프로젝트 기간** : 2025.02.21 - 진행중
+- **프로젝트 일정** : [Jira 타임라인](https://devseohui.atlassian.net/jira/software/projects/KAN/boards/1/timeline?shared=&atlOrigin=eyJpIjoiYWMxY2I1NjgyOTkzNDNlNTg5YWM2NjMxOGNlNTQ3YWUiLCJwIjoiaiJ9)
 ---
 #### 📌 3. 활용 기술
-- Programming : Python, SQL
-- Databases : PostgreSQL
-- Big Data Tools : Airflow
-- Version Control : Git, GitHub
-- Visualisation Tools: Tableau
-- Etc : Docker
+- **Programming** : Python, SQL
+- **Databases** : PostgreSQL
+- **Big Data Tools** : Airflow
+- **Version Control** : Git, GitHub
+- **Visualisation Tools** : Tableau
+- **Etc** : Docker
 ---
 #### 📌 4. 파이프라인
-- 배치 데이터 출처
+- **배치 데이터 출처**
   - [중앙선거여론조사심의위원회](https://nesdc.go.kr/portal/main.do) : 장래 정치 지도자 후보자 적합도 및 정당 지지율 추출
   - [Yahoo Finance API](https://github.com/ranaroussi/yfinance) : 주식 시가 및 종가 데이터 추출
   - [Pytrends](https://github.com/GeneralMills/pytrends) : 구글 트랜드 지수 추출
   - [Naver Developers](https://developers.naver.com/docs/serviceapi/search/blog/blog.md#%EB%B8%94%EB%A1%9C%EA%B7%B8) : 네이버 뉴스 맟 불로그 언급량 추출
-- ETL 파이프라인
+- **Data Flow**
   
 ---
 #### 📌 5. ERD
 ![Image](https://github.com/user-attachments/assets/457cf35f-d548-4684-8cbe-b2bf03d57f1e)
+
 ---
 #### 📌 6. User Interface
 - 
@@ -45,5 +47,5 @@
 - [신민경 기자, "정치 판갈이한다" 이준석 사실상 대선 출마선언…테마주 급등, 한국경제, 2025.02.03](https://www.hankyung.com/article/2025020387376) : 위와 동일 
 ---
 #### 📌 8. 회고
-- 블로그
+- [블로그](https://velog.io/@toughcookie/series/%EC%9E%A5%EB%9E%98-%EC%A0%95%EC%B9%98-%EC%A7%80%EB%8F%84%EC%9E%90-%ED%8A%B8%EB%A0%8C%EB%93%9C-%EB%B6%84%EC%84%9D-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)
 - 동영상
