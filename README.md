@@ -36,7 +36,7 @@
 
 ---
 #### 📌 6. Visualization
-- [개별 정치인 세부 분석](https://public.tableau.com/app/profile/seohui.cho/viz/2_17429160891360/2025)
+- [태블로 대시보드 - 정치인 개별 트렌드 분석](https://public.tableau.com/app/profile/seohui.cho/viz/2_17429160891360/2025)
 ---
 #### 📌 7. 참고 자료
 - [KRX | 정보데이터시스템](http://data.krx.co.kr/contents/MDC/MAIN/main/index.cmd) : 주식 종목 코드 수집
