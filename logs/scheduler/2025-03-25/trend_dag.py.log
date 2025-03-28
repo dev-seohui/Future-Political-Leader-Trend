@@ -1,0 +1,560 @@
+[2025-03-25T05:27:03.526+0000] {processor.py:186} INFO - Started process (PID=90) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:27:03.526+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:27:03.527+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:27:03.527+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:27:04.184+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:27:04.199+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:27:04.199+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:27:04.209+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:27:04.209+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:27:04.216+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.694 seconds
+[2025-03-25T05:27:34.253+0000] {processor.py:186} INFO - Started process (PID=161) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:27:34.254+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:27:34.255+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:27:34.255+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:27:34.917+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:27:34.935+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:27:34.934+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:27:34.944+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:27:34.943+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:27:34.954+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.703 seconds
+[2025-03-25T05:28:05.341+0000] {processor.py:186} INFO - Started process (PID=228) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:28:05.342+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:28:05.343+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:28:05.343+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:28:06.081+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:28:06.092+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:28:06.091+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:28:06.097+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:28:06.097+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:28:06.105+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.767 seconds
+[2025-03-25T05:28:36.220+0000] {processor.py:186} INFO - Started process (PID=309) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:28:36.220+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:28:36.221+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:28:36.221+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:28:36.602+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:28:36.610+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:28:36.609+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:28:36.620+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:28:36.620+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:28:36.626+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.409 seconds
+[2025-03-25T05:29:06.833+0000] {processor.py:186} INFO - Started process (PID=381) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:29:06.833+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:29:06.834+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:29:06.834+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:29:07.274+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:29:07.283+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:29:07.283+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:29:07.290+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:29:07.290+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:29:07.297+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.466 seconds
+[2025-03-25T05:29:37.337+0000] {processor.py:186} INFO - Started process (PID=455) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:29:37.338+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:29:37.339+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:29:37.338+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:29:38.170+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:29:38.176+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:29:38.176+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:29:38.181+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:29:38.181+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:29:38.191+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.856 seconds
+[2025-03-25T05:30:08.272+0000] {processor.py:186} INFO - Started process (PID=529) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:30:08.272+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:30:08.273+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:30:08.273+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:30:09.112+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:30:09.121+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:30:09.121+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:30:09.126+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:30:09.126+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:30:09.132+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.862 seconds
+[2025-03-25T05:30:39.204+0000] {processor.py:186} INFO - Started process (PID=608) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:30:39.204+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:30:39.205+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:30:39.205+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:30:40.169+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:30:40.186+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:30:40.185+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:30:40.194+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:30:40.194+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:30:40.204+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 1.002 seconds
+[2025-03-25T05:31:10.789+0000] {processor.py:186} INFO - Started process (PID=689) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:31:10.791+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:31:10.794+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:31:10.794+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:31:11.775+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:31:11.788+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:31:11.787+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:31:11.795+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:31:11.794+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:31:11.802+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 1.017 seconds
+[2025-03-25T05:31:42.006+0000] {processor.py:186} INFO - Started process (PID=756) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:31:42.006+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:31:42.009+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:31:42.008+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:31:42.870+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:31:42.881+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:31:42.881+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:31:42.888+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:31:42.888+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:31:42.895+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.895 seconds
+[2025-03-25T05:32:13.115+0000] {processor.py:186} INFO - Started process (PID=823) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:32:13.116+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:32:13.118+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:32:13.118+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:32:13.969+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:32:13.977+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:32:13.977+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:32:13.982+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:32:13.982+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:32:13.988+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.878 seconds
+[2025-03-25T05:32:44.362+0000] {processor.py:186} INFO - Started process (PID=890) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:32:44.363+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:32:44.365+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:32:44.364+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:32:45.219+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:32:45.227+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:32:45.227+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:32:45.232+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:32:45.232+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:32:45.237+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.880 seconds
+[2025-03-25T05:33:15.499+0000] {processor.py:186} INFO - Started process (PID=957) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:33:15.500+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:33:15.502+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:33:15.502+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:33:16.350+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:33:16.357+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:33:16.357+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:33:16.363+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:33:16.363+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:33:16.369+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.876 seconds
+[2025-03-25T05:33:46.933+0000] {processor.py:186} INFO - Started process (PID=1024) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:33:46.933+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:33:46.935+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:33:46.935+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:33:47.889+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:33:47.897+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:33:47.897+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:33:47.902+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:33:47.902+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:33:47.908+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.980 seconds
+[2025-03-25T05:34:18.158+0000] {processor.py:186} INFO - Started process (PID=1091) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:34:18.159+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:34:18.161+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:34:18.161+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:34:19.121+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:34:19.128+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:34:19.128+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:34:19.133+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:34:19.133+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:34:19.138+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.985 seconds
+[2025-03-25T05:34:49.467+0000] {processor.py:186} INFO - Started process (PID=1158) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:34:49.467+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:34:49.468+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:34:49.468+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:34:50.337+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:34:50.344+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:34:50.344+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:34:50.349+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:34:50.349+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:34:50.356+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.892 seconds
+[2025-03-25T05:35:20.906+0000] {processor.py:186} INFO - Started process (PID=1225) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:35:20.907+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:35:20.908+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:35:20.908+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:35:21.770+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:35:21.780+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:35:21.780+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:35:21.786+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:35:21.786+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:35:21.793+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.890 seconds
+[2025-03-25T05:35:52.158+0000] {processor.py:186} INFO - Started process (PID=1292) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:35:52.159+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:35:52.160+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:35:52.160+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:35:52.975+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:35:52.982+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:35:52.982+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:35:52.988+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:35:52.988+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:35:52.994+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.837 seconds
+[2025-03-25T05:36:23.090+0000] {processor.py:186} INFO - Started process (PID=1359) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:36:23.090+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:36:23.091+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:36:23.091+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:36:23.898+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:36:23.909+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:36:23.909+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:36:23.914+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:36:23.913+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:36:23.919+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.832 seconds
+[2025-03-25T05:36:54.636+0000] {processor.py:186} INFO - Started process (PID=1425) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:36:54.636+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:36:54.637+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:36:54.637+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:36:55.464+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:36:55.471+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:36:55.471+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:36:55.476+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:36:55.476+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:36:55.482+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.849 seconds
+[2025-03-25T05:37:25.546+0000] {processor.py:186} INFO - Started process (PID=1492) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:37:25.546+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:37:25.547+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:37:25.547+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:37:26.352+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:37:26.359+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:37:26.359+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:37:26.363+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:37:26.363+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:37:26.369+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.825 seconds
+[2025-03-25T05:37:56.899+0000] {processor.py:186} INFO - Started process (PID=1559) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:37:56.900+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:37:56.901+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:37:56.901+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:37:57.620+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:37:57.627+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:37:57.627+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:37:57.632+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:37:57.632+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:37:57.638+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.741 seconds
+[2025-03-25T05:38:28.236+0000] {processor.py:186} INFO - Started process (PID=1625) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:38:28.237+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:38:28.238+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:38:28.238+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:38:29.009+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:38:29.028+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:38:29.027+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:38:29.037+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:38:29.037+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:38:29.046+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.812 seconds
+[2025-03-25T05:38:59.412+0000] {processor.py:186} INFO - Started process (PID=1691) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:38:59.413+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:38:59.414+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:38:59.414+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:39:00.194+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:39:00.208+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:39:00.208+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:39:00.216+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:39:00.216+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:39:00.225+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.816 seconds
+[2025-03-25T05:39:30.632+0000] {processor.py:186} INFO - Started process (PID=1758) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:39:30.633+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:39:30.634+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:39:30.634+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:39:31.416+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:39:31.432+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:39:31.432+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:39:31.441+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:39:31.441+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:39:31.450+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.821 seconds
+[2025-03-25T05:40:01.688+0000] {processor.py:186} INFO - Started process (PID=1825) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:40:01.688+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:40:01.689+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:40:01.689+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:40:02.460+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:40:02.474+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:40:02.474+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:40:02.482+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:40:02.482+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:40:02.490+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.806 seconds
+[2025-03-25T05:40:32.853+0000] {processor.py:186} INFO - Started process (PID=1892) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:40:32.853+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:40:32.855+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:40:32.855+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:40:33.621+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:40:33.641+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:40:33.641+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:40:33.651+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:40:33.651+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:40:33.661+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.811 seconds
+[2025-03-25T05:41:04.309+0000] {processor.py:186} INFO - Started process (PID=1959) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:41:04.310+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:41:04.311+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:41:04.311+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:41:05.095+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:41:05.110+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:41:05.109+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:41:05.119+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:41:05.118+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:41:05.128+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.822 seconds
+[2025-03-25T05:41:35.397+0000] {processor.py:186} INFO - Started process (PID=2026) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:41:35.398+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:41:35.398+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:41:35.398+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:41:36.177+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:41:36.195+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:41:36.195+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:41:36.206+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:41:36.206+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:41:36.216+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.821 seconds
+[2025-03-25T05:42:06.566+0000] {processor.py:186} INFO - Started process (PID=2092) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:42:06.567+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:42:06.568+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:42:06.567+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:42:07.214+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:42:07.230+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:42:07.230+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:42:07.237+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:42:07.237+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:42:07.251+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.687 seconds
+[2025-03-25T05:42:38.055+0000] {processor.py:186} INFO - Started process (PID=2165) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:42:38.057+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:42:38.059+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:42:38.058+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:42:38.723+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:42:38.743+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:42:38.743+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:42:38.752+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:42:38.752+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:42:38.761+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.712 seconds
+[2025-03-25T05:43:09.534+0000] {processor.py:186} INFO - Started process (PID=2232) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:43:09.535+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:43:09.537+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:43:09.537+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:43:10.203+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:43:10.220+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:43:10.220+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:43:10.229+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:43:10.229+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:43:10.238+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.711 seconds
+[2025-03-25T05:43:40.931+0000] {processor.py:186} INFO - Started process (PID=2299) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:43:40.931+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:43:40.932+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:43:40.932+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:43:41.689+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:43:41.702+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:43:41.702+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:43:41.710+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:43:41.709+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:43:41.718+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.790 seconds
+[2025-03-25T05:44:12.017+0000] {processor.py:186} INFO - Started process (PID=2366) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:44:12.017+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:44:12.020+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:44:12.020+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:44:12.675+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:44:12.693+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:44:12.693+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:44:12.703+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:44:12.703+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:44:12.713+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.702 seconds
+[2025-03-25T05:44:42.822+0000] {processor.py:186} INFO - Started process (PID=2432) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:44:42.823+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:44:42.825+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:44:42.824+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:44:43.511+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:44:43.527+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:44:43.527+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:44:43.536+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:44:43.536+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:44:43.545+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.729 seconds
+[2025-03-25T05:45:13.951+0000] {processor.py:186} INFO - Started process (PID=2499) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:45:13.952+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:45:13.954+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:45:13.954+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:45:14.619+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:45:14.633+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:45:14.633+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:45:14.739+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:45:14.739+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:45:14.744+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.799 seconds
+[2025-03-25T05:45:44.981+0000] {processor.py:186} INFO - Started process (PID=2566) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:45:44.982+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:45:44.984+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:45:44.984+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:45:45.648+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:45:45.655+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:45:45.655+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:45:45.660+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:45:45.659+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:45:45.665+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.689 seconds
+[2025-03-25T05:46:16.443+0000] {processor.py:186} INFO - Started process (PID=2639) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:46:16.444+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:46:16.446+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:46:16.446+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:46:17.105+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:46:17.114+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:46:17.113+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:46:17.118+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:46:17.118+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:46:17.129+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.692 seconds
+[2025-03-25T05:46:47.194+0000] {processor.py:186} INFO - Started process (PID=2716) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:46:47.195+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:46:47.196+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:46:47.196+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:46:47.848+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:46:47.864+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:46:47.864+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:46:47.871+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:46:47.871+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:46:47.879+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.687 seconds
+[2025-03-25T05:47:18.125+0000] {processor.py:186} INFO - Started process (PID=2790) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:47:18.126+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:47:18.126+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:47:18.126+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:47:18.797+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:47:18.817+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:47:18.816+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:47:18.826+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:47:18.826+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:47:18.836+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.712 seconds
+[2025-03-25T05:47:49.060+0000] {processor.py:186} INFO - Started process (PID=2855) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:47:49.061+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:47:49.063+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:47:49.062+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:47:49.781+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:47:49.797+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:47:49.797+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:47:49.806+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:47:49.806+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:47:49.815+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.758 seconds
+[2025-03-25T05:48:20.007+0000] {processor.py:186} INFO - Started process (PID=2925) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:48:20.008+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:48:20.009+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:48:20.009+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:48:20.690+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:48:20.704+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:48:20.704+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:48:20.713+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:48:20.713+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:48:20.722+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.717 seconds
+[2025-03-25T05:48:51.264+0000] {processor.py:186} INFO - Started process (PID=2997) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:48:51.265+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:48:51.266+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:48:51.266+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:48:52.035+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:48:52.050+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:48:52.049+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:48:52.058+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:48:52.058+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:48:52.067+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.805 seconds
+[2025-03-25T05:49:23.078+0000] {processor.py:186} INFO - Started process (PID=3064) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:49:23.079+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:49:23.080+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:49:23.080+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:49:23.733+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:49:23.742+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:49:23.742+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:49:23.748+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:49:23.748+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:49:23.755+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.681 seconds
+[2025-03-25T05:49:53.914+0000] {processor.py:186} INFO - Started process (PID=3131) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:49:53.915+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:49:53.916+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:49:53.916+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:49:54.607+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:49:54.624+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:49:54.624+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:49:54.632+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:49:54.632+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:49:54.641+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.729 seconds
+[2025-03-25T05:50:25.672+0000] {processor.py:186} INFO - Started process (PID=3198) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:50:25.673+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:50:25.675+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:50:25.675+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:50:26.333+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:50:26.351+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:50:26.351+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:50:26.360+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:50:26.360+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:50:26.369+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.702 seconds
+[2025-03-25T05:50:56.503+0000] {processor.py:186} INFO - Started process (PID=3264) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:50:56.504+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:50:56.506+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:50:56.506+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:50:57.234+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:50:57.254+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:50:57.253+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:50:57.263+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:50:57.263+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:50:57.273+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.774 seconds
+[2025-03-25T05:51:27.368+0000] {processor.py:186} INFO - Started process (PID=3331) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:51:27.369+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:51:27.371+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:51:27.371+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:51:28.238+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:51:28.251+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:51:28.251+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:51:28.259+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:51:28.259+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:51:28.267+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.905 seconds
+[2025-03-25T05:51:58.450+0000] {processor.py:186} INFO - Started process (PID=3398) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:51:58.450+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:51:58.452+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:51:58.452+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:51:58.777+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:51:58.796+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:51:58.796+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:51:58.804+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:51:58.804+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:51:58.813+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.369 seconds
+[2025-03-25T05:52:28.873+0000] {processor.py:186} INFO - Started process (PID=3465) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:52:28.873+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:52:28.874+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:52:28.874+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:52:29.577+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:52:29.595+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:52:29.595+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:52:29.604+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:52:29.603+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:52:29.613+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.743 seconds
+[2025-03-25T05:52:59.646+0000] {processor.py:186} INFO - Started process (PID=3532) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:52:59.646+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:52:59.647+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:52:59.647+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:53:00.357+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:53:00.367+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:53:00.367+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:53:00.373+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:53:00.373+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:53:00.380+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.736 seconds
+[2025-03-25T05:53:30.497+0000] {processor.py:186} INFO - Started process (PID=3599) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:53:30.497+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:53:30.500+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:53:30.500+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:53:31.268+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:53:31.274+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:53:31.274+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:53:31.279+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:53:31.279+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:53:31.285+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.792 seconds
+[2025-03-25T05:54:01.379+0000] {processor.py:186} INFO - Started process (PID=3666) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:54:01.380+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:54:01.382+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:54:01.382+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:54:01.695+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:54:01.703+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:54:01.703+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:54:01.707+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:54:01.707+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:54:01.713+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.340 seconds
+[2025-03-25T05:54:31.756+0000] {processor.py:186} INFO - Started process (PID=3733) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:54:31.758+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:54:31.760+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:54:31.760+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:54:32.502+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:54:32.515+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:54:32.515+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:54:32.522+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:54:32.521+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:54:32.529+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.777 seconds
+[2025-03-25T05:55:02.616+0000] {processor.py:186} INFO - Started process (PID=3800) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:55:02.617+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:55:02.619+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:55:02.618+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:55:03.429+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:55:03.447+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:55:03.447+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:55:03.456+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:55:03.456+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:55:03.467+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.856 seconds
+[2025-03-25T05:55:33.619+0000] {processor.py:186} INFO - Started process (PID=3867) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:55:33.620+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:55:33.622+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:55:33.621+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:55:34.332+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:55:34.350+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:55:34.350+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:55:34.359+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:55:34.359+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:55:34.368+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.754 seconds
+[2025-03-25T05:56:04.393+0000] {processor.py:186} INFO - Started process (PID=3934) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:56:04.394+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:56:04.396+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:56:04.395+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:56:04.722+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:56:04.742+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:56:04.742+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:56:04.752+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:56:04.752+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:56:04.761+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.371 seconds
+[2025-03-25T05:56:34.867+0000] {processor.py:186} INFO - Started process (PID=4001) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:56:34.868+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:56:34.869+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:56:34.868+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:56:35.585+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:56:35.601+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:56:35.600+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:56:35.609+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:56:35.609+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:56:35.617+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.752 seconds
+[2025-03-25T05:57:05.716+0000] {processor.py:186} INFO - Started process (PID=4068) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:57:05.717+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:57:05.718+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:57:05.718+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:57:06.502+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:57:06.519+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:57:06.519+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:57:06.529+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:57:06.528+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:57:06.539+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.825 seconds
+[2025-03-25T05:57:36.633+0000] {processor.py:186} INFO - Started process (PID=4135) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:57:36.634+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:57:36.635+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:57:36.635+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:57:37.347+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:57:37.359+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:57:37.359+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:57:37.367+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:57:37.366+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:57:37.375+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.743 seconds
+[2025-03-25T05:58:07.440+0000] {processor.py:186} INFO - Started process (PID=4202) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:58:07.440+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:58:07.441+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:58:07.441+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:58:08.327+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:58:08.339+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:58:08.339+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:58:08.346+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:58:08.346+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:58:08.353+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.915 seconds
+[2025-03-25T05:58:38.387+0000] {processor.py:186} INFO - Started process (PID=4269) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:58:38.387+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:58:38.388+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:58:38.388+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:58:38.947+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:58:38.955+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:58:38.954+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:58:38.959+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:58:38.959+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:58:38.965+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.580 seconds
+[2025-03-25T05:59:09.090+0000] {processor.py:186} INFO - Started process (PID=4340) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:59:09.091+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:59:09.093+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:59:09.093+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:59:09.753+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:59:09.762+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:59:09.762+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:59:09.768+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:59:09.768+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:59:09.774+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.690 seconds
+[2025-03-25T05:59:40.075+0000] {processor.py:186} INFO - Started process (PID=4407) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:59:40.075+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T05:59:40.077+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:59:40.077+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:59:40.855+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T05:59:40.862+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:59:40.862+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T05:59:40.868+0000] {logging_mixin.py:190} INFO - [2025-03-25T05:59:40.868+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T05:59:40.874+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.804 seconds
+[2025-03-25T06:00:11.214+0000] {processor.py:186} INFO - Started process (PID=4473) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:00:11.215+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:00:11.217+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:00:11.217+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:00:11.866+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:00:11.875+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:00:11.875+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:00:11.881+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:00:11.881+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:00:11.887+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.676 seconds
+[2025-03-25T06:00:42.564+0000] {processor.py:186} INFO - Started process (PID=4540) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:00:42.565+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:00:42.566+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:00:42.565+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:00:43.216+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:00:43.223+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:00:43.223+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:00:43.229+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:00:43.229+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:00:43.235+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.673 seconds
+[2025-03-25T06:01:13.868+0000] {processor.py:186} INFO - Started process (PID=4607) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:01:13.869+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:01:13.870+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:01:13.870+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:01:14.654+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:01:14.671+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:01:14.671+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:01:14.680+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:01:14.680+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:01:14.689+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.823 seconds
+[2025-03-25T06:01:44.928+0000] {processor.py:186} INFO - Started process (PID=4674) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:01:44.929+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:01:44.930+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:01:44.930+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:01:45.705+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:01:45.723+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:01:45.722+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:01:45.731+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:01:45.731+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:01:45.742+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.816 seconds
+[2025-03-25T06:02:16.169+0000] {processor.py:186} INFO - Started process (PID=4741) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:02:16.169+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:02:16.170+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:02:16.170+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:02:16.985+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:02:17.002+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:02:17.001+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:02:17.011+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:02:17.011+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:02:17.019+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.853 seconds
+[2025-03-25T06:02:47.350+0000] {processor.py:186} INFO - Started process (PID=4808) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:02:47.350+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:02:47.352+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:02:47.351+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:02:47.664+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:02:47.682+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:02:47.682+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:02:47.690+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:02:47.690+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:02:47.699+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.351 seconds
+[2025-03-25T06:03:18.726+0000] {processor.py:186} INFO - Started process (PID=4875) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:03:18.727+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:03:18.730+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:03:18.730+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:03:19.553+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:03:19.566+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:03:19.566+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:03:19.574+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:03:19.574+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:03:19.582+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.860 seconds
+[2025-03-25T06:03:50.109+0000] {processor.py:186} INFO - Started process (PID=4941) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:03:50.111+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:03:50.112+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:03:50.112+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:03:50.482+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:03:50.501+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:03:50.501+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:03:50.510+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:03:50.510+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:03:50.520+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.416 seconds
+[2025-03-25T06:04:21.341+0000] {processor.py:186} INFO - Started process (PID=5008) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:04:21.342+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:04:21.344+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:04:21.344+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:04:22.129+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:04:22.149+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:04:22.149+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:04:22.158+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:04:22.158+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:04:22.168+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.830 seconds
+[2025-03-25T06:04:52.475+0000] {processor.py:186} INFO - Started process (PID=5075) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:04:52.476+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:04:52.478+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:04:52.478+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:04:53.360+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:04:53.376+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:04:53.376+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:04:53.384+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:04:53.384+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:04:53.394+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.924 seconds
+[2025-03-25T06:05:23.951+0000] {processor.py:186} INFO - Started process (PID=5142) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:05:23.952+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:05:23.954+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:05:23.953+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:05:24.450+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:05:24.469+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:05:24.468+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:05:24.478+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:05:24.478+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:05:24.487+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.540 seconds
+[2025-03-25T06:05:55.356+0000] {processor.py:186} INFO - Started process (PID=5209) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:05:55.357+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:05:55.358+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:05:55.358+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:05:56.143+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:05:56.162+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:05:56.161+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:05:56.172+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:05:56.172+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:05:56.182+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.829 seconds
+[2025-03-25T06:06:26.827+0000] {processor.py:186} INFO - Started process (PID=5276) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:06:26.828+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:06:26.830+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:06:26.829+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:06:27.776+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:06:27.791+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:06:27.791+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:06:27.797+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:06:27.797+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:06:27.803+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.982 seconds
+[2025-03-25T06:06:58.104+0000] {processor.py:186} INFO - Started process (PID=5343) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:06:58.106+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:06:58.109+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:06:58.108+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:06:58.956+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:06:58.965+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:06:58.965+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:06:58.970+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:06:58.970+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:06:58.977+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.880 seconds
+[2025-03-25T06:07:29.092+0000] {processor.py:186} INFO - Started process (PID=5412) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:07:29.093+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:07:29.093+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:07:29.093+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:07:29.820+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:07:29.827+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:07:29.827+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:07:29.832+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:07:29.832+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:07:29.839+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.750 seconds
+[2025-03-25T06:07:59.853+0000] {processor.py:186} INFO - Started process (PID=5481) to work on /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:07:59.853+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/trend_dag.py for tasks to queue
+[2025-03-25T06:07:59.853+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:07:59.853+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:08:00.651+0000] {processor.py:925} INFO - DAG(s) 'trend_dag' retrieved from /opt/airflow/dags/trend_dag.py
+[2025-03-25T06:08:00.659+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:08:00.659+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-25T06:08:00.665+0000] {logging_mixin.py:190} INFO - [2025-03-25T06:08:00.665+0000] {dag.py:4180} INFO - Setting next_dagrun for trend_dag to None, run_after=None
+[2025-03-25T06:08:00.671+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/trend_dag.py took 0.821 seconds

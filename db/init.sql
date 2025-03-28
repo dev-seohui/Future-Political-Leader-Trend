@@ -45,31 +45,44 @@ CREATE TABLE IF NOT EXISTS stock_info (
     listed_shares BIGINT NOT NULL
 );
 
+-- survey_log
+CREATE TABLE IF NOT EXISTS survey_log (
+    survey_id INT NOT NULL,
+    survey_start_date DATE NOT NULL,
+    survey_end_date DATE NOT NULL,
+    date DATE NOT NULL,
+    FOREIGN KEY (survey_id) REFERENCES survey_info(survey_id) ON DELETE CASCADE,
+    PRIMARY KEY (survey_id, date)
+);
+
 -- candidate_log
 CREATE TABLE IF NOT EXISTS candidate_log (
-    cid SERIAL PRIMARY KEY,
+    cid SERIAL,
     survey_id INT NOT NULL,
     candidate_name TEXT NOT NULL,
     approval_rating FLOAT NOT NULL,
-    FOREIGN KEY (survey_id) REFERENCES survey_info(survey_id) ON DELETE CASCADE
+    FOREIGN KEY (survey_id) REFERENCES survey_info(survey_id) ON DELETE CASCADE,
+    PRIMARY KEY (survey_id, candidate_name)
 );
 
 -- political_party_log
 CREATE TABLE IF NOT EXISTS political_party_log (
-    pid SERIAL PRIMARY KEY,
+    pid SERIAL,
     survey_id INT NOT NULL,
     political_party_name TEXT NOT NULL,
     support_rate FLOAT NOT NULL,
-    FOREIGN KEY (survey_id) REFERENCES survey_info(survey_id) ON DELETE CASCADE
+    FOREIGN KEY (survey_id) REFERENCES survey_info(survey_id) ON DELETE CASCADE,
+    PRIMARY KEY (survey_id, political_party_name)
 );
 
 -- theme_info
 CREATE TABLE IF NOT EXISTS theme_info (
-    tid SERIAL PRIMARY KEY,
+    tid SERIAL,
     stock_name TEXT NOT NULL,
     candidate_name TEXT NOT NULL,
     FOREIGN KEY (stock_name) REFERENCES stock_info(kor_stock_abbr) ON DELETE CASCADE,
-    FOREIGN KEY (candidate_name) REFERENCES candidate_info(candidate_name) ON DELETE CASCADE
+    FOREIGN KEY (candidate_name) REFERENCES candidate_info(candidate_name) ON DELETE CASCADE,
+    PRIMARY KEY (stock_name, candidate_name)
 );
 
 -- stock_log
@@ -86,27 +99,25 @@ CREATE TABLE IF NOT EXISTS stock_log (
     PRIMARY KEY (date, stock_code)  -- ✅ 중복을 방지할 유일한 키 설정
 );
 
--- naver_news
-CREATE TABLE IF NOT EXISTS naver_news (
-    kid SERIAL PRIMARY KEY,
+-- google_trend
+CREATE TABLE IF NOT EXISTS google_trend (
+    gid SERIAL,  -- ✅ 단순 증가하는 값
+    date DATE NOT NULL,
     keyword TEXT NOT NULL,
-    title TEXT NOT NULL,
-    original_link TEXT UNIQUE NOT NULL,  -- 중복 데이터 방지
-    naver_link TEXT UNIQUE NOT NULL,
-    description TEXT,
-    published_date DATE NOT NULL,
-    FOREIGN KEY (keyword) REFERENCES candidate_info(candidate_name) ON DELETE CASCADE
+    trend_score INT NOT NULL,
+    FOREIGN KEY (keyword) REFERENCES candidate_info(candidate_name) ON DELETE CASCADE,
+    PRIMARY KEY (date, keyword)  -- ✅ 중복을 방지할 유일한 키 설정
 );
 
--- naver_blog
-CREATE TABLE IF NOT EXISTS naver_blog (
-    kid SERIAL PRIMARY KEY,
+-- naver_trend
+CREATE TABLE IF NOT EXISTS naver_trend (
+    nid SERIAL, -- ✅ 단순 증가하는 값
+    date DATE NOT NULL,
     keyword TEXT NOT NULL,
-    title TEXT NOT NULL,
-    link TEXT UNIQUE NOT NULL,  -- 중복 데이터 방지
-    description TEXT,
-    blogger_name TEXT,
-    blogger_link TEXT,
-    post_date DATE NOT NULL,
-    FOREIGN KEY (keyword) REFERENCES candidate_info(candidate_name) ON DELETE CASCADE
+    news_count INT NOT NULL,
+    blog_count INT NOT NULL,
+    total_news_count INT NOT NULL,
+    total_blog_count INT NOT NULL,
+    FOREIGN KEY (keyword) REFERENCES candidate_info(candidate_name) ON DELETE CASCADE,
+    PRIMARY KEY (date, keyword)
 );

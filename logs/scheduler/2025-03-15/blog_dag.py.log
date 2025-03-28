@@ -2957,3 +2957,466 @@ AttributeError: module 'yfinance' has no attribute 'pdr_override'
 [2025-03-15T23:23:08.429+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:23:08.427+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-03-15T23:23:08.483+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:23:08.482+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
 [2025-03-15T23:23:08.662+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.356 seconds
+[2025-03-15T23:23:39.374+0000] {processor.py:186} INFO - Started process (PID=2317) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:23:39.379+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:23:39.404+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:23:39.392+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:23:39.428+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:23:39.505+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:23:39.504+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:23:39.534+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:23:39.534+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:23:39.603+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.233 seconds
+[2025-03-15T23:24:10.518+0000] {processor.py:186} INFO - Started process (PID=2383) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:24:10.528+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:24:10.533+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:24:10.532+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:24:10.559+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:24:10.623+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:24:10.621+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:24:10.677+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:24:10.677+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:24:10.748+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.243 seconds
+[2025-03-15T23:24:41.397+0000] {processor.py:186} INFO - Started process (PID=2450) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:24:41.400+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:24:41.420+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:24:41.416+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:24:41.447+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:24:41.511+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:24:41.511+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:24:41.523+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:24:41.523+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:24:41.598+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.207 seconds
+[2025-03-15T23:25:12.341+0000] {processor.py:186} INFO - Started process (PID=2517) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:25:12.343+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:25:12.358+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:25:12.358+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:25:12.401+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:25:12.475+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:25:12.474+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:25:12.489+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:25:12.489+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:25:12.551+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.214 seconds
+[2025-03-15T23:25:42.619+0000] {processor.py:186} INFO - Started process (PID=2583) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:25:42.622+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:25:42.625+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:25:42.624+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:25:42.652+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:25:42.707+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:25:42.706+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:25:42.732+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:25:42.732+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:25:42.782+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.167 seconds
+[2025-03-15T23:26:13.322+0000] {processor.py:186} INFO - Started process (PID=2650) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:26:13.324+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:26:13.326+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:26:13.326+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:26:13.353+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:26:13.392+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:26:13.392+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:26:13.405+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:26:13.405+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:26:13.460+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.142 seconds
+[2025-03-15T23:26:43.889+0000] {processor.py:186} INFO - Started process (PID=2716) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:26:43.895+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:26:43.905+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:26:43.904+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:26:43.929+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:26:43.974+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:26:43.973+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:26:43.994+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:26:43.994+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:26:44.074+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.189 seconds
+[2025-03-15T23:27:14.142+0000] {processor.py:186} INFO - Started process (PID=2783) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:27:14.143+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:27:14.159+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:27:14.159+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:27:14.202+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:27:14.226+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:27:14.226+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:27:14.271+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:27:14.271+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:27:14.314+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.176 seconds
+[2025-03-15T23:27:45.234+0000] {processor.py:186} INFO - Started process (PID=2850) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:27:45.241+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:27:45.248+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:27:45.248+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:27:45.280+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:27:45.374+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:27:45.374+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:27:45.400+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:27:45.399+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:27:45.493+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.262 seconds
+[2025-03-15T23:28:16.024+0000] {processor.py:186} INFO - Started process (PID=2917) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:28:16.028+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:28:16.043+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:28:16.042+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:28:16.069+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:28:16.140+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:28:16.134+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:28:16.172+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:28:16.168+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:28:16.240+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.219 seconds
+[2025-03-15T23:28:46.772+0000] {processor.py:186} INFO - Started process (PID=2983) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:28:46.773+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:28:46.793+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:28:46.793+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:28:46.816+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:28:46.855+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:28:46.854+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:28:46.876+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:28:46.876+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:28:46.912+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.144 seconds
+[2025-03-15T23:29:17.420+0000] {processor.py:186} INFO - Started process (PID=3050) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:29:17.423+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:29:17.430+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:29:17.428+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:29:17.467+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:29:17.528+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:29:17.525+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:29:17.550+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:29:17.549+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:29:17.606+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.189 seconds
+[2025-03-15T23:29:47.930+0000] {processor.py:186} INFO - Started process (PID=3117) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:29:47.934+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:29:47.950+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:29:47.947+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:29:47.973+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:29:48.020+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:29:48.019+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:29:48.050+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:29:48.050+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:29:48.111+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.184 seconds
+[2025-03-15T23:30:18.475+0000] {processor.py:186} INFO - Started process (PID=3184) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:30:18.479+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:30:18.483+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:30:18.483+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:30:18.499+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:30:18.546+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:30:18.545+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:30:18.560+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:30:18.560+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:30:18.584+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.112 seconds
+[2025-03-15T23:30:48.861+0000] {processor.py:186} INFO - Started process (PID=3251) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:30:48.864+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:30:48.883+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:30:48.883+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:30:48.929+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:30:49.005+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:30:49.005+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:30:49.033+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:30:49.033+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:30:49.117+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.262 seconds
+[2025-03-15T23:31:19.691+0000] {processor.py:186} INFO - Started process (PID=3318) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:31:19.700+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:31:19.721+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:31:19.721+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:31:19.735+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:31:19.793+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:31:19.791+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:31:19.825+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:31:19.824+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:31:19.905+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.218 seconds
+[2025-03-15T23:31:50.186+0000] {processor.py:186} INFO - Started process (PID=3385) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:31:50.188+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:31:50.202+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:31:50.200+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:31:50.242+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:31:50.289+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:31:50.288+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:31:50.321+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:31:50.321+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:31:50.432+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.250 seconds
+[2025-03-15T23:32:21.051+0000] {processor.py:186} INFO - Started process (PID=3452) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:32:21.052+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:32:21.064+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:32:21.059+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:32:21.088+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:32:21.148+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:32:21.147+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:32:21.201+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:32:21.201+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:32:21.274+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.230 seconds
+[2025-03-15T23:32:51.739+0000] {processor.py:186} INFO - Started process (PID=3519) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:32:51.742+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:32:51.750+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:32:51.750+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:32:51.764+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:32:51.814+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:32:51.814+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:32:51.823+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:32:51.823+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:32:51.881+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.145 seconds
+[2025-03-15T23:33:22.483+0000] {processor.py:186} INFO - Started process (PID=3586) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:33:22.486+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:33:22.491+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:33:22.491+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:33:22.516+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:33:22.554+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:33:22.552+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:33:22.576+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:33:22.576+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:33:22.627+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.151 seconds
+[2025-03-15T23:33:52.660+0000] {processor.py:186} INFO - Started process (PID=3653) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:33:52.661+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:33:52.669+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:33:52.669+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:33:52.700+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:33:52.755+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:33:52.752+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:33:52.772+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:33:52.772+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:33:52.842+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.185 seconds
+[2025-03-15T23:34:23.498+0000] {processor.py:186} INFO - Started process (PID=3720) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:34:23.499+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:34:23.509+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:34:23.507+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:34:23.530+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:34:23.578+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:34:23.578+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:34:23.644+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:34:23.644+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:34:23.694+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.201 seconds
+[2025-03-15T23:34:54.188+0000] {processor.py:186} INFO - Started process (PID=3786) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:34:54.193+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:34:54.205+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:34:54.205+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:34:54.232+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:34:54.316+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:34:54.316+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:34:54.343+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:34:54.342+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:34:54.412+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.227 seconds
+[2025-03-15T23:35:24.908+0000] {processor.py:186} INFO - Started process (PID=3853) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:35:24.909+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:35:24.913+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:35:24.912+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:35:24.927+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:35:24.954+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:35:24.954+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:35:24.970+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:35:24.970+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:35:25.009+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.104 seconds
+[2025-03-15T23:35:55.065+0000] {processor.py:186} INFO - Started process (PID=3920) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:35:55.067+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:35:55.075+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:35:55.073+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:35:55.099+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:35:55.150+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:35:55.149+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:35:55.211+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:35:55.211+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:35:55.258+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.197 seconds
+[2025-03-15T23:36:26.251+0000] {processor.py:186} INFO - Started process (PID=3987) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:36:26.252+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:36:26.256+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:36:26.256+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:36:26.293+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:36:26.338+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:36:26.338+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:36:26.357+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:36:26.357+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:36:26.425+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.178 seconds
+[2025-03-15T23:36:56.561+0000] {processor.py:186} INFO - Started process (PID=4060) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:36:56.566+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:36:56.575+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:36:56.575+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:36:56.594+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:36:56.627+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:36:56.626+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:36:56.643+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:36:56.641+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:36:56.713+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.156 seconds
+[2025-03-15T23:37:27.583+0000] {processor.py:186} INFO - Started process (PID=4127) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:37:27.584+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:37:27.590+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:37:27.586+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:37:27.634+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:37:27.697+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:37:27.693+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:37:27.712+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:37:27.712+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:37:27.747+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.167 seconds
+[2025-03-15T23:37:58.153+0000] {processor.py:186} INFO - Started process (PID=4194) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:37:58.155+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:37:58.169+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:37:58.169+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:37:58.207+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:37:58.259+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:37:58.259+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:37:58.274+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:37:58.274+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:37:58.317+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.170 seconds
+[2025-03-15T23:38:29.198+0000] {processor.py:186} INFO - Started process (PID=4261) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:38:29.201+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:38:29.215+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:38:29.207+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:38:29.244+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:38:29.325+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:38:29.324+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:38:29.373+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:38:29.370+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:38:29.448+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.253 seconds
+[2025-03-15T23:38:59.529+0000] {processor.py:186} INFO - Started process (PID=4328) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:38:59.533+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:38:59.544+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:38:59.544+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:38:59.576+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:38:59.639+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:38:59.639+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:38:59.661+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:38:59.661+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:38:59.730+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.205 seconds
+[2025-03-15T23:39:29.800+0000] {processor.py:186} INFO - Started process (PID=4394) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:39:29.801+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:39:29.807+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:39:29.806+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:39:29.825+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:39:29.887+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:39:29.886+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:39:29.917+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:39:29.917+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:39:29.963+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.166 seconds
+[2025-03-15T23:40:00.571+0000] {processor.py:186} INFO - Started process (PID=4461) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:40:00.574+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:40:00.579+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:40:00.579+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:40:00.632+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:40:00.688+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:40:00.684+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:40:00.699+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:40:00.699+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:40:00.744+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.176 seconds
+[2025-03-15T23:40:31.039+0000] {processor.py:186} INFO - Started process (PID=4528) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:40:31.043+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:40:31.049+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:40:31.048+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:40:31.086+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:40:31.121+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:40:31.120+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:40:31.150+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:40:31.150+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:40:31.196+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.160 seconds
+[2025-03-15T23:41:01.490+0000] {processor.py:186} INFO - Started process (PID=4594) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:41:01.495+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:41:01.508+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:41:01.508+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:41:01.535+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:41:01.576+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:41:01.573+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:41:01.608+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:41:01.608+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:41:01.669+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.181 seconds
+[2025-03-15T23:41:32.413+0000] {processor.py:186} INFO - Started process (PID=4660) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:41:32.417+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:41:32.433+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:41:32.429+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:41:32.451+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:41:32.497+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:41:32.497+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:41:32.533+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:41:32.533+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:41:32.592+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.182 seconds
+[2025-03-15T23:42:03.198+0000] {processor.py:186} INFO - Started process (PID=4727) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:42:03.200+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:42:03.211+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:42:03.211+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:42:03.244+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:42:03.305+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:42:03.305+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:42:03.319+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:42:03.319+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:42:03.364+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.170 seconds
+[2025-03-15T23:42:33.858+0000] {processor.py:186} INFO - Started process (PID=4795) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:42:33.869+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:42:33.873+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:42:33.873+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:42:33.898+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:42:33.961+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:42:33.961+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:42:33.980+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:42:33.980+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:42:34.034+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.180 seconds
+[2025-03-15T23:43:04.841+0000] {processor.py:186} INFO - Started process (PID=4862) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:43:04.842+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:43:04.855+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:43:04.855+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:43:04.893+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:43:04.942+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:43:04.942+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:43:04.956+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:43:04.956+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:43:05.009+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.172 seconds
+[2025-03-15T23:43:35.783+0000] {processor.py:186} INFO - Started process (PID=4929) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:43:35.786+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:43:35.804+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:43:35.799+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:43:35.820+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:43:35.856+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:43:35.855+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:43:35.879+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:43:35.878+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:43:35.930+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.151 seconds
+[2025-03-15T23:44:05.981+0000] {processor.py:186} INFO - Started process (PID=4996) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:44:05.984+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:44:05.994+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:44:05.994+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:44:06.031+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:44:06.075+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:44:06.074+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:44:06.103+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:44:06.103+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:44:06.166+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.189 seconds
+[2025-03-15T23:44:36.977+0000] {processor.py:186} INFO - Started process (PID=5063) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:44:36.978+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:44:36.983+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:44:36.982+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:44:37.023+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:44:37.071+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:44:37.070+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:44:37.094+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:44:37.092+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:44:37.166+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.194 seconds
+[2025-03-15T23:45:07.907+0000] {processor.py:186} INFO - Started process (PID=5129) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:45:07.912+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:45:07.923+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:45:07.923+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:45:07.952+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:45:08.003+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:45:08.000+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:45:08.017+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:45:08.017+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:45:08.081+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.177 seconds
+[2025-03-15T23:45:39.046+0000] {processor.py:186} INFO - Started process (PID=5196) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:45:39.049+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:45:39.061+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:45:39.060+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:45:39.075+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:45:39.111+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:45:39.111+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:45:39.136+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:45:39.136+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:45:39.210+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.170 seconds
+[2025-03-15T23:46:09.563+0000] {processor.py:186} INFO - Started process (PID=5263) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:46:09.565+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:46:09.569+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:46:09.569+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:46:09.595+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:46:09.635+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:46:09.635+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:46:09.652+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:46:09.652+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:46:09.723+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.164 seconds
+[2025-03-15T23:46:40.582+0000] {processor.py:186} INFO - Started process (PID=5329) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:46:40.584+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:46:40.604+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:46:40.604+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:46:40.624+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:46:40.664+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:46:40.664+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:46:40.681+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:46:40.681+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:46:40.723+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.144 seconds
+[2025-03-15T23:47:11.692+0000] {processor.py:186} INFO - Started process (PID=5396) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:47:11.694+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:47:11.709+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:47:11.707+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:47:11.735+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:47:11.793+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:47:11.793+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:47:11.816+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:47:11.816+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:47:11.875+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.187 seconds
+[2025-03-15T23:47:42.275+0000] {processor.py:186} INFO - Started process (PID=5463) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:47:42.280+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:47:42.289+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:47:42.289+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:47:42.309+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:47:42.338+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:47:42.336+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:47:42.356+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:47:42.355+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:47:42.440+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.168 seconds
+[2025-03-15T23:48:12.847+0000] {processor.py:186} INFO - Started process (PID=5530) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:48:12.853+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:48:12.857+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:48:12.857+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:48:12.886+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:48:12.951+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:48:12.951+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:48:12.990+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:48:12.990+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:48:13.053+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.209 seconds
+[2025-03-15T23:48:43.487+0000] {processor.py:186} INFO - Started process (PID=5597) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:48:43.488+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:48:43.505+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:48:43.504+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:48:43.527+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:48:43.585+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:48:43.585+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:48:43.618+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:48:43.617+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:48:43.692+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.215 seconds
+[2025-03-15T23:49:14.566+0000] {processor.py:186} INFO - Started process (PID=5663) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:49:14.569+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:49:14.584+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:49:14.584+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:49:14.605+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:49:14.655+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:49:14.654+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:49:14.684+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:49:14.684+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:49:14.763+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.202 seconds
+[2025-03-15T23:49:45.075+0000] {processor.py:186} INFO - Started process (PID=5730) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:49:45.082+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:49:45.096+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:49:45.095+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:49:45.117+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:49:45.164+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:49:45.161+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:49:45.180+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:49:45.180+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:49:45.239+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.168 seconds
+[2025-03-15T23:50:15.869+0000] {processor.py:186} INFO - Started process (PID=5799) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:50:15.875+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:50:15.893+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:50:15.889+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:50:15.926+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:50:15.986+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:50:15.985+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:50:16.023+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:50:16.022+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:50:16.084+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.218 seconds
+[2025-03-15T23:50:46.836+0000] {processor.py:186} INFO - Started process (PID=5866) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:50:46.837+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:50:46.855+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:50:46.850+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:50:46.874+0000] {processor.py:925} INFO - DAG(s) 'instant_stock_dag' retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:50:46.919+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:50:46.919+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-15T23:50:46.932+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:50:46.931+0000] {dag.py:4180} INFO - Setting next_dagrun for instant_stock_dag to None, run_after=None
+[2025-03-15T23:50:46.969+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.137 seconds
+[2025-03-15T23:50:58.497+0000] {processor.py:186} INFO - Started process (PID=5902) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:50:58.516+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:50:58.533+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:50:58.533+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:50:58.596+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:50:58.631+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.138 seconds
+[2025-03-15T23:51:52.338+0000] {processor.py:186} INFO - Started process (PID=104) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:51:52.341+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:51:52.359+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:51:52.359+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:51:52.371+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:51:52.439+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.103 seconds
+[2025-03-15T23:52:23.138+0000] {processor.py:186} INFO - Started process (PID=171) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:52:23.144+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:52:23.175+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:52:23.168+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:52:23.189+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:52:23.238+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.104 seconds
+[2025-03-15T23:52:53.766+0000] {processor.py:186} INFO - Started process (PID=238) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:52:53.770+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:52:53.778+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:52:53.776+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:52:53.791+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:52:53.853+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.091 seconds
+[2025-03-15T23:53:24.261+0000] {processor.py:186} INFO - Started process (PID=304) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:53:24.264+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:53:24.269+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:53:24.269+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:53:24.282+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:53:24.339+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.081 seconds
+[2025-03-15T23:53:54.484+0000] {processor.py:186} INFO - Started process (PID=370) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:53:54.485+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:53:54.487+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:53:54.487+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:53:54.495+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:53:54.505+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.028 seconds
+[2025-03-15T23:54:24.873+0000] {processor.py:186} INFO - Started process (PID=443) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:54:24.875+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:54:24.877+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:54:24.876+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:54:24.884+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:54:24.894+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.026 seconds
+[2025-03-15T23:54:55.367+0000] {processor.py:186} INFO - Started process (PID=510) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:54:55.368+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:54:55.370+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:54:55.370+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:54:55.374+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:54:55.386+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.022 seconds
+[2025-03-15T23:55:25.528+0000] {processor.py:186} INFO - Started process (PID=577) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:55:25.529+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:55:25.530+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:55:25.530+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:55:25.536+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:55:25.546+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.023 seconds
+[2025-03-15T23:55:56.230+0000] {processor.py:186} INFO - Started process (PID=644) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:55:56.232+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:55:56.234+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:55:56.234+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:55:56.246+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:55:56.267+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.041 seconds
+[2025-03-15T23:56:26.323+0000] {processor.py:186} INFO - Started process (PID=712) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:56:26.326+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:56:26.331+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:56:26.330+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:56:26.342+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:56:26.381+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.063 seconds
+[2025-03-15T23:56:57.059+0000] {processor.py:186} INFO - Started process (PID=779) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:56:57.065+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:56:57.076+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:56:57.071+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:56:57.087+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:56:57.128+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.074 seconds
+[2025-03-15T23:57:27.454+0000] {processor.py:186} INFO - Started process (PID=845) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:57:27.461+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:57:27.464+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:57:27.464+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:57:27.476+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:57:27.513+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.064 seconds
+[2025-03-15T23:57:58.156+0000] {processor.py:186} INFO - Started process (PID=911) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:57:58.162+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:57:58.166+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:57:58.166+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:57:58.197+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:57:58.231+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.080 seconds
+[2025-03-15T23:58:29.188+0000] {processor.py:186} INFO - Started process (PID=978) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:58:29.190+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:58:29.194+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:58:29.193+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:58:29.206+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:58:29.248+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.063 seconds
+[2025-03-15T23:59:00.023+0000] {processor.py:186} INFO - Started process (PID=1045) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:59:00.029+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:59:00.042+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:59:00.040+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:59:00.052+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:59:00.093+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.073 seconds
+[2025-03-15T23:59:30.665+0000] {processor.py:186} INFO - Started process (PID=1112) to work on /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:59:30.667+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/blog_dag.py for tasks to queue
+[2025-03-15T23:59:30.671+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:59:30.670+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:59:30.679+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/blog_dag.py
+[2025-03-15T23:59:30.697+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/blog_dag.py took 0.036 seconds

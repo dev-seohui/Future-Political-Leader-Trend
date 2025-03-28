@@ -1,0 +1,5 @@
+.env
+plugins/config/settings.py
+tableau/gsheet_credential.json
+__pycache__/
+db

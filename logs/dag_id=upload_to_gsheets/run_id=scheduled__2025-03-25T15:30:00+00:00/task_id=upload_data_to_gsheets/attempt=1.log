@@ -1,0 +1,28 @@
+[2025-03-26T15:30:01.651+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-26T15:30:01.656+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: upload_to_gsheets.upload_data_to_gsheets scheduled__2025-03-25T15:30:00+00:00 [queued]>
+[2025-03-26T15:30:01.658+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: upload_to_gsheets.upload_data_to_gsheets scheduled__2025-03-25T15:30:00+00:00 [queued]>
+[2025-03-26T15:30:01.658+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-26T15:30:01.662+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): upload_data_to_gsheets> on 2025-03-25 15:30:00+00:00
+[2025-03-26T15:30:01.664+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=852) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-26T15:30:01.665+0000] {standard_task_runner.py:72} INFO - Started process 853 to run task
+[2025-03-26T15:30:01.665+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'upload_to_gsheets', 'upload_data_to_gsheets', 'scheduled__2025-03-25T15:30:00+00:00', '--job-id', '378', '--raw', '--subdir', 'DAGS_FOLDER/gsheet_dag.py', '--cfg-path', '/tmp/tmp4vsw3t3v']
+[2025-03-26T15:30:01.666+0000] {standard_task_runner.py:105} INFO - Job 378: Subtask upload_data_to_gsheets
+[2025-03-26T15:30:01.680+0000] {task_command.py:467} INFO - Running <TaskInstance: upload_to_gsheets.upload_data_to_gsheets scheduled__2025-03-25T15:30:00+00:00 [running]> on host f8bccaf06f4c
+[2025-03-26T15:30:01.706+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='upload_to_gsheets' AIRFLOW_CTX_TASK_ID='upload_data_to_gsheets' AIRFLOW_CTX_EXECUTION_DATE='2025-03-25T15:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-25T15:30:00+00:00'
+[2025-03-26T15:30:01.707+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-26T15:30:01.707+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-26T15:30:01.707+0000] {logging_mixin.py:190} INFO - Current task name:upload_data_to_gsheets state:running start_date:2025-03-26 15:30:01.656195+00:00
+[2025-03-26T15:30:01.707+0000] {logging_mixin.py:190} INFO - Dag name:upload_to_gsheets and current dag run status:running
+[2025-03-26T15:30:01.707+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-26T15:30:23.428+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-26T15:30:23.435+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-26T15:30:23.435+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=upload_to_gsheets, task_id=upload_data_to_gsheets, run_id=scheduled__2025-03-25T15:30:00+00:00, execution_date=20250325T153000, start_date=20250326T153001, end_date=20250326T153023
+[2025-03-26T15:30:23.445+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-26T15:30:23.446+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-26T15:30:23.446+0000] {logging_mixin.py:190} INFO - Dag name:upload_to_gsheets queued_at:2025-03-26 15:30:00.297669+00:00
+[2025-03-26T15:30:23.446+0000] {logging_mixin.py:190} INFO - Task hostname:f8bccaf06f4c operator:PythonOperator
+[2025-03-26T15:30:23.469+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-26T15:30:23.475+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-26T15:30:23.475+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

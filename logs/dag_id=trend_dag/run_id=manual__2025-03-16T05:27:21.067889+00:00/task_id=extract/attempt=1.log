@@ -1,0 +1,28 @@
+[2025-03-16T05:27:24.660+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-16T05:27:24.666+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: trend_dag.extract manual__2025-03-16T05:27:21.067889+00:00 [queued]>
+[2025-03-16T05:27:24.669+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: trend_dag.extract manual__2025-03-16T05:27:21.067889+00:00 [queued]>
+[2025-03-16T05:27:24.669+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-16T05:27:24.673+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): extract> on 2025-03-16 05:27:21.067889+00:00
+[2025-03-16T05:27:24.675+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=154) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-16T05:27:24.676+0000] {standard_task_runner.py:72} INFO - Started process 155 to run task
+[2025-03-16T05:27:24.677+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'trend_dag', 'extract', 'manual__2025-03-16T05:27:21.067889+00:00', '--job-id', '255', '--raw', '--subdir', 'DAGS_FOLDER/trend_dag.py', '--cfg-path', '/tmp/tmppept73_f']
+[2025-03-16T05:27:24.677+0000] {standard_task_runner.py:105} INFO - Job 255: Subtask extract
+[2025-03-16T05:27:24.694+0000] {task_command.py:467} INFO - Running <TaskInstance: trend_dag.extract manual__2025-03-16T05:27:21.067889+00:00 [running]> on host de242c700bce
+[2025-03-16T05:27:24.720+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='trend_dag' AIRFLOW_CTX_TASK_ID='extract' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T05:27:21.067889+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T05:27:21.067889+00:00'
+[2025-03-16T05:27:24.721+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-16T05:27:24.721+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-16T05:27:24.721+0000] {logging_mixin.py:190} INFO - Current task name:extract state:running start_date:2025-03-16 05:27:24.667059+00:00
+[2025-03-16T05:27:24.721+0000] {logging_mixin.py:190} INFO - Dag name:trend_dag and current dag run status:running
+[2025-03-16T05:27:24.721+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-16T05:30:09.905+0000] {python.py:240} INFO - Done. Returned value was: [{'date': '2025-03-15', 'trend_score': 100, 'keyword': '김경수'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '김동연'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '김두관'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '김문수'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '김부겸'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '나경원'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '신장식'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '안철수'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '오세훈'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '우원식'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '원희룡'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '유승민'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '이낙연'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '이재명'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '이준석'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '조국'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '추미애'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '한동훈'}, {'date': '2025-03-15', 'trend_score': 100, 'keyword': '홍준표'}]
+[2025-03-16T05:30:09.935+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-16T05:30:09.936+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=trend_dag, task_id=extract, run_id=manual__2025-03-16T05:27:21.067889+00:00, execution_date=20250316T052721, start_date=20250316T052724, end_date=20250316T053009
+[2025-03-16T05:30:09.948+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-16T05:30:09.948+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-16T05:30:09.949+0000] {logging_mixin.py:190} INFO - Dag name:trend_dag queued_at:2025-03-16 05:27:21.081065+00:00
+[2025-03-16T05:30:09.949+0000] {logging_mixin.py:190} INFO - Task hostname:de242c700bce operator:PythonOperator
+[2025-03-16T05:30:09.986+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-16T05:30:09.998+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-16T05:30:09.999+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

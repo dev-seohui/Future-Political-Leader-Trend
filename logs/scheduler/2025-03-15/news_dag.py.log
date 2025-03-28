@@ -6030,3 +6030,1123 @@ Traceback (most recent call last):
 ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
 [2025-03-15T23:23:08.797+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
 [2025-03-15T23:23:08.861+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.141 seconds
+[2025-03-15T23:23:39.736+0000] {processor.py:186} INFO - Started process (PID=2320) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:23:39.737+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:23:39.740+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:23:39.739+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:23:39.756+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:23:39.753+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:23:39.757+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:23:39.785+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.054 seconds
+[2025-03-15T23:24:11.042+0000] {processor.py:186} INFO - Started process (PID=2386) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:24:11.044+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:24:11.053+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:24:11.052+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:24:11.079+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:24:11.073+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:24:11.081+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:24:11.113+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.076 seconds
+[2025-03-15T23:24:41.700+0000] {processor.py:186} INFO - Started process (PID=2453) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:24:41.704+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:24:41.713+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:24:41.711+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:24:41.748+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:24:41.743+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:24:41.752+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:24:41.802+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.105 seconds
+[2025-03-15T23:25:12.736+0000] {processor.py:186} INFO - Started process (PID=2520) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:25:12.738+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:25:12.745+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:25:12.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:25:12.785+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:25:12.775+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:25:12.789+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:25:12.863+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.131 seconds
+[2025-03-15T23:25:43.027+0000] {processor.py:186} INFO - Started process (PID=2586) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:25:43.030+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:25:43.050+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:25:43.050+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:25:43.109+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:25:43.096+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:25:43.113+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:25:43.133+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.110 seconds
+[2025-03-15T23:26:13.623+0000] {processor.py:186} INFO - Started process (PID=2653) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:26:13.624+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:26:13.646+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:26:13.646+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:26:13.701+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:26:13.696+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:26:13.702+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:26:13.734+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.114 seconds
+[2025-03-15T23:26:44.281+0000] {processor.py:186} INFO - Started process (PID=2719) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:26:44.285+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:26:44.296+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:26:44.295+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:26:44.325+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:26:44.318+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:26:44.328+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:26:44.381+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.103 seconds
+[2025-03-15T23:27:14.444+0000] {processor.py:186} INFO - Started process (PID=2786) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:27:14.449+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:27:14.461+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:27:14.459+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:27:14.478+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:27:14.475+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:27:14.479+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:27:14.514+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.074 seconds
+[2025-03-15T23:27:45.699+0000] {processor.py:186} INFO - Started process (PID=2853) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:27:45.701+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:27:45.708+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:27:45.707+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:27:45.746+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:27:45.737+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:27:45.762+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:27:45.825+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.132 seconds
+[2025-03-15T23:28:16.354+0000] {processor.py:186} INFO - Started process (PID=2920) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:28:16.358+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:28:16.366+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:28:16.365+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:28:16.394+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:28:16.389+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:28:16.399+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:28:16.455+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.104 seconds
+[2025-03-15T23:28:47.004+0000] {processor.py:186} INFO - Started process (PID=2986) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:28:47.006+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:28:47.013+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:28:47.013+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:28:47.047+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:28:47.042+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:28:47.048+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:28:47.072+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.072 seconds
+[2025-03-15T23:29:17.795+0000] {processor.py:186} INFO - Started process (PID=3053) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:29:17.798+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:29:17.811+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:29:17.809+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:29:17.855+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:29:17.848+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:29:17.865+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:29:17.928+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.137 seconds
+[2025-03-15T23:29:48.210+0000] {processor.py:186} INFO - Started process (PID=3120) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:29:48.211+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:29:48.221+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:29:48.221+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:29:48.275+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:29:48.267+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:29:48.282+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:29:48.327+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.121 seconds
+[2025-03-15T23:30:18.709+0000] {processor.py:186} INFO - Started process (PID=3187) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:30:18.711+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:30:18.717+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:30:18.716+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:30:18.731+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:30:18.729+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:30:18.732+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:30:18.758+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.053 seconds
+[2025-03-15T23:30:49.197+0000] {processor.py:186} INFO - Started process (PID=3254) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:30:49.198+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:30:49.207+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:30:49.207+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:30:49.264+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:30:49.257+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:30:49.267+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:30:49.318+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.124 seconds
+[2025-03-15T23:31:19.970+0000] {processor.py:186} INFO - Started process (PID=3321) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:31:19.973+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:31:19.984+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:31:19.984+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:31:20.046+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:31:20.032+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:31:20.050+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:31:20.120+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.152 seconds
+[2025-03-15T23:31:50.633+0000] {processor.py:186} INFO - Started process (PID=3388) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:31:50.636+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:31:50.650+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:31:50.649+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:31:50.684+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:31:50.679+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:31:50.685+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:31:50.749+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.119 seconds
+[2025-03-15T23:32:21.339+0000] {processor.py:186} INFO - Started process (PID=3455) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:32:21.340+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:32:21.356+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:32:21.355+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:32:21.453+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:32:21.439+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:32:21.454+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:32:21.508+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.173 seconds
+[2025-03-15T23:32:52.048+0000] {processor.py:186} INFO - Started process (PID=3522) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:32:52.052+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:32:52.071+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:32:52.069+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:32:52.121+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:32:52.116+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:32:52.122+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:32:52.171+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.128 seconds
+[2025-03-15T23:33:22.823+0000] {processor.py:186} INFO - Started process (PID=3589) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:33:22.834+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:33:22.846+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:33:22.842+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:33:22.880+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:33:22.874+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:33:22.883+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:33:22.941+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.121 seconds
+[2025-03-15T23:33:53.037+0000] {processor.py:186} INFO - Started process (PID=3656) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:33:53.041+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:33:53.049+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:33:53.048+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:33:53.074+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:33:53.068+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:33:53.076+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:33:53.116+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.083 seconds
+[2025-03-15T23:34:23.901+0000] {processor.py:186} INFO - Started process (PID=3723) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:34:23.905+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:34:23.918+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:34:23.917+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:34:23.970+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:34:23.953+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:34:23.975+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:34:24.039+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.141 seconds
+[2025-03-15T23:34:54.511+0000] {processor.py:186} INFO - Started process (PID=3789) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:34:54.514+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:34:54.524+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:34:54.524+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:34:54.588+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:34:54.575+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:34:54.592+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:34:54.617+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.111 seconds
+[2025-03-15T23:35:25.165+0000] {processor.py:186} INFO - Started process (PID=3856) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:35:25.168+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:35:25.176+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:35:25.173+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:35:25.198+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:35:25.194+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:35:25.202+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:35:25.246+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.084 seconds
+[2025-03-15T23:35:55.464+0000] {processor.py:186} INFO - Started process (PID=3923) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:35:55.468+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:35:55.500+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:35:55.499+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:35:55.592+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:35:55.585+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:35:55.598+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:35:55.634+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.174 seconds
+[2025-03-15T23:36:26.541+0000] {processor.py:186} INFO - Started process (PID=3996) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:36:26.545+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:36:26.562+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:36:26.560+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:36:26.612+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:36:26.605+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:36:26.615+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:36:26.671+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.134 seconds
+[2025-03-15T23:36:56.838+0000] {processor.py:186} INFO - Started process (PID=4063) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:36:56.840+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:36:56.844+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:36:56.844+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:36:56.943+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:36:56.933+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:36:56.964+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:36:57.015+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.180 seconds
+[2025-03-15T23:37:27.857+0000] {processor.py:186} INFO - Started process (PID=4130) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:37:27.861+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:37:27.870+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:37:27.869+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:37:27.903+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:37:27.898+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:37:27.909+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:37:27.948+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.094 seconds
+[2025-03-15T23:37:58.460+0000] {processor.py:186} INFO - Started process (PID=4197) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:37:58.463+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:37:58.479+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:37:58.476+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:37:58.526+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:37:58.513+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:37:58.529+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:37:58.564+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.108 seconds
+[2025-03-15T23:38:29.548+0000] {processor.py:186} INFO - Started process (PID=4264) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:38:29.550+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:38:29.567+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:38:29.562+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:38:29.727+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:38:29.694+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:38:29.737+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:38:29.816+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.273 seconds
+[2025-03-15T23:38:59.900+0000] {processor.py:186} INFO - Started process (PID=4331) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:38:59.903+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:38:59.909+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:38:59.908+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:38:59.927+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:38:59.924+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:38:59.930+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:38:59.979+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.083 seconds
+[2025-03-15T23:39:30.209+0000] {processor.py:186} INFO - Started process (PID=4397) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:39:30.211+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:39:30.224+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:39:30.218+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:39:30.260+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:39:30.253+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:39:30.261+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:39:30.302+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.097 seconds
+[2025-03-15T23:40:00.811+0000] {processor.py:186} INFO - Started process (PID=4464) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:40:00.813+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:40:00.829+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:40:00.826+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:40:00.871+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:40:00.864+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:40:00.880+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:40:00.951+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.143 seconds
+[2025-03-15T23:40:31.291+0000] {processor.py:186} INFO - Started process (PID=4531) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:40:31.292+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:40:31.298+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:40:31.298+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:40:31.318+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:40:31.314+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:40:31.321+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:40:31.386+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.101 seconds
+[2025-03-15T23:41:01.847+0000] {processor.py:186} INFO - Started process (PID=4597) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:41:01.848+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:41:01.850+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:41:01.850+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:41:01.863+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:41:01.861+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:41:01.865+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:41:01.891+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.047 seconds
+[2025-03-15T23:41:32.690+0000] {processor.py:186} INFO - Started process (PID=4663) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:41:32.690+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:41:32.692+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:41:32.692+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:41:32.738+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:41:32.730+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:41:32.744+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:41:32.805+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.118 seconds
+[2025-03-15T23:42:03.479+0000] {processor.py:186} INFO - Started process (PID=4730) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:42:03.481+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:42:03.487+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:42:03.487+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:42:03.516+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:42:03.512+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:42:03.517+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:42:03.552+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.077 seconds
+[2025-03-15T23:42:34.188+0000] {processor.py:186} INFO - Started process (PID=4798) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:42:34.194+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:42:34.214+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:42:34.214+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:42:34.267+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:42:34.254+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:42:34.274+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:42:34.326+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.143 seconds
+[2025-03-15T23:43:05.074+0000] {processor.py:186} INFO - Started process (PID=4865) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:43:05.076+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:43:05.079+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:43:05.079+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:43:05.126+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:43:05.109+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:43:05.128+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:43:05.194+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.124 seconds
+[2025-03-15T23:43:36.054+0000] {processor.py:186} INFO - Started process (PID=4932) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:43:36.058+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:43:36.065+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:43:36.065+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:43:36.113+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:43:36.108+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:43:36.115+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:43:36.173+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.123 seconds
+[2025-03-15T23:44:06.377+0000] {processor.py:186} INFO - Started process (PID=4999) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:44:06.381+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:44:06.386+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:44:06.385+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:44:06.413+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:44:06.407+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:44:06.416+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:44:06.506+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.133 seconds
+[2025-03-15T23:44:37.250+0000] {processor.py:186} INFO - Started process (PID=5066) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:44:37.252+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:44:37.268+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:44:37.267+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:44:37.306+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:44:37.301+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:44:37.310+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:44:37.367+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.120 seconds
+[2025-03-15T23:45:08.256+0000] {processor.py:186} INFO - Started process (PID=5132) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:45:08.258+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:45:08.274+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:45:08.269+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:45:08.323+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:45:08.310+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:45:08.330+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:45:08.372+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.119 seconds
+[2025-03-15T23:45:39.321+0000] {processor.py:186} INFO - Started process (PID=5199) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:45:39.323+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:45:39.338+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:45:39.333+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:45:39.365+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:45:39.361+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:45:39.367+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:45:39.394+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.075 seconds
+[2025-03-15T23:46:09.743+0000] {processor.py:186} INFO - Started process (PID=5265) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:46:09.747+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:46:09.769+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:46:09.766+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:46:09.807+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:46:09.797+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:46:09.809+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:46:09.864+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.124 seconds
+[2025-03-15T23:46:40.775+0000] {processor.py:186} INFO - Started process (PID=5331) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:46:40.777+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:46:40.789+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:46:40.788+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:46:40.821+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:46:40.816+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:46:40.824+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:46:40.883+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.111 seconds
+[2025-03-15T23:47:11.887+0000] {processor.py:186} INFO - Started process (PID=5398) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:47:11.891+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:47:11.898+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:47:11.898+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:47:11.940+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:47:11.934+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:47:11.942+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:47:11.997+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.112 seconds
+[2025-03-15T23:47:42.433+0000] {processor.py:186} INFO - Started process (PID=5465) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:47:42.435+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:47:42.447+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:47:42.446+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:47:42.493+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:47:42.477+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:47:42.500+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:47:42.565+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.135 seconds
+[2025-03-15T23:48:13.071+0000] {processor.py:186} INFO - Started process (PID=5532) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:48:13.072+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:48:13.084+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:48:13.082+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:48:13.107+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:48:13.104+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:48:13.111+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:48:13.172+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.104 seconds
+[2025-03-15T23:48:43.678+0000] {processor.py:186} INFO - Started process (PID=5599) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:48:43.680+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:48:43.689+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:48:43.688+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:48:43.748+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:48:43.744+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:48:43.757+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:48:43.834+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.161 seconds
+[2025-03-15T23:49:14.714+0000] {processor.py:186} INFO - Started process (PID=5665) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:49:14.715+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:49:14.729+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:49:14.729+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:49:14.787+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:49:14.774+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:49:14.794+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:49:14.844+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.133 seconds
+[2025-03-15T23:49:45.239+0000] {processor.py:186} INFO - Started process (PID=5732) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:49:45.243+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:49:45.259+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:49:45.258+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:49:45.300+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:49:45.292+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:49:45.303+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:49:45.372+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.135 seconds
+[2025-03-15T23:50:16.028+0000] {processor.py:186} INFO - Started process (PID=5801) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:50:16.029+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:50:16.030+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:50:16.030+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:50:16.090+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:50:16.084+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:50:16.091+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:50:16.115+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.091 seconds
+[2025-03-15T23:50:46.994+0000] {processor.py:186} INFO - Started process (PID=5868) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:50:46.995+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:50:47.012+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:50:47.009+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:50:47.048+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:50:47.046+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:50:47.049+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:50:47.119+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.129 seconds
+[2025-03-15T23:51:52.594+0000] {processor.py:186} INFO - Started process (PID=107) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:51:52.598+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:51:52.614+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:51:52.612+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:51:52.648+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:51:52.642+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:51:52.653+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:51:52.684+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.094 seconds
+[2025-03-15T23:52:23.418+0000] {processor.py:186} INFO - Started process (PID=174) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:52:23.420+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:52:23.430+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:52:23.426+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:52:23.454+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:52:23.449+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:52:23.456+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:52:23.507+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.091 seconds
+[2025-03-15T23:52:54.001+0000] {processor.py:186} INFO - Started process (PID=241) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:52:54.002+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:52:54.004+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:52:54.003+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:52:54.033+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:52:54.028+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:52:54.038+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:52:54.081+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.083 seconds
+[2025-03-15T23:53:24.440+0000] {processor.py:186} INFO - Started process (PID=307) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:53:24.446+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:53:24.449+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:53:24.449+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:53:24.476+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:53:24.468+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:53:24.478+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:53:24.517+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.080 seconds
+[2025-03-15T23:53:54.567+0000] {processor.py:186} INFO - Started process (PID=379) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:53:54.568+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:53:54.569+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:53:54.568+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:53:54.580+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:53:54.579+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:53:54.581+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:53:54.593+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.030 seconds
+[2025-03-15T23:54:24.982+0000] {processor.py:186} INFO - Started process (PID=446) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:54:24.983+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:54:24.984+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:54:24.983+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:54:24.997+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:54:24.996+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:54:24.998+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:54:25.010+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.032 seconds
+[2025-03-15T23:54:55.452+0000] {processor.py:186} INFO - Started process (PID=513) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:54:55.453+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:54:55.453+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:54:55.453+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:54:55.469+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:54:55.468+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:54:55.470+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:54:55.482+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.034 seconds
+[2025-03-15T23:55:25.628+0000] {processor.py:186} INFO - Started process (PID=580) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:55:25.629+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:55:25.630+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:55:25.630+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:55:25.642+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:55:25.640+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:55:25.643+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:55:25.656+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.033 seconds
+[2025-03-15T23:55:56.535+0000] {processor.py:186} INFO - Started process (PID=647) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:55:56.537+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:55:56.539+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:55:56.539+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:55:56.578+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:55:56.569+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:55:56.582+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:55:56.617+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.085 seconds
+[2025-03-15T23:56:27.508+0000] {processor.py:186} INFO - Started process (PID=715) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:56:27.511+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:56:27.520+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:56:27.520+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:56:27.565+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:56:27.556+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:56:27.570+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:56:27.609+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.105 seconds
+[2025-03-15T23:56:58.283+0000] {processor.py:186} INFO - Started process (PID=782) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:56:58.285+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:56:58.291+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:56:58.291+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:56:58.350+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:56:58.342+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:56:58.353+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:56:58.395+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.118 seconds
+[2025-03-15T23:57:28.665+0000] {processor.py:186} INFO - Started process (PID=848) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:57:28.667+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:57:28.683+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:57:28.679+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:57:28.718+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:57:28.715+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:57:28.719+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:57:28.761+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.102 seconds
+[2025-03-15T23:57:59.481+0000] {processor.py:186} INFO - Started process (PID=914) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:57:59.490+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:57:59.508+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:57:59.507+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:57:59.535+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:57:59.529+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:57:59.538+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:57:59.583+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.104 seconds
+[2025-03-15T23:58:30.430+0000] {processor.py:186} INFO - Started process (PID=981) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:58:30.433+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:58:30.437+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:58:30.436+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:58:30.485+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:58:30.481+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:58:30.488+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:58:30.517+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.090 seconds
+[2025-03-15T23:59:01.255+0000] {processor.py:186} INFO - Started process (PID=1048) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:59:01.256+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:59:01.258+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:59:01.258+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:59:01.297+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:59:01.293+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:59:01.301+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:59:01.346+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.096 seconds
+[2025-03-15T23:59:31.905+0000] {processor.py:186} INFO - Started process (PID=1115) to work on /opt/airflow/dags/news_dag.py
+[2025-03-15T23:59:31.909+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/news_dag.py for tasks to queue
+[2025-03-15T23:59:31.923+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:59:31.921+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:59:31.959+0000] {logging_mixin.py:190} INFO - [2025-03-15T23:59:31.955+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/news_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_dag.py", line 4, in <module>
+    from scripts.extract.news_extract import NaverBlogExtractor
+  File "/opt/airflow/plugins/scripts/extract/news_extract.py", line 5, in <module>
+    from config.settings import CLIENT_ID, CLIENT_SECRET
+ImportError: cannot import name 'CLIENT_ID' from 'config.settings' (/opt/airflow/plugins/config/settings.py)
+[2025-03-15T23:59:31.961+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/news_dag.py
+[2025-03-15T23:59:32.011+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/news_dag.py took 0.109 seconds

@@ -54,6 +54,7 @@ x-airflow-common:
   environment:
     &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+    AIRFLOW__CORE__DEFAULT_TIMEZONE: Asia/Seoul
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
     AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
@@ -68,7 +69,7 @@ x-airflow-common:
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
     # WARNING: Use _PIP_ADDITIONAL_REQUIREMENTS option ONLY for a quick checks
     # for other purpose (development, test and especially production usage) build/extend Airflow image.
-    _PIP_ADDITIONAL_REQUIREMENTS: "pandas yfinance pytrends psycopg2-binary apache-airflow-providers-postgres"
+    _PIP_ADDITIONAL_REQUIREMENTS: "pandas yfinance pytrends gspread sqlalchemy oauth2client urllib3==1.26.16 psycopg2-binary apache-airflow-providers-postgres"
     # The following line can be used to set a custom config file, stored in the local config folder
     # If you want to use it, outcomment it and replace airflow.cfg with the name of your config file
     # AIRFLOW_CONFIG: '/opt/airflow/config/airflow.cfg'
@@ -93,6 +94,7 @@ services:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow 
       POSTGRES_DB: future_political_leader_trend
+      TZ: Asia/Seoul
     volumes:
       - postgres-db-volume:/var/lib/postgresql/data
       - ./db/:/docker-entrypoint-initdb.d/
@@ -119,6 +121,9 @@ services:
 
   airflow-webserver:
     <<: *airflow-common
+    environment:
+      <<: *airflow-common-env
+      TZ: Asia/Seoul
     command: webserver
     ports:
       - "8080:8080"
@@ -137,6 +142,9 @@ services:
   airflow-scheduler:
     <<: *airflow-common
     command: scheduler
+    environment:
+      <<: *airflow-common-env
+      TZ: Asia/Seoul
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8974/health"]
       interval: 30s
@@ -163,6 +171,7 @@ services:
       start_period: 30s
     environment:
       <<: *airflow-common-env
+      TZ: Asia/Seoul
       # Required to handle warm shutdown of the celery workers properly
       # See https://airflow.apache.org/docs/docker-stack/entrypoint.html#signal-propagation
       DUMB_INIT_SETSID: "0"
@@ -174,6 +183,9 @@ services:
 
   airflow-triggerer:
     <<: *airflow-common
+    environment:
+      <<: *airflow-common-env
+      TZ: Asia/Seoul
     command: triggerer
     healthcheck:
       test: ["CMD-SHELL", 'airflow jobs check --job-type TriggererJob --hostname "$${HOSTNAME}"']
@@ -242,6 +254,7 @@ services:
     # yamllint enable rule:line-length
     environment:
       <<: *airflow-common-env
+      TZ: Asia/Seoul
       _AIRFLOW_DB_MIGRATE: 'true'
       _AIRFLOW_WWW_USER_CREATE: 'true'
       _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-airflow}
