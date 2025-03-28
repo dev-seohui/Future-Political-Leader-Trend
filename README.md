@@ -17,8 +17,7 @@
 ---
 #### 📌 2. 일정
 - **프로젝트 기간** : 2025.02.21 - 진행중
-- **프로젝트 일정** : [Jira 타임라인](https://devseohui.atlassian.net/jira/software/projects/KAN/boards/1/timeline?shared=&atlOrigin=eyJpIjoiYWMxY2I1NjgyOTkzNDNlNTg5YWM2NjMxOGNlNTQ3YWUiLCJwIjoiaiJ9)
-
+- **프로젝트 일정** : Jira 타임라인
 ---
 #### 📌 3. 활용 기술
 - **Cloud Platform** : GCP
