@@ -9,25 +9,33 @@
   - 후보자의 여론조사 지지율과 포털의 트렌드 지표 (구글 트렌드. 네이버 뉴스, 네이버 블로그, 야후 주가)를 비교 분석
 - **핵심 기능**
   - 분석 결과를 대시보드 형태로 제공
+- **구현 사항**
+  - 네이버 개발자 센터 API, pytrends 라이브러리, yfinance 라이브러리 사용하여 배치 데이터 추출 
+  - Docker 컨테이너로 Airflow, Postgresql 서버 구축
+  - 여론조사 결과 데이터와 트렌드 시계열 데이터를 Tableau로 비교 시각화
+
 ---
 #### 📌 2. 일정
 - **프로젝트 기간** : 2025.02.21 - 진행중
 - **프로젝트 일정** : [Jira 타임라인](https://devseohui.atlassian.net/jira/software/projects/KAN/boards/1/timeline?shared=&atlOrigin=eyJpIjoiYWMxY2I1NjgyOTkzNDNlNTg5YWM2NjMxOGNlNTQ3YWUiLCJwIjoiaiJ9)
+
 ---
 #### 📌 3. 활용 기술
+- **Cloud Platform** : GCP
 - **Programming** : Python, SQL
 - **Databases** : PostgreSQL
 - **Big Data Tools** : Airflow
 - **Version Control** : Git, GitHub
 - **Visualisation Tools** : Tableau
-- **Etc** : Docker
+  
 ---
 #### 📌 4. Data Flow
-- **배치 데이터 출처**
-  - [중앙선거여론조사심의위원회](https://nesdc.go.kr/portal/main.do) : 장래 정치 지도자 후보자 적합도 및 정당 지지율 추출
-  - [Yahoo Finance API](https://github.com/ranaroussi/yfinance) : 주식 시가 및 종가 데이터 추출
-  - [Pytrends](https://github.com/GeneralMills/pytrends) : 구글 트랜드 지수 추출
-  - [Naver Developers](https://developers.naver.com/docs/serviceapi/search/blog/blog.md#%EB%B8%94%EB%A1%9C%EA%B7%B8) : 네이버 뉴스 맟 불로그 언급량 추출
+![Image](https://github.com/user-attachments/assets/86f56072-c0b1-490a-ab45-b11a6ba6a5fc)
+- [Naver Developers](https://developers.naver.com/docs/serviceapi/search/blog/blog.md#%EB%B8%94%EB%A1%9C%EA%B7%B8) : 네이버 뉴스 맟 불로그 언급량 추출
+- [Yahoo Finance API](https://github.com/ranaroussi/yfinance) : 주식 시가 및 종가 데이터 추출
+- [Pytrends](https://github.com/GeneralMills/pytrends) : 구글 트랜드 지수 추출
+- [중앙선거여론조사심의위원회](https://nesdc.go.kr/portal/main.do) : 장래 정치 지도자 후보자 적합도 및 정당 지지율 추출
+- 정치인 후보자 지지율의 경우 **범여권 + 범야권 진영 통합** 여론조사만 지지율만 활용 (양자대결, 3자대결 등의 지지율 제외)
   
 ---
 #### 📌 5. ERD
