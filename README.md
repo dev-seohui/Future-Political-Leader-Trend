@@ -46,7 +46,7 @@
 ---
 #### 📌 7. 참고 자료
 - [KRX | 정보데이터시스템](http://data.krx.co.kr/contents/MDC/MAIN/main/index.cmd) : 주식 종목 코드 수집
-- [핀업](https://stock.finup.co.kr/) : 정치 테마주 수집
+- [핀업](https://stock.finup.co.kr/) : 정치 테마주 종목 수집
 - [뉴시스(신문), 정치테마주 기승…23곳 무더기 상한가, 2024.12.05](https://www.donga.com/news/Economy/article/all/20241205/130572929/1) : 위와 동일
 - [김혜인 기자, 정치 테마주, 전례 없는 급등락... 얼마나 올랐길래?, 뉴스톱, 2025.01.27](https://www.newstof.com/news/articleView.html?idxno=26266) : 위와 동일 
 - [김경민 기자, 계엄 후 정치테마주 ‘기승’···투자주의종목 4년8개월만에 최대, 경향신문, 2025.01.26](https://www.khan.co.kr/article/202501261156001) : 위와 동일 
