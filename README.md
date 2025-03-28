@@ -31,7 +31,7 @@
   
 ---
 #### 📌 5. ERD
-- 
+![Image](https://github.com/user-attachments/assets/457cf35f-d548-4684-8cbe-b2bf03d57f1e)
 ---
 #### 📌 6. User Interface
 - 
