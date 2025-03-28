@@ -2,7 +2,7 @@
 import urllib.request
 import json
 import psycopg2
-from datetime import datetime
+from datetime import datetime, timedelta
 from config.settings import CLIENT_ID, CLIENT_SECRET, DB_CONFIG
 
 
@@ -50,7 +50,7 @@ def get_previous_cumulative_counts():
 
 """ 📌 최종 추출 함수: 일일/누적 뉴스 & 블로그 카운트 계산 """
 def extract_naver_data():
-    today = datetime.today().strftime('%Y-%m-%d')
+    today = (datetime.today() - timedelta(days=1)).strftime('%Y-%m-%d')
     candidate_list = get_candidate_list()
     prev_counts = get_previous_cumulative_counts()
     data_to_insert = []
