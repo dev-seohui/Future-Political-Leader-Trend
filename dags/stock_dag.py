@@ -21,7 +21,7 @@ dag = DAG(
     "stock_dag",    # ✅ DAG 이름 (고유 식별자)
     default_args=default_args,  
     description="주가 데이터 갱신", # ✅ DAG 설명 (UI 표시)
-    schedule_interval="10 0 * * *", # ✅ 매일 00:10 실행
+    schedule_interval="1 0 * * *",  # ✅ 매일 00:01 실행
     catchup=False,  # ✅ 과거 데이터 실행 여부 (실행 X)
 )
 

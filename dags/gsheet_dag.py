@@ -25,7 +25,7 @@ dag = DAG(
     "upload_to_gsheets",    # ✅ DAG 이름 (고유 식별자)
     default_args=default_args,
     description="PostgreSQL -> Google Sheet", # ✅ DAG 설명 (UI 표시)
-    schedule_interval="30 0 * * *", # ✅ 매일 00:30 실행
+    schedule_interval="10 0 * * *", # ✅ 매일 00:30 실행
     catchup=False,  # ✅ 과거 데이터 실행 여부 (실행 X)
 )
 

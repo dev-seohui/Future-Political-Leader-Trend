@@ -1,5 +1,6 @@
 """ 📌 패키지 불러오기 """
 import time
+import math 
 import random
 import pandas as pd
 import psycopg2
@@ -35,14 +36,19 @@ def extract_google_data():
 
     # ✅ 트렌드 데이터 다운로드 기간 설정
     today_date = (datetime.today() - timedelta(days=1)).strftime('%Y-%m-%d')  
-    PERIOD = f"{today_date} {today_date}"   # ✅ timeframe 형식 변경
+    today_date_after = datetime.today().strftime('%Y-%m-%d')
+    PERIOD = f"{today_date} {today_date_after}"   # ✅ timeframe 형식 변경
 
     dfs = []    
-    for keyword in keywords:
+    batch_size = 5
+    total_batches = math.ceil(len(keywords)/batch_size)
+
+    for i in range(total_batches):
         # ✅ kw_list: 검색할 키워드 (리스트 형식, 한 번에 여러 개도 가능)
-        # ✅ timeframe: 검색할 기간 ("today 1-m" → 최근 한 달간 데이터)
+        # ✅ timeframe: 검색할 기간 
         # ✅ geo: 'KR' → 대한민국 기준 데이터 조회
-        pytrends.build_payload(kw_list=[keyword], 
+        batch = keywords[i * batch_size : (i + 1) * batch_size]
+        pytrends.build_payload(kw_list=batch, 
                                timeframe=PERIOD, 
                                geo='KR')
         df = pytrends.interest_over_time()
@@ -52,14 +58,13 @@ def extract_google_data():
         
         # ✅ 날짜 컬럼 추가
         df = df.reset_index() 
-        df = df[["date", keyword]]
-
-        # ✅ 컬럼 세부 정보 변경
-        df.rename(columns={keyword: "trend_score"}, inplace=True)
-        df["keyword"] = keyword
-
-        dfs.append(df)
-        time.sleep(random.uniform(60, 120)) # ✅ 5~10초 랜덤 딜레이 추가
+        for keyword in batch:
+            temp_df = df[["date", keyword]].copy()
+            temp_df.rename(columns={keyword: "trend_score"}, inplace=True)
+            temp_df["keyword"] = keyword
+            dfs.append(temp_df)
+            
+        time.sleep(random.uniform(10, 20)) # ✅ 5~10초 랜덤 딜레이 추가
 
     if not dfs:
         raise ValueError("❌ No valid data retrieved from Pytrends.")
