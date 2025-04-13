@@ -34,7 +34,7 @@
 - [Yahoo Finance API](https://github.com/ranaroussi/yfinance) : 주식 시가 및 종가 데이터 추출
 - [Pytrends](https://github.com/GeneralMills/pytrends) : 구글 트랜드 지수 추출
 - [중앙선거여론조사심의위원회](https://nesdc.go.kr/portal/main.do) : 장래 정치 지도자 후보자 적합도 및 정당 지지율 추출
-- 정치인 후보자 지지율의 경우 **범여권 + 범야권 진영 통합** 여론조사의 지지율만 활용 (양자대결, 3자대결 등의 지지율 제외)
+- 정치인 후보자 지지율의 경우 **범진보와 법보수를 아우르는 다자대결** 여론조사의 지지율만 활용 (양자대결, 3자대결 등의 지지율 제외)
   
 ---
 #### 📌 5. ERD
