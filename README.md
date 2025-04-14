@@ -42,7 +42,8 @@
 
 ---
 #### 📌 6. Visualization
-- [태블로 대시보드 - 정치인 개별 트렌드 분석](https://public.tableau.com/views/_17436625522470/2025?:language=ko-KR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+- [태블로 대시보드 - 정치인 개별 트렌드 분석](https://public.tableau.com/views/2_17429160891360/2025?:language=ko-KR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+- 
 ---
 #### 📌 7. 참고 자료
 - [KRX | 정보데이터시스템](http://data.krx.co.kr/contents/MDC/MAIN/main/index.cmd) : 주식 종목 코드 수집
