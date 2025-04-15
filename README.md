@@ -55,4 +55,3 @@
 ---
 #### 📌 8. 회고
 - [블로그](https://velog.io/@toughcookie/series/%EC%9E%A5%EB%9E%98-%EC%A0%95%EC%B9%98-%EC%A7%80%EB%8F%84%EC%9E%90-%ED%8A%B8%EB%A0%8C%EB%93%9C-%EB%B6%84%EC%84%9D-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)
-- 동영상
