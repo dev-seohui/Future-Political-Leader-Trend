@@ -18,6 +18,12 @@
 - Cloud : GCP
 - ETC : Git, Docker, Jira
 
+#### ✅ 구현 세부사항
+- 네이버 Open API : 키워드 관련 뉴스·블로그 포스팅 수의 누적값만 조회 가능하여, 매일 00:01에 DAG를 실행해 오늘 누적 수치와 어제 누적 수치의 차이를 계산해 일별 데이터를 추출. 초기 데이터는 Selenium으로 웹 스크래핑하여 수집.
+- yfinance, pytrends : 비공식 Python 라이브러리를 사용해 매일 주가 데이터와 구글 트렌드 데이터를 수집.
+- 중앙선거여론조사심의위원회 : 정당 지지율은 주 1회 제공되는 xlsx 파일로 수집. 정치인 지지율은 제공 문서가 없어 직접 결과표를 조회하여 수집. 정치인 지지율의 경우 다자대결의 결과만 수집. (양자대결, 3자대결, 진영 내 대결 제외)
+- PostgreSQL에는 Incremental Update 방식으로 저장. Google Sheet에는 데이터 일관성 유지를 위해 Full Update 방식으로 저장.
+
 #### ✅ ERD
 <img src="https://github.com/user-attachments/assets/4ebb96f9-7c5d-4b4d-a629-7cd529960ad1" width="700"/>
 
