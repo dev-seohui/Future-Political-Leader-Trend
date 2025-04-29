@@ -4,7 +4,7 @@
 <img src="https://github.com/user-attachments/assets/0f322674-12a0-48dd-920b-72f27f95ab95" width="700"/>
 
 #### ✅ 일정 
-- 프로젝트 기간 : 2025.02.21 - 2025.04.30
+- 프로젝트 기간 : 2025.02.21 - 2025.04.27
 - 프로젝트 일정 관리 : Jira 
   
 #### ✅ Data Flow
