@@ -1,14 +1,14 @@
 ## 🗳️ 장래 정치 지도자 트렌드 분석 프로젝트
 
 #### ✅ 페르소나
-<img src="https://github.com/user-attachments/assets/0f322674-12a0-48dd-920b-72f27f95ab95" width="500"/>
+<img src="https://github.com/user-attachments/assets/0f322674-12a0-48dd-920b-72f27f95ab95" width="700"/>
 
 #### ✅ 일정 
 - 프로젝트 기간 : 2025.02.21 - 2025.04.30
 - 프로젝트 일정 관리 : Jira 
   
 #### ✅ Data Flow
-<img src="https://github.com/user-attachments/assets/9c70340b-7872-42e1-81bb-b1feb1590023" width="500"/>
+<img src="https://github.com/user-attachments/assets/9c70340b-7872-42e1-81bb-b1feb1590023" width="700"/>
 
 #### ✅ 활용 기술
 - Language : Python3 (Selenium, Pandas)
@@ -19,7 +19,7 @@
 - ETC : Git, Docker, Jira
 
 #### ✅ ERD
-<img src="https://github.com/user-attachments/assets/4ebb96f9-7c5d-4b4d-a629-7cd529960ad1" width="500"/>
+<img src="https://github.com/user-attachments/assets/4ebb96f9-7c5d-4b4d-a629-7cd529960ad1" width="700"/>
 
 #### ✅ Visualization
 - [태블로](https://public.tableau.com/app/profile/seohui.cho/viz/2_17429160891360/2025)
