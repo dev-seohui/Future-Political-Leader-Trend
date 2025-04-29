@@ -64,7 +64,7 @@ def extract_google_data():
             temp_df["keyword"] = keyword
             dfs.append(temp_df)
             
-        time.sleep(random.uniform(10, 20)) # ✅ 5~10초 랜덤 딜레이 추가
+        time.sleep(random.uniform(5, 10)) # ✅ 5~10초 랜덤 딜레이 추가
 
     if not dfs:
         raise ValueError("❌ No valid data retrieved from Pytrends.")
