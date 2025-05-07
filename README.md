@@ -40,7 +40,7 @@
 
 ***
 
-#### ✅ Visualization
+#### ✅ 시각화
 - [태블로](https://public.tableau.com/app/profile/seohui.cho/viz/2_17429160891360/2025)
 
 ***
